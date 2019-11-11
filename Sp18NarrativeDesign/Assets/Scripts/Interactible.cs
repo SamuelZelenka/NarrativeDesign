@@ -5,23 +5,32 @@ using UnityEngine.Events;
 
 public class Interactible : MonoBehaviour
 {
+
+
+    //The point from the interaction check happens from
     public Vector3 InteractionPoint { get => transform.position + (transform.rotation * interactionOriginPointOffset); }
+
+
+    //The offset from the objects origin the check happens from 
     [SerializeField] Vector3 interactionOriginPointOffset;
+    //Interaction icon offset
     [SerializeField] Vector3 interactVisualiserObjectOffset;
     public Vector3 InteractVisualiserObjectOffset
     {
         get
         {
             if (rotateInteractionVisWithRotation)
-                return transform.position + transform.rotation * interactVisualiserObjectOffset;
-            else return transform.position + interactionOriginPointOffset;
+            { return transform.position + transform.rotation * interactVisualiserObjectOffset; }
+            else return transform.position + interactVisualiserObjectOffset;
         }
     }
+    [Tooltip("Should the interaction icon be affected by the objects rotation")]
     [SerializeField] bool rotateInteractionVisWithRotation = true;
-
+    [Tooltip("How close the player has to be to the interactionpoint in order to be able to interact")]
     [SerializeField] float interactionRadius = .5f;
     [SerializeField]
     bool interactible = true;
+    [Tooltip("Leave on everything")]
     [SerializeField] LayerMask interactionMask = ~0;
     GameObject interactVisualiser;
     public UnityEvent interactionEvent = new UnityEvent();
@@ -68,22 +77,25 @@ public class Interactible : MonoBehaviour
         Gizmos.DrawSphere(InteractionPoint, interactionRadius);
     }
 
-    void Start()
+   public virtual void Start()
     {
         InstantiateInteractVisualiser();
     }
+    //Creates the interaction visualiser in the scene
     void InstantiateInteractVisualiser()
     {
         interactVisualiser = Instantiate(Resources.Load("InteractionCanvas") as GameObject);
-        interactVisualiser.transform.position = transform.position + transform.rotation * interactVisualiserObjectOffset;
+        interactVisualiser.transform.position = InteractVisualiserObjectOffset;
         interactVisualiser.SetActive(false);
     }
+
+    //Show or hide the interaction icon
     public void ShowInteractIcon(bool show)
     {
         switch (show)
         {
             case (true):
-                interactVisualiser.transform.position = transform.position + transform.rotation * interactVisualiserObjectOffset;
+                interactVisualiser.transform.position = InteractVisualiserObjectOffset;
                 interactVisualiser.SetActive(true);
                 break;
             case (false):
@@ -92,7 +104,7 @@ public class Interactible : MonoBehaviour
 
         }
     }
-    void OnDestroy()
+    public virtual void OnDestroy()
     {
         Destroy(interactVisualiser);
     }
