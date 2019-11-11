@@ -27,14 +27,14 @@ public class Interactible : MonoBehaviour
     [Tooltip("Should the interaction icon be affected by the objects rotation")]
     [SerializeField] bool rotateInteractionVisWithRotation = true;
     [Tooltip("How close the player has to be to the interactionpoint in order to be able to interact")]
-    [SerializeField] float interactionRadius = .5f;
+    [SerializeField]protected float interactionRadius = .5f;
     [SerializeField]
-    bool interactible = true;
+  protected  bool interactible = true;
     [Tooltip("Leave on everything")]
-    [SerializeField] LayerMask interactionMask = ~0;
+    [SerializeField] protected LayerMask interactionMask = ~0;
     GameObject interactVisualiser;
     public UnityEvent interactionEvent = new UnityEvent();
-    public bool CanInteract
+    public virtual bool CanInteract
     {
         get
         {
