@@ -1,0 +1,13 @@
+
+FileNaming:
+Textures - WallTexture_01.jpg
+Models - BrokenChair_01.fbx
+Audio - AmbientRain_01.wav
+Scripts - PlayerInteract.cs
+Scenes - Streets.scene
+
+FolderStructure:
+Assets/Models/Environment/Streets/Props/BrokenChair_01.fbx
+Assets/Models/Environment/Streets/LevelDesign/Walls/SandstoneWall_01.fbx
+Assets/Models/Environment/Streets/LevelDesign/Floor/BrickFloor_01.fbx
+
