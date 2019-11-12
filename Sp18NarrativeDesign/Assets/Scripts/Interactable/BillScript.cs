@@ -5,7 +5,7 @@ using UnityEngine;
 public class BillScript : MonoBehaviour
 {
 
-    // Update is called once per frame
+    //Makes object face the main camera
     void Update()
     {
         if (Camera.main != null)
