@@ -4,7 +4,7 @@ Shader "Custom/OutlineTest"
 {
 	Properties
 	{
-		_Color("Main Color", Color) = (1,1,1,1)
+		_Color("Main Color", Color) = (1,3,1,3)
 		_MainTex("Base (RGB) Gloss (A)", 2D) = "white" {}
 	}
 
