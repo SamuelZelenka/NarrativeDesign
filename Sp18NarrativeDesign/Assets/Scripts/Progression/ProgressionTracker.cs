@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class ProgressionTracker
+public class ProgressionTracker
 {
     public static List<Objective> completedObjectives = new List<Objective>();
 
