@@ -401,11 +401,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 68525012}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e69455d5cc6fedc4eabc1d74286c9f2d, type: 3}
+  m_Script: {fileID: 11500000, guid: ec2e34b4280a18c4fb0e21d5ed03d404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   optionsMenu: {fileID: 508470662}
   creditsWindow: {fileID: 1305951447}
+  pauseMenu: {fileID: 0}
+  dropdownMenu: {fileID: 1283789332}
 --- !u!1 &75641067
 GameObject:
   m_ObjectHideFlags: 0
@@ -2491,7 +2493,7 @@ GameObject:
   - component: {fileID: 1283789333}
   - component: {fileID: 1283789332}
   m_Layer: 5
-  m_Name: Dropdown
+  m_Name: Resolutions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2566,13 +2568,7 @@ MonoBehaviour:
   m_ItemImage: {fileID: 0}
   m_Value: 0
   m_Options:
-    m_Options:
-    - m_Text: Option A
-      m_Image: {fileID: 0}
-    - m_Text: Option B
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
+    m_Options: []
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3414,7 +3410,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1809077074}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 68525017}
+        m_MethodName: PlayButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1809077074
 MonoBehaviour:
   m_ObjectHideFlags: 0
