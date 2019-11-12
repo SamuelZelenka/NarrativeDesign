@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class ProgressionTracker : MonoBehaviour
 {
-    List<Objective> CompletedObjectives;
+    List<Objective> completedObjectives;
 
+    Objective currentObjective;
+
+    void SetObjective(Objective objective)
+    {
+        completedObjectives.Add(currentObjective);
+
+        currentObjective = objective;
+    }
 }
