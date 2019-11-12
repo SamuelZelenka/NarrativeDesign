@@ -1,17 +1,35 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProgressionTracker : MonoBehaviour
+public static class ProgressionTracker
 {
-    List<Objective> completedObjectives;
+    public static List<Objective> completedObjectives = new List<Objective>();
 
-    Objective currentObjective;
+    public static List<Objective> activeObjectives = new List<Objective>();
 
-    void SetObjective(Objective objective)
+
+
+    public static string AddObjective(Objective objective)
     {
-        completedObjectives.Add(currentObjective);
-
-        currentObjective = objective;
+        if (!activeObjectives.Contains(objective))
+        {
+            activeObjectives.Add(objective);
+            return $"{objective.objectiveTitle} added to objectives.";
+        }
+        return "Objective is already active.";
     }
+    public static string CompleteObjective(Objective objective)
+    {
+        Predicate<Objective> objectFinder = (Objective activeObject) => { return activeObject == objective;};
+        if (!completedObjectives.Contains(objective))
+        {
+            completedObjectives.Add(objective);
+            activeObjectives.RemoveAt(activeObjectives.FindIndex(objectFinder));
+            return $"{objective.objectiveTitle} Objective Completed.";
+        }
+        return "Objective is already active.";
+    }
+    
 }

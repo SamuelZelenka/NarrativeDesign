@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Objective : Interactible
 {
-    string objectiveTitle;
+    public string objectiveTitle;
     public override void Interact()
     {
-        
+        string newstring = ProgressionTracker.AddObjective(this);
+        print(newstring);
+        Destroy(this.gameObject);
     }
 
 }
