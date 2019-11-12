@@ -6,5 +6,4 @@ public class ProgressionTracker : MonoBehaviour
 {
     List<Objective> CompletedObjectives;
 
-    void Add
 }
