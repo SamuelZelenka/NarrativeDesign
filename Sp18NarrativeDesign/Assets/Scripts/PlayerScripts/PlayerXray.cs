@@ -17,7 +17,7 @@ public class PlayerXray : MonoBehaviour
     [SerializeField] float scanTime = 3;
     float scanTimer = 0;
     float scanRange = 0;
-
+    [SerializeField] float scanrangeShrinker = -10;
     float intesity;
 
     float activeTimer = 0;
@@ -60,7 +60,7 @@ public class PlayerXray : MonoBehaviour
                 scanRange += growthRate * Time.deltaTime;
                 foreach (var item in xRayObjects)
                 {
-                    if (Vector3.Distance(sphereObject.transform.position, item.transform.position) <= scanRange)
+                    if (Vector3.Distance(sphereObject.transform.position, item.transform.position) <= scanRange - scanrangeShrinker)
                     {
                         Debug.Log("Showing");
                         item.ShowThroughWalls(true);
@@ -72,11 +72,10 @@ public class PlayerXray : MonoBehaviour
                 scanning = false;
                 foreach (var item in xRayObjects)
                 {
-                    if (Vector3.Distance(sphereObject.transform.position, item.transform.position) <= scanRange)
-                    {
+
                         Debug.Log("Hiding");
                         item.ShowThroughWalls(false);
-                    }
+                    
                 }
             }
         }
