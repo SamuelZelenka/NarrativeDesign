@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class ObjectiveInteractable : Interactible
 {
-    public string objectiveTitle;
+    [SerializeField] string objectiveText;
+
     public override void Interact()
     {
-        ObjectiveManager.AddObjective(this);
+        ObjectiveManager.AddObjective(new Objective(objectiveText));
         Destroy(this.gameObject);
     }
-    ontrigger
+
 }
