@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.Collections.Generic;
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
 	[RequireComponent(typeof(Rigidbody))]
@@ -29,8 +29,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		CapsuleCollider m_Capsule;
 		bool m_Crouching;
 
-
-		void Start()
+        List<GameObject> allEnemies = new List<GameObject>();
+        void Start()
 		{
 			m_Animator = GetComponent<Animator>();
 			m_Rigidbody = GetComponent<Rigidbody>();
@@ -40,10 +40,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 			m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 			m_OrigGroundCheckDistance = m_GroundCheckDistance;
-		}
-
-
-		public void Move(Vector3 move, bool crouch, bool jump)
+        }
+        
+        public void Move(Vector3 move, bool crouch, bool jump)
 		{
 
 			// convert the world relative moveInput vector into a local-relative
