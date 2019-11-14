@@ -28,6 +28,11 @@ public class PlayerXray : MonoBehaviour
     [SerializeField] Material chargedMaterial;
     [SerializeField] Material notChargedMaterial;
 
+
+
+
+    [SerializeField] AudioSource audioSource;
+
     private void Start()
     {
         sphereObject.transform.parent = null;
@@ -65,7 +70,7 @@ public class PlayerXray : MonoBehaviour
                 scanRange += growthRate * Time.deltaTime;
                 foreach (var item in xRayObjects)
                 {
-                    if (Vector3.Distance(sphereObject.transform.position, item.transform.position) <= scanRange/2 - scanrangeShrinker)
+                    if (Vector3.Distance(sphereObject.transform.position, item.transform.position) <= scanRange / 2 - scanrangeShrinker)
                     {
 
                         item.ShowThroughWalls(true);
@@ -79,8 +84,8 @@ public class PlayerXray : MonoBehaviour
                 {
 
 
-                        item.ShowThroughWalls(false);
-                    
+                    item.ShowThroughWalls(false);
+
                 }
             }
         }
@@ -107,6 +112,8 @@ public class PlayerXray : MonoBehaviour
     {
         if (batteryPercentage >= 100 && !scanning)
         {
+            if (audioSource != null)
+                audioSource.Play();
             unCharged();
             batteryPercentage = 0;
             sphereObject.transform.position = transform.position + sphereObjectOrigin;
