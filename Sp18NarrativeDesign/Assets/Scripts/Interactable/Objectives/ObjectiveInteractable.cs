@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Objective : Interactible
+public class ObjectiveInteractable : Interactible
 {
-    public string objectiveTitle;
+    [SerializeField] string objectiveText;
+
     public override void Interact()
     {
-        string newstring = ProgressionTracker.AddObjective(this);
-        print(newstring);
+        ObjectiveManager.AddObjective(new Objective(objectiveText));
         Destroy(this.gameObject);
     }
 
