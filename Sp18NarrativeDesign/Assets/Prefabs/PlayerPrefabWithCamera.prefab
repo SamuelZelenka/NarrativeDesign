@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &33709789
 Transform:
   m_ObjectHideFlags: 0
@@ -5289,46 +5289,6 @@ MonoBehaviour:
   minCameraXAngle: -23.3
   maxCameraXAngle: 40.37
   sensitivity: 5
---- !u!114 &8589832250084665629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8589832250679699316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e3737953f45c5649b2df270bfd0c170, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactibles: []
---- !u!114 &8589832250084665630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8589832250679699316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd78f04c11d89084f8d9fee25fd07942, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  batteryPercentage: 0
-  batteryChargeSpeed: 25
-  orbActiveTime: 2
-  growthRate: 50
-  lightGrowthRate: 50
-  lerp: 2
-  light: {fileID: 418875698}
-  sphereObject: {fileID: 33709788}
-  sphereObjectOrigin: {x: 0, y: 0.94, z: 0}
-  scanTime: 3
-  scanrangeShrinker: 1
-  chargedDisplay: {fileID: 8589832250666186166}
-  chargedMaterial: {fileID: 2100000, guid: 9dcce69a10a97d842bcfea853e5c9d8b, type: 2}
-  notChargedMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  audioSource: {fileID: 808713120}
 --- !u!82 &808713120
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5426,6 +5386,46 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8589832250084665629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8589832250679699316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e3737953f45c5649b2df270bfd0c170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactibles: []
+--- !u!114 &8589832250084665630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8589832250679699316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd78f04c11d89084f8d9fee25fd07942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  batteryPercentage: 0
+  batteryChargeSpeed: 25
+  orbActiveTime: 2
+  growthRate: 50
+  lightGrowthRate: 50
+  lerp: 2
+  light: {fileID: 418875698}
+  sphereObject: {fileID: 33709788}
+  sphereObjectOrigin: {x: 0, y: 0.94, z: 0}
+  scanTime: 3
+  scanrangeShrinker: 1
+  chargedDisplay: {fileID: 8589832250666186166}
+  chargedMaterial: {fileID: 2100000, guid: 9dcce69a10a97d842bcfea853e5c9d8b, type: 2}
+  notChargedMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  audioSource: {fileID: 808713120}
 --- !u!1 &9116569946697434941
 GameObject:
   m_ObjectHideFlags: 0
