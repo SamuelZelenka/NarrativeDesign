@@ -637,7 +637,7 @@ MonoBehaviour:
   creditsWindow: {fileID: 0}
   pauseMenu: {fileID: 929468935}
   pauseButtons: {fileID: 1938276330}
-  missionsText: {fileID: 0}
+  missionsText: {fileID: 1950712427}
   dropdownMenu: {fileID: 1918116702}
 --- !u!1 &408664973
 GameObject:
@@ -2931,7 +2931,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 227.1, y: 773.1}
+  m_AnchoredPosition: {x: 190, y: 760}
   m_SizeDelta: {x: 1464.7, y: 439.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1950712425
