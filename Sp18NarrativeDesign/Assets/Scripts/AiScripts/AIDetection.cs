@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AIDetection : MonoBehaviour
 {
-    
+
     [SerializeField] Transform player;
     [SerializeField] float viewDistance = 5f;
     [SerializeField] float angle = 100;
@@ -19,10 +19,11 @@ public class AIDetection : MonoBehaviour
     {
         RaycastHit hit;
         Debug.DrawRay(gameObject.transform.position, transform.forward, Color.red);
-        Debug.DrawLine(gameObject.transform.position,transform.position +  transform.forward * viewDistance, Color.green);
+        Debug.DrawLine(gameObject.transform.position, transform.position + transform.forward * viewDistance, Color.green);
 
-    Debug.Log(    rayCone(player, transform.position, transform.forward,angle ));
-        if (rayCone(player, transform.position, transform.forward, angle)){
+        Debug.Log(rayCone(player, transform.position, transform.forward, angle));
+        if (rayCone(player, transform.position, transform.forward, angle))
+        {
             //What happens when the player is discovered.
         }
     }
