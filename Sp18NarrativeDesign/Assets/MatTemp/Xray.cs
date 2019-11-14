@@ -4,32 +4,53 @@ using UnityEngine;
 
 public class Xray : MonoBehaviour
 {
-    Material m_Original;
+    Material m_Original;    
     
     [SerializeField]
     Material m_Xray;
 
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip audioClip;
+    AudioSource AudioSource
+    {
+        get
+        {
+            if (audioSource == null)
+            {
+                audioSource = Instantiate(Resources.Load("ScannedObjectSoundSource") as GameObject, transform.position, Quaternion.identity, gameObject.transform).GetComponent<AudioSource>();
+            }
+            return audioSource;
+        }
+    }
     bool _xRayActive = false;
     void Start()
     {
         m_Original = GetComponent<Renderer>().material;
+        audioClip = Resources.Load("ScanSound") as AudioClip;
+        audioSource = AudioSource;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    bool played = false;
+
+
+   public void ShowThroughWalls(bool doit)
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (!doit)
         {
-            if (_xRayActive == true)
+            GetComponent<Renderer>().material = m_Original;
+            played = false;
+        }
+        else
+        {
+            GetComponent<Renderer>().material = m_Xray;
+            _xRayActive = false;
+            if (audioClip != null && !played)
             {
-                GetComponent<Renderer>().material = m_Original;
-                _xRayActive = false;
-            }
-            else
-            {
-                GetComponent<Renderer>().material = m_Xray;
-                _xRayActive = true;
+                AudioSource.clip = audioClip;
+                AudioSource.Play();
+                played = true;
             }
         }
     }
+
 }

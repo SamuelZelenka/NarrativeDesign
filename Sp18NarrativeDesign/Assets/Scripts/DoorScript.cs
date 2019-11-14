@@ -47,26 +47,6 @@ public class DoorScript : MonoBehaviour
             doorTimer = 0;
             open = shouldOpen;
         }
-        //switch (open)
-        //{
-        //    case (true):
-        //        if (!locked)
-        //        {
-        //            Debug.Log("owo");
-        //            animator.SetBool("Open", true);
-        //            open = true;
-        //            doorTimer = 0;
-        //        }
-
-        //        break;
-        //    case (false):
-        //        if (!locked)
-        //        {
-        //            animator.SetBool("Open", false);
-        //            open = false;
-        //        }
-        //        break;
-        //}
 
     }
 
