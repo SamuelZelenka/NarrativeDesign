@@ -26,7 +26,7 @@ public class Xray : MonoBehaviour
     void Start()
     {
         m_Original = GetComponent<Renderer>().material;
-        audioClip = Resources.Load("ScanSound") as AudioClip;
+        audioClip = Resources.Load("ScanFound") as AudioClip;
         audioSource = AudioSource;
     }
 
