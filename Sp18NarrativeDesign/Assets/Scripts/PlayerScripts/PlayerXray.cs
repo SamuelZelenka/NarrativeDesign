@@ -24,7 +24,7 @@ public class PlayerXray : MonoBehaviour
     float activeTimer = 0;
     Xray[] xRayObjects = new Xray[0];
 
-    [SerializeField] MeshRenderer chargedDisplay;
+    [SerializeField] Renderer chargedDisplay;
     [SerializeField] Material chargedMaterial;
     [SerializeField] Material notChargedMaterial;
 
