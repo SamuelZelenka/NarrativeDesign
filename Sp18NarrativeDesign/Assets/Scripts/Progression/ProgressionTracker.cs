@@ -16,7 +16,7 @@ public class ProgressionTracker : MonoBehaviour
         if (!activeObjectives.Contains(objective))
         {
             activeObjectives.Add(objective);
-            return $"{objective.objectiveTitle} added to objectives.";
+            return $"{objective.objectiveText} added to objectives.";
         }
         return "Objective is already active.";
     }
@@ -27,7 +27,7 @@ public class ProgressionTracker : MonoBehaviour
         {
             completedObjectives.Add(objective);
             activeObjectives.RemoveAt(activeObjectives.FindIndex(objectFinder));
-            return $"{objective.objectiveTitle} Objective Completed.";
+            return $"{objective.objectiveText} Objective Completed.";
         }
         return "Objective is already active.";
     }
