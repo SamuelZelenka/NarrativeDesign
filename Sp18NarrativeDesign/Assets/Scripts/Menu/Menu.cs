@@ -49,13 +49,18 @@ public class Menu : MonoBehaviour
         if (scene.name == "MainScene")
         {
             if (!pauseMenu.activeSelf){
-            pauseMenu.SetActive(true);
-            pauseButtons.SetBool("Paused", true);
-            missionsText.SetBool("Paused", true);
+                playerCamera.SetActive(false);
+                pauseMenu.SetActive(true);
+                Cursor.lockState = CursorLockMode.None;
+                pauseButtons.SetBool("Paused", true);
+                missionsText.SetBool("Paused", true);
  
             }
             else{
                 pauseButtons.SetBool("Paused", false);
+                missionsText.SetBool("Paused", false);
+                playerCamera.SetActive(true);
+                Cursor.lockState = CursorLockMode.Locked;
                 pauseMenu.SetActive(false);
             } 
         }
@@ -66,6 +71,8 @@ public class Menu : MonoBehaviour
     private Animator pauseButtons;
     [SerializeField]
     private Animator missionsText;
+    [SerializeField]
+    private GameObject playerCamera;
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape))
         {  
@@ -74,8 +81,8 @@ public class Menu : MonoBehaviour
                 optionsMenu.SetActive(false);
             }
             else
-            {
-            PauseMenu();
+            { 
+                PauseMenu();
             }
         }
     }
