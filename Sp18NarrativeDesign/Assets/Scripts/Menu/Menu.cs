@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.Characters.ThirdPerson;
 
 public class Menu : MonoBehaviour
 {
@@ -49,7 +50,9 @@ public class Menu : MonoBehaviour
         if (scene.name == "MainScene")
         {
             if (!pauseMenu.activeSelf){
-                playerCamera.SetActive(false);
+                Time.timeScale = 0;
+                playerCamera.GetComponent<PlayerCamera>().enabled = false;
+                playerControls.GetComponent<ThirdPersonUserControl>().enabled = false;
                 pauseMenu.SetActive(true);
                 Cursor.lockState = CursorLockMode.None;
                 pauseButtons.SetBool("Paused", true);
@@ -57,9 +60,11 @@ public class Menu : MonoBehaviour
  
             }
             else{
+                Time.timeScale = 1;
                 pauseButtons.SetBool("Paused", false);
                 missionsText.SetBool("Paused", false);
-                playerCamera.SetActive(true);
+                playerCamera.GetComponent<PlayerCamera>().enabled = true;
+                playerControls.GetComponent<ThirdPersonUserControl>().enabled = true;
                 Cursor.lockState = CursorLockMode.Locked;
                 pauseMenu.SetActive(false);
             } 
@@ -73,6 +78,9 @@ public class Menu : MonoBehaviour
     private Animator missionsText;
     [SerializeField]
     private GameObject playerCamera;
+    [SerializeField]
+    private GameObject playerControls;
+
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape))
         {  
