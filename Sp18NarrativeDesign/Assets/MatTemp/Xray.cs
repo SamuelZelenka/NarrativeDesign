@@ -16,20 +16,20 @@ public class Xray : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+
+
+   public void ShowThroughWalls(bool doit)
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (!doit)
         {
-            if (_xRayActive == true)
-            {
-                GetComponent<Renderer>().material = m_Original;
-                _xRayActive = false;
-            }
-            else
-            {
-                GetComponent<Renderer>().material = m_Xray;
-                _xRayActive = true;
-            }
+            GetComponent<Renderer>().material = m_Original;
+            _xRayActive = true;
+        }
+        else
+        {
+            GetComponent<Renderer>().material = m_Xray;
+            _xRayActive = false;
         }
     }
+
 }

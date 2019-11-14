@@ -46,4 +46,8 @@ public class PlayerCamera : MonoBehaviour
         Gizmos.DrawWireSphere(PlayerObject.transform.position + Quaternion.Euler(0, yAxisRotation, 0) * playerOffset, .5f);
 
     }
+    private void OnEnable()
+    {
+        GetComponent<Camera>().depthTextureMode = DepthTextureMode.DepthNormals;
+    }
 }
