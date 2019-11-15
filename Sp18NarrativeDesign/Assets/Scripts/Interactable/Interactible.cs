@@ -27,9 +27,9 @@ public class Interactible : MonoBehaviour
     [Tooltip("Should the interaction icon be affected by the objects rotation")]
     [SerializeField] bool rotateInteractionVisWithRotation = true;
     [Tooltip("How close the player has to be to the interactionpoint in order to be able to interact")]
-    [SerializeField]protected float interactionRadius = .5f;
+    [SerializeField] protected float interactionRadius = .5f;
     [SerializeField]
-  protected  bool interactible = true;
+    protected bool interactible = true;
     [Tooltip("Leave on everything")]
     [SerializeField] protected LayerMask interactionMask = ~0;
     GameObject interactVisualiser;
@@ -77,7 +77,7 @@ public class Interactible : MonoBehaviour
         Gizmos.DrawSphere(InteractionPoint, interactionRadius);
     }
 
-   public virtual void Start()
+    public virtual void Start()
     {
         InstantiateInteractVisualiser();
     }
