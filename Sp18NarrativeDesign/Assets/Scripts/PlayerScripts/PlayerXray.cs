@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerXray : MonoBehaviour
 {
     [SerializeField] float batteryPercentage = 0;
+    [SerializeField] float batteryChargeSpeed = 1;
     public float BatteryPercentage { get => batteryPercentage; }
     [SerializeField] float orbActiveTime = 5;
     [SerializeField] float growthRate = 1;
@@ -17,11 +18,20 @@ public class PlayerXray : MonoBehaviour
     [SerializeField] float scanTime = 3;
     float scanTimer = 0;
     float scanRange = 0;
-
+    [SerializeField] float scanrangeShrinker = -10;
     float intesity;
 
     float activeTimer = 0;
     Xray[] xRayObjects = new Xray[0];
+
+    [SerializeField] Renderer chargedDisplay;
+    [SerializeField] Material chargedMaterial;
+    [SerializeField] Material notChargedMaterial;
+
+
+
+
+    [SerializeField] AudioSource audioSource;
 
     private void Start()
     {
@@ -60,9 +70,9 @@ public class PlayerXray : MonoBehaviour
                 scanRange += growthRate * Time.deltaTime;
                 foreach (var item in xRayObjects)
                 {
-                    if (Vector3.Distance(sphereObject.transform.position, item.transform.position) <= scanRange)
+                    if (Vector3.Distance(sphereObject.transform.position, item.transform.position) <= scanRange / 2 - scanrangeShrinker)
                     {
-                        Debug.Log("Showing");
+
                         item.ShowThroughWalls(true);
                     }
                 }
@@ -72,29 +82,61 @@ public class PlayerXray : MonoBehaviour
                 scanning = false;
                 foreach (var item in xRayObjects)
                 {
-                    if (Vector3.Distance(sphereObject.transform.position, item.transform.position) <= scanRange)
-                    {
-                        Debug.Log("Hiding");
-                        item.ShowThroughWalls(false);
-                    }
+
+
+                    item.ShowThroughWalls(false);
+
                 }
             }
         }
 
+
+        batteryPercentage += batteryChargeSpeed * Time.deltaTime;
+        if (batteryPercentage >= 100)
+        {
+            fullyCharged();
+        }
+
+
+    }
+
+    void fullyCharged()
+    {
+        chargedDisplay.material = chargedMaterial;
+    }
+    void unCharged()
+    {
+        chargedDisplay.material = notChargedMaterial;
     }
     void Xray()
     {
-        sphereObject.transform.position = transform.position + sphereObjectOrigin;
-        light.range = 0;
-        activeTimer = 0;
-        sphereObject.transform.localScale = Vector3.zero;
-        sphereObject.SetActive(true);
-        light.intensity = intesity;
-        scanning = true;
-        scanTimer = 0;
-        scanRange = 0;
-        xRayObjects = GameObject.FindObjectsOfType<Xray>();
-        Debug.Log(xRayObjects.Length);
+        if (batteryPercentage >= 100 && !scanning)
+        {
+            if (audioSource != null)
+                audioSource.Play();
+            unCharged();
+            batteryPercentage = 0;
+            sphereObject.transform.position = transform.position + sphereObjectOrigin;
+            light.range = 0;
+            activeTimer = 0;
+            sphereObject.transform.localScale = Vector3.zero;
+            sphereObject.SetActive(true);
+            light.intensity = intesity;
+            scanning = true;
+            scanTimer = 0;
+            scanRange = 0;
+            xRayObjects = GameObject.FindObjectsOfType<Xray>();
+            foreach (var item in xRayObjects)
+            {
+
+
+                item.ShowThroughWalls(false);
+
+            }
+        }
+
+
+
     }
     private void OnDrawGizmosSelected()
     {
