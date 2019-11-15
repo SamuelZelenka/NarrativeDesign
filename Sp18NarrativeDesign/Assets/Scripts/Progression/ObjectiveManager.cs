@@ -13,7 +13,7 @@ public class ObjectiveManager : MonoBehaviour
     public static ObjectiveManager objectiveManager;
     private void Start()
     {
-        objectiveManager = Transform.FindObjectOfType<ObjectiveManager>();
+        objectiveManager = this.GetComponent<ObjectiveManager>();
     }
     private void Update()
     {
