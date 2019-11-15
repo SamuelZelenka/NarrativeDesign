@@ -5,23 +5,24 @@ FileNaming:
 Parent objects: thisIsCamelCase
 Child objects: ThisIsPascalCase
 
-Parent object: Lamp_01
-Child object: lampBulb_01
+Parent object: Lamp
+Child object: lampBulb
 
-Textures: WallTexture_01.jpg
-Models: BrokenChair_01.fbx
-Audio: AmbientRain_01.wav
+Textures: WallTexture.v1.1.jpg
+Models: BrokenChair.v1.1.fbx
+Audio: AmbientRain.v.1.1.wav
 Scripts: PlayerInteract.cs
 Scenes: Streets.scene
+Prefab: Table.prefab
 
 
 FolderStructure:
 
 Assets / <Type> / <Area> / <Group> / <(sub group)> / <modelFile>.fbx
 
-Assets / Models / Environment / Props / BrokenChair_01.fbx
-Assets / Models / Environment / LevelDesign / Walls / SandstoneWall_01.fbx
-Assets / Models / Character / NPC / Robot / PoliceRobot_01.fbx
+Assets / Models / UI / Menu / StartButton.v1.1.png
+Assets / Models / Environment / LevelDesign / Walls / SandstoneWall.v2.5.fbx
+Assets / Models / Character / NPC / Robot / PoliceRobot.v.1.2.fbx
 
 
 Prefix Underscores to highlight items - _ProgressionManager
