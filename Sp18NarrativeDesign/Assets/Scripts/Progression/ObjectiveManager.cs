@@ -2,18 +2,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectiveManager : MonoBehaviour
 {
     public List<Objective> completedObjectives = new List<Objective>();
 
     public List<Objective> activeObjectives = new List<Objective>();
+
+    [SerializeField] Text objectiveText;
     [SerializeField] int count;
 
     public static ObjectiveManager objectiveManager;
+    public static Text objectiveDescription;
     private void Start()
     {
         objectiveManager = this.GetComponent<ObjectiveManager>();
+        objectiveDescription = objectiveText; 
     }
     private void Update()
     {
@@ -27,7 +32,7 @@ public class ObjectiveManager : MonoBehaviour
         if (!objectiveManager.activeObjectives.Contains(objective))
         {
             objectiveManager.activeObjectives.Add(objective);
-            
+            objectiveDescription.text += objective.objectiveText + "\n";
             return $"{objective.objectiveText} added to objectives.";
         }
         return "Objective is already active.";
