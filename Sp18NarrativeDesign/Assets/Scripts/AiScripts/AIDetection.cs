@@ -15,7 +15,7 @@ public class AIDetection : MonoBehaviour
 
     NavMeshAgent agent;
     string waypointTag = "Waypoint";
-
+    public bool detectedPlayer = false;
     List<GameObject> waypointList = new List<GameObject>();// list of possible waypoints
 
     // Start is called before the first frame update
@@ -48,8 +48,9 @@ public class AIDetection : MonoBehaviour
         if (rayCone(player, transform.position, transform.forward, angle))
         {
             agent.SetDestination(player.transform.position);
+            detectedPlayer = false;
             //What happens when the player is discovered.
-        }
+        } else { detectedPlayer = false; }
     }
     bool rayCone(Transform player, Vector3 coneTipPos, Vector3 coneDirection, float angle)
     {
