@@ -48,7 +48,7 @@ public class AIDetection : MonoBehaviour
         if (rayCone(player, transform.position, transform.forward, angle))
         {
             agent.SetDestination(player.transform.position);
-            detectedPlayer = false;
+            detectedPlayer = true;
             //What happens when the player is discovered.
         } else { detectedPlayer = false; }
     }
