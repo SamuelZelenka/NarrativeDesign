@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ProgressionTracker : MonoBehaviour
+{
+    public static List<Objective> completedObjectives = new List<Objective>();
+
+    public static List<Objective> activeObjectives = new List<Objective>();
+
+
+
+    public static string AddObjective(Objective objective)
+    {
+        if (!activeObjectives.Contains(objective))
+        {
+            activeObjectives.Add(objective);
+            return $"{objective.objectiveText} added to objectives.";
+        }
+        return "Objective is already active.";
+    }
+    public static string CompleteObjective(Objective objective)
+    {
+        Predicate<Objective> objectFinder = (Objective activeObject) => { return activeObject == objective;};
+        if (!completedObjectives.Contains(objective))
+        {
+            completedObjectives.Add(objective);
+            activeObjectives.RemoveAt(activeObjectives.FindIndex(objectFinder));
+            return $"{objective.objectiveText} Objective Completed.";
+        }
+        return "Objective is already active.";
+    }
+    
+}

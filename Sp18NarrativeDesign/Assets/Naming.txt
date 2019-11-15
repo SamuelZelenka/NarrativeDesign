@@ -1,0 +1,28 @@
+
+FileNaming:
+
+
+Parent objects: thisIsCamelCase
+Child objects: ThisIsPascalCase
+
+Parent object: Lamp_01
+Child object: lampBulb_01
+
+Textures: WallTexture_01.jpg
+Models: BrokenChair_01.fbx
+Audio: AmbientRain_01.wav
+Scripts: PlayerInteract.cs
+Scenes: Streets.scene
+
+
+FolderStructure:
+
+Assets / <Type> / <Area> / <Group> / <(sub group)> / <modelFile>.fbx
+
+Assets / Models / Environment / Props / BrokenChair_01.fbx
+Assets / Models / Environment / LevelDesign / Walls / SandstoneWall_01.fbx
+Assets / Models / Character / NPC / Robot / PoliceRobot_01.fbx
+
+
+Prefix Underscores to highlight items - _ProgressionManager
+Avoid abbreviations - Do not: BFG_01 Do: BigFuckingGun_01
