@@ -19,6 +19,7 @@ public class PlayerXray : MonoBehaviour
     float scanTimer = 0;
     float scanRange = 0;
     [SerializeField] float scanrangeShrinker = -10;
+    [SerializeField] float scannerMaxRange = 100;
     float intesity;
 
     float activeTimer = 0;
@@ -67,7 +68,7 @@ public class PlayerXray : MonoBehaviour
             if (scanTimer < scanTime)
             {
                 scanTimer += Time.deltaTime;
-                scanRange += growthRate * Time.deltaTime;
+                scanRange = Mathf.Clamp(scanRange + growthRate * Time.deltaTime, 0, scannerMaxRange);
                 foreach (var item in xRayObjects)
                 {
                     if (Vector3.Distance(sphereObject.transform.position, item.transform.position) <= scanRange / 2 - scanrangeShrinker)
