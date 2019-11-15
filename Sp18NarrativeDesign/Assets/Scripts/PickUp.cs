@@ -18,7 +18,7 @@ public class PickUp : MonoBehaviour
             isHolding = true;
             item = other.gameObject;
             item.transform.parent = tempParent.transform;
-            item.transform.position = item.transform.parent.position + new Vector3(0,0.5f,0) + item.transform.parent.forward * 0.5f;
+            item.transform.position = item.transform.parent.position + new Vector3(0,0.5f,0);
             item.GetComponent<Rigidbody>().useGravity = false;
             item.GetComponent<Rigidbody>().detectCollisions = true;
             item.GetComponent<Rigidbody>().velocity = Vector3.zero;

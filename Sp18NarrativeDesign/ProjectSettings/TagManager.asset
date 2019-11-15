@@ -4,6 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Fire
+  - Enemy
   - Moveable
   layers:
   - Default
@@ -14,8 +16,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - X-ray
+  - Player
   - 
   - 
   - 
@@ -39,6 +41,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: X-ray
+    uniqueID: 7398751
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
