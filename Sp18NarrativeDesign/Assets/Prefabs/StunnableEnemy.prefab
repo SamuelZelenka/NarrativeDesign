@@ -159,7 +159,7 @@ MonoBehaviour:
   currentState: 0
   player: {fileID: 0}
   viewDistance: 5
-  angle: 55
+  angle: 90.34
   target: {fileID: 0}
   detectedTime: 4
   detectedPlayer: 0
