@@ -28,8 +28,7 @@ public class ObjectiveInteractable : Interactible
                 break;
             case ObjectiveType.End:
                 ObjectiveManager.objectiveManager.ObjectiveInteractComplete(endTitle);
-                break;
-            case ObjectiveType.Both:
+                break;    case ObjectiveType.Both:
                 ObjectiveManager.objectiveManager.ObjectiveInteractComplete(endTitle);
                 ObjectiveManager.objectiveManager.ObjectiveInteractAdd(objective);
                 break;
