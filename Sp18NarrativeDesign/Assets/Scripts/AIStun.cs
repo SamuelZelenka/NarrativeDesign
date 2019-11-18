@@ -10,6 +10,11 @@ public class AIStun : Interactible
     [SerializeField] float stunnedTime = 3;
     bool stunned = false;
     [SerializeField] GameObject stunnedEffect;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] Animator animator;
+    [SerializeField] string stunnedParameter = "Stunned";
+
+
     AIDetection AIDetection
     {
         get
@@ -45,6 +50,10 @@ public class AIStun : Interactible
                 AIDetection.enabled = true;
                 stunned = false;
                 stunnedEffect.SetActive(false);
+                if (animator != null)
+                {
+                    animator.SetBool("Stunned", false);
+                }
             }
 
         }
@@ -57,6 +66,10 @@ public class AIStun : Interactible
         AIDetection.enabled = false;
         stunned = true;
         stunnedEffect.SetActive(true);
+        if (animator != null)
+        {
+            animator.SetBool("Stunned", true);
+        }audioSource.Play();
     }
 
 
