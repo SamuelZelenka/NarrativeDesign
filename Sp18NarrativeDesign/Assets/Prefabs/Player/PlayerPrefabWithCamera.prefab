@@ -5576,6 +5576,20 @@ MonoBehaviour:
   chargedMaterial: {fileID: 2100000, guid: 9dcce69a10a97d842bcfea853e5c9d8b, type: 2}
   notChargedMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   audioSource: {fileID: 808713120}
+--- !u!114 &712617670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8589832250679699316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4b762ad05a94de4a86f739a0c1dbf02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  s_WalkingSound: 5
+  s_RunningSound: 10
 --- !u!1 &9116569946697434941
 GameObject:
   m_ObjectHideFlags: 0

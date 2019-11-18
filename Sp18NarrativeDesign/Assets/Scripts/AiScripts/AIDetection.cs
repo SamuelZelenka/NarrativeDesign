@@ -187,14 +187,17 @@ public class AIDetection : MonoBehaviour
     }
     public void PlayerDetected()
     {
+        Debug.Log("Detected player");
         currentState = AIState.pursuing;
         detectedTimer = 0;
         detectedPlayer = true;
     }
     public void CheckPosition(Vector3 positionToCheck)
     {
+        
         if (currentState != AIState.pursuing)
         {
+            Debug.Log("Checking: " + positionToCheck);
             currentState = AIState.checking;
             checkPositionTimer = 0;
             agent.SetDestination(positionToCheck);
