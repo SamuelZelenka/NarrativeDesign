@@ -15,7 +15,7 @@ public class AIStun : Interactible
     [SerializeField] string stunnedParameter = "Stunned";
 
 
-    AIDetection AIDetection
+    AIDetection _AIDetection
     {
         get
         {
@@ -33,7 +33,7 @@ public class AIStun : Interactible
     public override void Update()
     {
         base.Update();
-        if (!AIDetection.detectedPlayer && !stunned)
+        if (_AIDetection.currentState != AIDetection.AIState.checking && _AIDetection.currentState != AIDetection.AIState.pursuing && !stunned)
         {
             interactible = true;
         }
@@ -52,6 +52,7 @@ public class AIStun : Interactible
                 stunnedEffect.SetActive(false);
                 if (animator != null)
                 {
+                    Debug.Log("Falsed;");
                     animator.SetBool("Stunned", false);
                 }
                 //         GetComponent<NavMeshAgent>().enabled = true;
@@ -65,11 +66,12 @@ public class AIStun : Interactible
     {
         stunTimer = 0;
         // AIDetection.enabled = false;'
-        AIDetection.Stun(stunnedTime);
+        _AIDetection.Stun(stunnedTime);
         stunned = true;
         stunnedEffect.SetActive(true);
         if (animator != null)
         {
+            Debug.Log("Truthed");
             animator.SetBool("Stunned", true);
         }
         audioSource.Play();
