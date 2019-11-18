@@ -13,6 +13,7 @@ Models: BrokenChair.v1.1.fbx
 Audio: AmbientRain.v.1.1.wav
 Scripts: PlayerInteract.cs
 Scenes: Streets.scene
+Prefab: Table.prefab
 
 
 FolderStructure:
