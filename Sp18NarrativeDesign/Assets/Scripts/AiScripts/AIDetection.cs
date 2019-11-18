@@ -7,8 +7,9 @@ using UnityEngine.AI;
 public class AIDetection : MonoBehaviour
 {
 
-    enum AIState { patrolling, pursuing, checking }
-   [SerializeField] AIState currentState;
+    enum AIState { patrolling, pursuing, checking, stunned }
+    [SerializeField] AIState currentState;
+    
     [SerializeField] Transform player;
     [SerializeField] float viewDistance = 5f;
     [SerializeField] float angle = 100;
@@ -22,14 +23,15 @@ public class AIDetection : MonoBehaviour
 
     [SerializeField] float checkPositionTime = 10f;
     float checkPositionTimer = 0f;
-    [SerializeField] List<Transform> waypoints = new List<Transform>();
+    [SerializeField] List<PatrolWaypoint> waypoints = new List<PatrolWaypoint>();
 
     int currentWaypointTarget = 0;
     [SerializeField] float deadArea = 1f;
 
     [SerializeField] float waitAtWaypointTime = 1f;
-
-
+    float waitAtWaypointTimer = 0f;
+    float stunTime;
+    float stunTimer = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +39,23 @@ public class AIDetection : MonoBehaviour
 
         agent = gameObject.GetComponent<NavMeshAgent>();
         if (waypoints.Count > 0)
+        {
             agent.SetDestination(waypoints[0].transform.position);
+            waitAtWaypointTime = waypoints[currentWaypointTarget].waitHereTime;
+            waitAtWaypointTimer = 0;
+        }
+    }
+
+    private void OnEnable()
+    {
+
+        agent = gameObject.GetComponent<NavMeshAgent>();
+        if (waypoints.Count > 0)
+        {
+
+            agent.SetDestination(waypoints[0].transform.position);
+            waitAtWaypointTime = waypoints[currentWaypointTarget].waitHereTime;
+        }
     }
 
     // Update is called once per frame
@@ -55,7 +73,7 @@ public class AIDetection : MonoBehaviour
         Debug.DrawLine(gameObject.transform.position, transform.position + transform.forward * viewDistance, Color.green);
 
         //      Debug.Log(rayCone(player, transform.position, transform.forward, angle));
-        if (rayCone(player, transform.position, transform.forward, angle))
+        if (rayCone(player, transform.position, transform.forward, angle) && currentState != AIState.stunned)
         {
             RaycastHit raycastHit;
             if (Physics.Linecast(transform.position, player.position, out raycastHit))
@@ -79,16 +97,30 @@ public class AIDetection : MonoBehaviour
                 detectedPlayer = false;
                 if (waypoints.Count > 0)
                 {
+                //    agent.SetDestination(waypoints[currentWaypointTarget].transform.position);
                     if (Vector3.Distance(transform.position, waypoints[currentWaypointTarget].transform.position) < deadArea)
                     {
-
-                        if (currentWaypointTarget + 1 >= waypoints.Count)
+                        if (waitAtWaypointTimer >= waitAtWaypointTime)
                         {
-                            currentWaypointTarget = 0;
+                            if (currentWaypointTarget + 1 >= waypoints.Count)
+                            {
+                                currentWaypointTarget = 0;
 
+                            }
+                            else
+                            {
+                                currentWaypointTarget++;
+
+
+                            }
+                            waitAtWaypointTimer = 0;
+                            waitAtWaypointTime = waypoints[currentWaypointTarget].waitHereTime;
+
+                            agent.SetDestination(waypoints[currentWaypointTarget].transform.position);
+                        } else
+                        {
+                            waitAtWaypointTimer += Time.deltaTime * 1;
                         }
-                        else currentWaypointTarget++;
-                        agent.SetDestination(waypoints[currentWaypointTarget].transform.position);
                     }
                 }
 
@@ -112,6 +144,17 @@ public class AIDetection : MonoBehaviour
                 }
                 detectedPlayer = false;
                 break;
+            case AIState.stunned:
+
+                if (stunTimer >= stunTime)
+                {
+                    currentState = prevState;
+                    agent.SetDestination(prevDestination);
+                }
+                else stunTimer += Time.deltaTime * 1;
+
+
+                break;
 
         }
 
@@ -131,7 +174,17 @@ public class AIDetection : MonoBehaviour
 
     }
 
-
+    AIState prevState;
+    Vector3 prevDestination;
+    public void Stun(float time)
+    {
+        stunTimer = 0;
+        stunTime = time;
+        prevState = currentState;
+        currentState = AIState.stunned;
+        prevDestination = agent.destination;
+        agent.SetDestination(transform.position);
+    }
     public void PlayerDetected()
     {
         currentState = AIState.pursuing;

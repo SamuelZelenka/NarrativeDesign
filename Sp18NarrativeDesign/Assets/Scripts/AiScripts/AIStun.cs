@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 public class AIStun : Interactible
 {
     AIDetection aIDetection;
@@ -47,13 +47,14 @@ public class AIStun : Interactible
             stunTimer += 1 * Time.deltaTime;
             if (stunTimer >= stunnedTime)
             {
-                AIDetection.enabled = true;
+                //   AIDetection.enabled = true;
                 stunned = false;
                 stunnedEffect.SetActive(false);
                 if (animator != null)
                 {
                     animator.SetBool("Stunned", false);
                 }
+                //         GetComponent<NavMeshAgent>().enabled = true;
             }
 
         }
@@ -63,13 +64,16 @@ public class AIStun : Interactible
     public void StartStun()
     {
         stunTimer = 0;
-        AIDetection.enabled = false;
+        // AIDetection.enabled = false;'
+        AIDetection.Stun(stunnedTime);
         stunned = true;
         stunnedEffect.SetActive(true);
         if (animator != null)
         {
             animator.SetBool("Stunned", true);
-        }audioSource.Play();
+        }
+        audioSource.Play();
+        // GetComponent<NavMeshAgent>().SetDestination(transform.position);
     }
 
 
