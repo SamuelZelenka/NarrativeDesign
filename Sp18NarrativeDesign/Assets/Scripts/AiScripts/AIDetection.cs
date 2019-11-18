@@ -12,7 +12,8 @@ public class AIDetection : MonoBehaviour
     [SerializeField] float angle = 100;
 
     [SerializeField] GameObject target; //current target for AI
-
+    [SerializeField] float detectedTime = 10f;
+    float detectedTimer = 0f;
     NavMeshAgent agent;
     string waypointTag = "Waypoint";
     public bool detectedPlayer = false;
@@ -44,20 +45,52 @@ public class AIDetection : MonoBehaviour
         Debug.DrawRay(gameObject.transform.position, transform.forward, Color.red);
         Debug.DrawLine(gameObject.transform.position, transform.position + transform.forward * viewDistance, Color.green);
 
-        Debug.Log(rayCone(player, transform.position, transform.forward, angle));
+  //      Debug.Log(rayCone(player, transform.position, transform.forward, angle));
         if (rayCone(player, transform.position, transform.forward, angle))
         {
-            agent.SetDestination(player.transform.position);
-            detectedPlayer = true;
+            RaycastHit raycastHit;
+            if (Physics.Linecast(transform.position, player.position, out raycastHit))
+            {
+                if (raycastHit.transform.tag == "Player")
+                {
+                    Debug.Log("saodja");
+                    PlayerDetected();
+                }
+            }
+
+
+
             //What happens when the player is discovered.
-        } else { detectedPlayer = false; }
+        }
+
+        if (detectedPlayer)
+        {
+            detectedTimer += Time.deltaTime * 1;
+            agent.SetDestination(player.transform.position);
+            if (detectedTimer >= detectedTime)
+            {
+                detectedPlayer = false;
+            }
+        }
+
+        
     }
+
+
+    public void PlayerDetected()
+    {
+        detectedPlayer = true;
+        detectedTimer = 0;
+    }
+
+
     bool rayCone(Transform player, Vector3 coneTipPos, Vector3 coneDirection, float angle)
     {
         float coneHalfAngle = angle / 2;
         Vector3 directionTowardT = player.position - coneTipPos;
         float angleFromConeCenter = Vector3.Angle(directionTowardT, coneDirection);
         return angleFromConeCenter <= coneHalfAngle;
+
     }
 
 }
