@@ -70,6 +70,10 @@ public class AIDetection : MonoBehaviour
         {
 
 
+            if (detectedPlayer == true)
+            {
+                //gameOver(); //End the game if found
+            }
 
             RaycastHit raycastHit;
             if (Physics.Linecast(transform.position, player.position, out raycastHit))
@@ -221,7 +225,5 @@ public class AIDetection : MonoBehaviour
             Gizmos.DrawLine(transform.position, agent.destination);
 
     }
-
-
 
 }
