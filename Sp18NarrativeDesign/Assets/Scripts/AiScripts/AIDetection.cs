@@ -75,6 +75,7 @@ public class AIDetection : MonoBehaviour
                 //gameOver(); //End the game if found
             }
 
+
             RaycastHit raycastHit;
             if (Physics.Linecast(transform.position, player.position, out raycastHit))
             {
