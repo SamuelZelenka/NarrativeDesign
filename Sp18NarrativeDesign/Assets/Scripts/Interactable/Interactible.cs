@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Interactible : MonoBehaviour
 {
@@ -34,6 +35,11 @@ public class Interactible : MonoBehaviour
     [SerializeField] protected LayerMask interactionMask = ~0;
     GameObject interactVisualiser;
     public UnityEvent interactionEvent = new UnityEvent();
+
+    [SerializeField] Sprite customInteractionIcon;
+
+
+
     public virtual bool CanInteract
     {
         get
@@ -87,6 +93,10 @@ public class Interactible : MonoBehaviour
         interactVisualiser = Instantiate(Resources.Load("InteractionCanvas") as GameObject);
         interactVisualiser.transform.position = InteractVisualiserObjectOffset;
         interactVisualiser.SetActive(false);
+        if (customInteractionIcon != null)
+        {
+            interactVisualiser.GetComponent<BillScript>().image.sprite = customInteractionIcon;
+        }
     }
 
     //Show or hide the interaction icon
