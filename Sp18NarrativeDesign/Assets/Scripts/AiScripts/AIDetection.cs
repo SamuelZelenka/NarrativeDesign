@@ -49,6 +49,10 @@ public class AIDetection : MonoBehaviour
         {
             agent.SetDestination(player.transform.position);
             detectedPlayer = true;
+            if (detectedPlayer == true)
+            {
+                //gameOver(); //End the game if found
+            }
             //What happens when the player is discovered.
         } else { detectedPlayer = false; }
     }
@@ -59,5 +63,9 @@ public class AIDetection : MonoBehaviour
         float angleFromConeCenter = Vector3.Angle(directionTowardT, coneDirection);
         return angleFromConeCenter <= coneHalfAngle;
     }
-
+    //Function to end the game.
+    //void gameOver()
+    //{
+        
+    //}
 }
