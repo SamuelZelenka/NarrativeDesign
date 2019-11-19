@@ -494,6 +494,7 @@ MonoBehaviour:
   interactionEvent:
     m_PersistentCalls:
       m_Calls: []
+  customInteractionIcon: {fileID: 0}
   myType: 0
   startTitle: Objective1
   endTitle: 
@@ -614,6 +615,7 @@ MonoBehaviour:
   interactionEvent:
     m_PersistentCalls:
       m_Calls: []
+  customInteractionIcon: {fileID: 0}
   myType: 1
   startTitle: Objective5
   endTitle: Objective5
@@ -1010,6 +1012,7 @@ MonoBehaviour:
   interactionEvent:
     m_PersistentCalls:
       m_Calls: []
+  customInteractionIcon: {fileID: 0}
   myType: 2
   startTitle: Objective5
   endTitle: Objective4
@@ -1130,6 +1133,7 @@ MonoBehaviour:
   interactionEvent:
     m_PersistentCalls:
       m_Calls: []
+  customInteractionIcon: {fileID: 0}
   myType: 2
   startTitle: Objective4
   endTitle: Objective3
@@ -3807,6 +3811,7 @@ MonoBehaviour:
   interactionEvent:
     m_PersistentCalls:
       m_Calls: []
+  customInteractionIcon: {fileID: 0}
   myType: 2
   startTitle: Objective2
   endTitle: Objective1
@@ -3834,6 +3839,7 @@ MonoBehaviour:
   interactionEvent:
     m_PersistentCalls:
       m_Calls: []
+  customInteractionIcon: {fileID: 0}
   myType: 2
   startTitle: Objective3
   endTitle: Objective2
