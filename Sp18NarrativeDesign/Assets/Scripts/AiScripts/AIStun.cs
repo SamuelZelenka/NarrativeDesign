@@ -49,7 +49,7 @@ public class AIStun : Interactible
             {
                 //   AIDetection.enabled = true;
                 stunned = false;
-                stunnedEffect.SetActive(false);
+             //   stunnedEffect.SetActive(false);
                 if (animator != null)
                 {
                     Debug.Log("Falsed;");
@@ -68,7 +68,7 @@ public class AIStun : Interactible
         // AIDetection.enabled = false;'
         _AIDetection.Stun(stunnedTime);
         stunned = true;
-        stunnedEffect.SetActive(true);
+        //stunnedEffect.SetActive(true);
         if (animator != null)
         {
             Debug.Log("Truthed");
