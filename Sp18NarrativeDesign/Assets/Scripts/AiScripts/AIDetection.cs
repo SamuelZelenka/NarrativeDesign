@@ -71,6 +71,7 @@ public class AIDetection : MonoBehaviour
 
 
 
+
             RaycastHit raycastHit;
             if (Physics.Linecast(transform.position, player.position, out raycastHit))
             {
