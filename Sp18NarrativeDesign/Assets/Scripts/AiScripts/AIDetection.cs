@@ -7,8 +7,8 @@ using UnityEngine.AI;
 public class AIDetection : MonoBehaviour
 {
 
-    enum AIState { patrolling, pursuing, checking, stunned }
-    [SerializeField] AIState currentState;
+   public enum AIState { patrolling, pursuing, checking, stunned }
+    [SerializeField]public AIState currentState;
     
     [SerializeField] Transform player;
     [SerializeField] float viewDistance = 5f;
@@ -204,7 +204,7 @@ public class AIDetection : MonoBehaviour
     public void CheckPosition(Vector3 positionToCheck)
     {
         
-        if (currentState != AIState.pursuing)
+        if (currentState != AIState.pursuing && currentState != AIState.stunned)
         {
             Debug.Log("Checking: " + positionToCheck);
             currentState = AIState.checking;
