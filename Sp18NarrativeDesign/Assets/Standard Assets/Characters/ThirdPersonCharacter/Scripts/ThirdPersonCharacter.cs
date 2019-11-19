@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
 	[RequireComponent(typeof(Rigidbody))]
@@ -7,7 +9,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 	[RequireComponent(typeof(Animator))]
 	public class ThirdPersonCharacter : MonoBehaviour
 	{
-		[SerializeField] float m_MovingTurnSpeed = 360;
+        [SerializeField] GameObject gameOverMenu;
+
+        [SerializeField] float m_MovingTurnSpeed = 360;
 		[SerializeField] float m_StationaryTurnSpeed = 180;
 		[SerializeField] float m_JumpPower = 12f;
 		[Range(1f, 4f)][SerializeField] float m_GravityMultiplier = 2f;
@@ -220,5 +224,22 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				m_Animator.applyRootMotion = false;
 			}
 		}
-	}
+        void OnCollisionEnter(Collision collision)
+        {
+            if (collision.transform.tag == "Enemy")
+            {
+                gameOver();
+            }
+        }
+        void gameOver()
+        {
+            Time.timeScale = 0;
+            gameOverMenu.SetActive(true);
+        }
+        public void returnToMenu()
+        {
+            Time.timeScale = 1;
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
 }
