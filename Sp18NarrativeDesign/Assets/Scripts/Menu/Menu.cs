@@ -52,6 +52,7 @@ public class Menu : MonoBehaviour
     }
     public void PlayButtonPressed()
 	{
+        Time.timeScale = 1;
 		SceneManager.LoadScene("MainScene");
 	}
     public void ExitGame(){
