@@ -1,7 +1,12 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System;
+
+
+
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
 	[RequireComponent(typeof(Rigidbody))]
@@ -224,18 +229,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				m_Animator.applyRootMotion = false;
 			}
 		}
-        void OnCollisionEnter(Collision collision)
-        {
-            if (collision.transform.tag == "Enemy")
-            {
-                gameOver();
-            }
-        }
-        void gameOver()
-        {
-            Time.timeScale = 0;
-            gameOverMenu.SetActive(true);
-        }
+
+
         public void returnToMenu()
         {
             Time.timeScale = 1;

@@ -7,6 +7,7 @@ public class ObjectiveTrigger : MonoBehaviour
 {
     public enum ObjectiveType { Start, End, Both }
 
+    [HideInInspector]
     public ObjectiveType myType;
     [HideInInspector]
     public int startID;
@@ -50,6 +51,7 @@ public class ObjectiveTriggerEditor : Editor
 
     public override void OnInspectorGUI()
     {
+        base.OnInspectorGUI();
         ObjectiveTrigger script = (ObjectiveTrigger)target;
 
         script.myType = (ObjectiveTrigger.ObjectiveType)EditorGUILayout.EnumPopup("My type", script.myType);

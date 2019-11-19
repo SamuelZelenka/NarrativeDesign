@@ -8,18 +8,16 @@ public class ObjectiveInteractable : Interactible
 {
     public enum ObjectiveType { Start, End, Both}
 
-    public ObjectiveType myType;
-    [HideInInspector]
-    public int startID;
-    [HideInInspector]
-    public int endID;
-    [HideInInspector]
-    public string objectiveText;
+    [HideInInspector] public ObjectiveType myType;
+    [HideInInspector] public int startID;
+    [HideInInspector] public int endID;
+    [HideInInspector] public string objectiveText;
 
     Objective objective;
 
     public override void Interact()
     {
+        base.Interact();
         objective = new Objective(startID, objectiveText);
         switch (myType)
         {
@@ -52,6 +50,7 @@ public class ObjectiveInteractableEditor : Editor
 
     public override void OnInspectorGUI()
     {
+        base.OnInspectorGUI();
         ObjectiveInteractable script = (ObjectiveInteractable)target;
 
         script.myType = (ObjectiveInteractable.ObjectiveType)EditorGUILayout.EnumPopup("My type", script.myType);
