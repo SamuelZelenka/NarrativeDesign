@@ -75,6 +75,14 @@ public class AIDetection : MonoBehaviour
         //      Debug.Log(rayCone(player, transform.position, transform.forward, angle));
         if (rayCone(player, transform.position, transform.forward, angle) && currentState != AIState.stunned)
         {
+
+            agent.SetDestination(player.transform.position);
+            detectedPlayer = true;
+            if (detectedPlayer == true)
+            {
+                //gameOver(); //End the game if found
+            }
+
             RaycastHit raycastHit;
             if (Physics.Linecast(transform.position, player.position, out raycastHit))
             {
@@ -87,7 +95,6 @@ public class AIDetection : MonoBehaviour
 
 
 
-            //What happens when the player is discovered.
         }
 
 
@@ -158,18 +165,7 @@ public class AIDetection : MonoBehaviour
 
         }
 
-        if (detectedPlayer)
-        {
 
-        }
-        else
-        {
-
-
-
-
-
-        }
 
 
     }
@@ -213,6 +209,13 @@ public class AIDetection : MonoBehaviour
 
     }
 
+    //Function to end the game.
+    void gameOver()
+    {
+
+    }
+
+
     private void OnDrawGizmosSelected()
     {
         for (int i = 0; i < waypoints.Count; i++)
@@ -231,6 +234,7 @@ public class AIDetection : MonoBehaviour
             Gizmos.DrawLine(transform.position, agent.destination);
 
     }
+
 
 
 }
