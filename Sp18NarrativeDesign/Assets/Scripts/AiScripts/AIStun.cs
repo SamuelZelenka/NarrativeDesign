@@ -13,7 +13,7 @@ public class AIStun : Interactible
     [SerializeField] AudioSource audioSource;
     [SerializeField] Animator animator;
     [SerializeField] string stunnedParameter = "Stunned";
-
+    [SerializeField] LineRenderer lineRenderer = new LineRenderer();
 
     AIDetection _AIDetection
     {
@@ -59,7 +59,8 @@ public class AIStun : Interactible
             }
 
         }
-
+        //lineRenderer.SetPosition(0, FindObjectOfType<PlayerXray>().transform.position);
+        //lineRenderer.SetPosition(1, stunnedEffect.transform.position);
     }
 
     public void StartStun()
