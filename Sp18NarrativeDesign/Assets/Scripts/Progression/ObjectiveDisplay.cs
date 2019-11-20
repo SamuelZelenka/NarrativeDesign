@@ -21,7 +21,7 @@ public class ObjectiveDisplay : MonoBehaviour
     {
         if (textQueue.Count != 0 && !coroutineRunning)
         {
-            coroutine = UpdateLog(2);
+            coroutine = UpdateLog(2f);
             StartCoroutine(coroutine);
         }
     }
@@ -43,7 +43,7 @@ public class ObjectiveDisplay : MonoBehaviour
         coroutineRunning = true;
         textLog.text = textQueue.Dequeue();
 
-        for (float i = waitTime; i > -0.9f; i -= 0.01f)
+        for (float i = waitTime; i > 0; i -= 0.01f)
         {
 
             Color newColor = textLog.color;
