@@ -7,8 +7,8 @@ using UnityEngine.AI;
 public class AIDetection : MonoBehaviour
 {
 
-    enum AIState { patrolling, pursuing, checking, stunned }
-    [SerializeField] AIState currentState;
+   public enum AIState { patrolling, pursuing, checking, stunned }
+    [SerializeField]public AIState currentState;
     
     [SerializeField] Transform player;
     [SerializeField] float viewDistance = 5f;
@@ -61,13 +61,6 @@ public class AIDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (target != null)
-        //{
-        //    target = GameObject.FindGameObjectWithTag("Player");
-        ////}
-
-        //agent.SetDestination(target.transform.position); //Sets the target for the AI
-
         RaycastHit hit;
         Debug.DrawRay(gameObject.transform.position, transform.forward, Color.red);
         Debug.DrawLine(gameObject.transform.position, transform.position + transform.forward * viewDistance, Color.green);
@@ -75,19 +68,25 @@ public class AIDetection : MonoBehaviour
         //      Debug.Log(rayCone(player, transform.position, transform.forward, angle));
         if (rayCone(player, transform.position, transform.forward, angle) && currentState != AIState.stunned)
         {
+
+
+            if (detectedPlayer == true)
+            {
+                //gameOver(); //End the game if found
+            }
+
+
             RaycastHit raycastHit;
             if (Physics.Linecast(transform.position, player.position, out raycastHit))
             {
                 if (raycastHit.transform.tag == "Player")
                 {
-                    Debug.Log("saodja");
                     PlayerDetected();
                 }
             }
 
 
 
-            //What happens when the player is discovered.
         }
 
 
@@ -158,18 +157,7 @@ public class AIDetection : MonoBehaviour
 
         }
 
-        if (detectedPlayer)
-        {
 
-        }
-        else
-        {
-
-
-
-
-
-        }
 
 
     }
@@ -187,7 +175,7 @@ public class AIDetection : MonoBehaviour
     }
     public void PlayerDetected()
     {
-        Debug.Log("Detected player");
+
         currentState = AIState.pursuing;
         detectedTimer = 0;
         detectedPlayer = true;
@@ -195,9 +183,9 @@ public class AIDetection : MonoBehaviour
     public void CheckPosition(Vector3 positionToCheck)
     {
         
-        if (currentState != AIState.pursuing)
+        if (currentState != AIState.pursuing && currentState != AIState.stunned)
         {
-            Debug.Log("Checking: " + positionToCheck);
+
             currentState = AIState.checking;
             checkPositionTimer = 0;
             agent.SetDestination(positionToCheck);
@@ -212,6 +200,13 @@ public class AIDetection : MonoBehaviour
         return angleFromConeCenter <= coneHalfAngle;
 
     }
+
+    //Function to end the game.
+    void gameOver()
+    {
+
+    }
+
 
     private void OnDrawGizmosSelected()
     {
@@ -231,6 +226,5 @@ public class AIDetection : MonoBehaviour
             Gizmos.DrawLine(transform.position, agent.destination);
 
     }
-
 
 }

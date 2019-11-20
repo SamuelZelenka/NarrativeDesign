@@ -11,6 +11,8 @@ public class Menu : MonoBehaviour
     [SerializeField]
     private GameObject optionsMenu;
     [SerializeField]
+    private GameObject tutorialWindow;
+    [SerializeField]
     private GameObject creditsWindow;
     //
     //These open and close optios and credits windows
@@ -26,6 +28,17 @@ public class Menu : MonoBehaviour
     public void OptionsCloseButtonPressed(){
         optionsMenu.SetActive(false);
     }
+    public void TutorialButtonPressed(){
+        if (!tutorialWindow.activeSelf){
+            tutorialWindow.SetActive(true);
+        }
+        else{
+            tutorialWindow.SetActive(false);
+        } 
+    }
+    public void TutorialCloseButtonPressed(){
+        tutorialWindow.SetActive(false);
+    }
     public void CreditsButtonPressed(){
         if (!creditsWindow.activeSelf){
             creditsWindow.SetActive(true);
@@ -39,6 +52,7 @@ public class Menu : MonoBehaviour
     }
     public void PlayButtonPressed()
 	{
+        Time.timeScale = 1;
 		SceneManager.LoadScene("MainScene");
 	}
     public void ExitGame(){
