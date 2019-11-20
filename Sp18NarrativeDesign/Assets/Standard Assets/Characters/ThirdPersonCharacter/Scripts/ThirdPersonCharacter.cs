@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System;
 
@@ -14,7 +13,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 	[RequireComponent(typeof(Animator))]
 	public class ThirdPersonCharacter : MonoBehaviour
 	{
-        [SerializeField] GameObject gameOverMenu;
+
 
         [SerializeField] float m_MovingTurnSpeed = 360;
 		[SerializeField] float m_StationaryTurnSpeed = 180;
@@ -230,11 +229,5 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			}
 		}
 
-
-        public void returnToMenu()
-        {
-            Time.timeScale = 1;
-            SceneManager.LoadScene("MainMenu");
-        }
     }
 }

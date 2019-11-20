@@ -54,6 +54,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 crouch = !crouch;
             }
 
+
             // calculate move direction to pass to character
             if (m_Cam != null)
             {
@@ -68,9 +69,17 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 m_Move = v*Vector3.forward + h*Vector3.right;
             }
 #if !MOBILE_INPUT
-            
-			// walk speed multiplier
-	        if (Input.GetKey(KeyCode.LeftShift)) m_Move *= 2f;
+
+            // walk speed multiplier
+            if (Input.GetKey(KeyCode.LeftShift) && !crouch)
+            {
+                m_Move *= 2f;
+            }
+
+            if (crouch)
+            {
+                m_Move *= 2f;
+            }
 #endif
 
             // pass all parameters to the character control script
