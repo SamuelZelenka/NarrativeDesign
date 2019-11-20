@@ -6,16 +6,16 @@ using UnityEngine;
 
 public class Objective
 {
-    public string title;
+    public int ID;
     public string objectiveText;
     public bool isCompleted;
 
    
 
 
-    public Objective(string title, string objectiveText)
+    public Objective(int ID, string objectiveText)
     {
-        this.title = title;
+        this.ID = ID;
         this.objectiveText = objectiveText;
         this.isCompleted = false;
         ObjectiveManager.objectiveManager.onObjectiveInteractAdd += OnInteractAdd;
@@ -31,11 +31,11 @@ public class Objective
             ObjectiveManager.activeObjectives.Add(this);
         }
     }
-    public void OnInteractComplete(string completeTitle)
+    public void OnInteractComplete(int completeID)
     {
         foreach (Objective objective in ObjectiveManager.activeObjectives)
         {
-            if (objective.title == completeTitle && !objective.isCompleted)
+            if (objective.ID == completeID && !objective.isCompleted)
             {
                 objective.isCompleted = true;
                 ObjectiveManager.objectiveManager.ObjectiveComplete();

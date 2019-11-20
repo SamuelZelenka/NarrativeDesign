@@ -33,7 +33,7 @@ public class Xray : MonoBehaviour
     bool played = false;
 
 
-   public void ShowThroughWalls(bool doit)
+   public virtual void ShowThroughWalls(bool doit)
     {
         if (!doit)
         {
