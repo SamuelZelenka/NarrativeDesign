@@ -6,47 +6,56 @@ using UnityEngine.UI;
 
 public class ObjectiveManager : MonoBehaviour
 {
-    public List<Objective> completedObjectives = new List<Objective>();
+    public event Action<Objective> onObjectiveInteractAdd;
+    public event Action<string> onObjectiveInteractComplete;
+    public event Action objectiveComplete;
 
-    public List<Objective> activeObjectives = new List<Objective>();
 
-    [SerializeField] Text objectiveText;
-    [SerializeField] int count;
+    public static List<Objective> activeObjectives = new List<Objective>();
 
     public static ObjectiveManager objectiveManager;
-    public static Text objectiveDescription;
-    private void Start()
+    public Text objectiveDescription;
+
+    private void Awake()
     {
-        objectiveManager = this.GetComponent<ObjectiveManager>();
-        objectiveDescription = objectiveText; 
-    }
-    private void Update()
-    {
-        count = activeObjectives.Count;
+        objectiveManager = this;
     }
 
 
-    public static string AddObjective(Objective objective)
+    public void ObjectiveInteractAdd(Objective newObjective)
     {
-
-        if (!objectiveManager.activeObjectives.Contains(objective))
+        if (onObjectiveInteractAdd != null)
         {
-            objectiveManager.activeObjectives.Add(objective);
-            objectiveDescription.text += objective.objectiveText + "\n";
-            return $"{objective.objectiveText} added to objectives.";
+            onObjectiveInteractAdd(newObjective);
         }
-        return "Objective is already active.";
     }
-    public static string CompleteObjective(Objective objective)
+
+    public void ObjectiveInteractComplete(string completeTitle)
     {
-        Predicate<Objective> objectFinder = (Objective activeObject) => { return activeObject == objective;};
-        if (!objectiveManager.completedObjectives.Contains(objective))
+        if (onObjectiveInteractAdd != null)
         {
-            objectiveManager.completedObjectives.Add(objective);
-            objectiveManager.activeObjectives.RemoveAt(objectiveManager.activeObjectives.FindIndex(objectFinder));
-            return $"{objective.objectiveText} Objective Completed.";
+            onObjectiveInteractComplete(completeTitle);
         }
-        return "Objective is already active.";
     }
-    
+    public void ObjectiveComplete()
+    {
+        if (onObjectiveInteractAdd != null)
+        {
+            objectiveComplete();
+        }
+    }
+
+
+    public static void UpdateObjectiveLog()
+    {
+        objectiveManager.objectiveDescription.text = "";
+        foreach (Objective objective in activeObjectives)
+        {
+            if (objective.isCompleted)
+            {
+                objectiveManager.objectiveDescription.text += "(Completed) ";
+            }
+            objectiveManager.objectiveDescription.text += objective.objectiveText + "\n";
+        }
+    }
 }
