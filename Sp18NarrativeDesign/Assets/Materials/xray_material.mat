@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _InWorldTexture:
-        m_Texture: {fileID: 2800000, guid: a196fd6788131ec459bfb26012466fc1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 19c58ee0729ffc84cb18f0dadc60c746, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -59,6 +59,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _WorldMainTex:
+        m_Texture: {fileID: 2800000, guid: 2beb3362d4b99ed40890889c97d63cd4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -70,6 +74,7 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _Opacity: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -79,3 +84,4 @@ Material:
     m_Colors:
     - _Color: {r: 0.8113208, g: 0.3892392, b: 0.095674604, a: 0.63529414}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _WorldColor: {r: 1, g: 1, b: 1, a: 1}
