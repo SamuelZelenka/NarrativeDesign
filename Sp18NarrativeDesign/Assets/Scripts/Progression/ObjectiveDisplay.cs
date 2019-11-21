@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class ObjectiveDisplay : MonoBehaviour
 {
     Text textLog;
-    IEnumerator coroutine;
+    IEnumerator updateLog;
+
+    
     [SerializeField] Queue<string> textQueue = new Queue<string>();
 
     public bool coroutineRunning;
@@ -21,8 +23,8 @@ public class ObjectiveDisplay : MonoBehaviour
     {
         if (textQueue.Count != 0 && !coroutineRunning)
         {
-            coroutine = UpdateLog(2f);
-            StartCoroutine(coroutine);
+            updateLog = UpdateLog(2f);
+            StartCoroutine(updateLog);
         }
     }
 
@@ -41,11 +43,11 @@ public class ObjectiveDisplay : MonoBehaviour
     IEnumerator UpdateLog(float waitTime)
     {
         coroutineRunning = true;
-        textLog.text = textQueue.Dequeue();
+        textLog.text= textQueue.Dequeue();
+
 
         for (float i = waitTime; i > 0; i -= 0.01f)
         {
-
             Color newColor = textLog.color;
             newColor.a = i;
             textLog.color = newColor;
