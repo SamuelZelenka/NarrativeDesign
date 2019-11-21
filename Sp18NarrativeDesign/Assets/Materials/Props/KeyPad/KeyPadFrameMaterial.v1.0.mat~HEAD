@@ -7,7 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SurveillanceCameraLens.v1.1
+<<<<<<< HEAD:Sp18NarrativeDesign/Assets/Materials/Props/KeyPad/KeyPadFrameMaterial.v1.0.mat
+  m_Name: KeyPadFrameMaterial.v1.0
+=======
+  m_Name: SurveillanceDroneBody
+>>>>>>> Hugo:Sp18NarrativeDesign/Assets/Models/Props/Enemies/SurveillanceDrone/Material/SurveillanceDroneBody.mat
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 1
@@ -20,7 +24,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 692c2fd117bc0a9439bdcf1989bfc002, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7b51c328ba9e2904e9af7f5a488faf5c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -36,15 +40,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: df49d160ab1f332468900e80c28f4067, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6982373df55e26f4ab4400ae3a666109, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 35f9bab943db1724c85faf6fd1b22796, type: 3}
+        m_Texture: {fileID: 2800000, guid: c80408245fbf80a469df52f33cd149eb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 76ae4d72748d557478b122e0d23ee5cf, type: 3}
+        m_Texture: {fileID: 2800000, guid: fd31df8c36070d9429977155f98d36ac, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:

@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SurveillanceCameraLens.v1.1
+  m_Name: KeyPadScreenMaterial.v1.0
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 1
@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 692c2fd117bc0a9439bdcf1989bfc002, type: 3}
+        m_Texture: {fileID: 2800000, guid: e2017117a530d9d4896ba6a084b00d35, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -36,15 +36,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: df49d160ab1f332468900e80c28f4067, type: 3}
+        m_Texture: {fileID: 2800000, guid: b2c27896eafdec642b96ca6156959293, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 35f9bab943db1724c85faf6fd1b22796, type: 3}
+        m_Texture: {fileID: 2800000, guid: c29a705cae742b1438198a243c2db137, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 76ae4d72748d557478b122e0d23ee5cf, type: 3}
+        m_Texture: {fileID: 2800000, guid: 63f94a942e59e9c4e8b976fcf8d74b45, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
