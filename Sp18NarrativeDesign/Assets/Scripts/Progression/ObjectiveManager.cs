@@ -2,46 +2,60 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectiveManager : MonoBehaviour
 {
-    public List<Objective> completedObjectives = new List<Objective>();
+    public event Action<Objective> onObjectiveInteractAdd;
+    public event Action<int> onObjectiveInteractComplete;
+    public event Action objectiveComplete;
 
-    public List<Objective> activeObjectives = new List<Objective>();
-    [SerializeField] int count;
+
+    public static List<Objective> activeObjectives = new List<Objective>();
 
     public static ObjectiveManager objectiveManager;
-    private void Start()
+    public Text objectiveDescription;
+
+    private void Awake()
     {
-        objectiveManager = this.GetComponent<ObjectiveManager>();
-    }
-    private void Update()
-    {
-        count = activeObjectives.Count;
+        objectiveManager = this;
     }
 
 
-    public static string AddObjective(Objective objective)
+    public void ObjectiveInteractAdd(Objective newObjective)
     {
-
-        if (!objectiveManager.activeObjectives.Contains(objective))
+        if (onObjectiveInteractAdd != null)
         {
-            objectiveManager.activeObjectives.Add(objective);
-            
-            return $"{objective.objectiveText} added to objectives.";
+            onObjectiveInteractAdd(newObjective);
         }
-        return "Objective is already active.";
     }
-    public static string CompleteObjective(Objective objective)
+
+    public void ObjectiveInteractComplete(int completeID)
     {
-        Predicate<Objective> objectFinder = (Objective activeObject) => { return activeObject == objective;};
-        if (!objectiveManager.completedObjectives.Contains(objective))
+        if (onObjectiveInteractAdd != null)
         {
-            objectiveManager.completedObjectives.Add(objective);
-            objectiveManager.activeObjectives.RemoveAt(objectiveManager.activeObjectives.FindIndex(objectFinder));
-            return $"{objective.objectiveText} Objective Completed.";
+            onObjectiveInteractComplete(completeID);
         }
-        return "Objective is already active.";
     }
-    
+    public void ObjectiveComplete()
+    {
+        if (onObjectiveInteractAdd != null)
+        {
+            objectiveComplete();
+        }
+    }
+
+
+    public static void UpdateObjectiveLog()
+    {
+        objectiveManager.objectiveDescription.text = "";
+        foreach (Objective objective in activeObjectives)
+        {
+            if (objective.isCompleted)
+            {
+                objectiveManager.objectiveDescription.text += "(Completed) ";
+            }
+            objectiveManager.objectiveDescription.text += objective.objectiveText + "\n";
+        }
+    }
 }
