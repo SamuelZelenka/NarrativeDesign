@@ -14,6 +14,11 @@ public class AIDetection : MonoBehaviour
     [SerializeField] float viewDistance = 5f;
     [SerializeField] float angle = 100;
 
+    [SerializeField] float patrolMoveSpeed = 3.5f;
+    [SerializeField] float checkMoveSpeed = 3.5f;
+    [SerializeField] float pursuitMoveSpeed = 3.5f;
+
+
     [SerializeField] GameObject target; //current target for AI
     [SerializeField] float detectedTime = 10f;
     float detectedTimer = 0f;
@@ -108,6 +113,7 @@ public class AIDetection : MonoBehaviour
         {
             case AIState.patrolling:
                 detectedPlayer = false;
+                agent.speed = patrolMoveSpeed;
                 if (waypoints.Count > 0)
                 {
                 //    agent.SetDestination(waypoints[currentWaypointTarget].transform.position);
@@ -142,6 +148,7 @@ public class AIDetection : MonoBehaviour
             case AIState.pursuing:
                 detectedTimer += Time.deltaTime * 1;
                 agent.SetDestination(player.transform.position);
+                agent.speed = pursuitMoveSpeed;
                 if (detectedTimer >= detectedTime)
                 {
                     currentState = AIState.checking;
@@ -150,6 +157,7 @@ public class AIDetection : MonoBehaviour
                 break;
             case AIState.checking:
                 checkPositionTimer += Time.deltaTime * 1;
+                agent.speed = checkMoveSpeed;
                 if (checkPositionTimer >= checkPositionTime)
                 {
                     currentState = AIState.patrolling;
@@ -196,12 +204,15 @@ public class AIDetection : MonoBehaviour
         detectedPlayer = true;
         setLights(AIState.pursuing);
     }
+
+    Vector3 positionToCheck = new Vector3();
     public void CheckPosition(Vector3 positionToCheck)
     {
-        
+        if (Vector3.Distance(transform.position, positionToCheck) <= deadArea)
+            checkPositionTimer += 1 * Time.deltaTime;
         if (currentState != AIState.pursuing && currentState != AIState.stunned)
         {
-
+            this.positionToCheck = positionToCheck;
             currentState = AIState.checking;
             checkPositionTimer = 0;
             agent.SetDestination(positionToCheck);

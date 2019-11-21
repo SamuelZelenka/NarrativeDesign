@@ -33,7 +33,7 @@ public class AIStun : Interactible
     public override void Update()
     {
         base.Update();
-        if (_AIDetection.currentState != AIDetection.AIState.checking && _AIDetection.currentState != AIDetection.AIState.pursuing && !stunned)
+        if ( _AIDetection.currentState != AIDetection.AIState.pursuing && !stunned)
         {
             interactible = true;
         }
