@@ -4,28 +4,22 @@ using UnityEngine;
 
 public class FootstepSound : MonoBehaviour
 {
+    [SerializeField]
     AudioSource[] footstepAudioSource;
     // Start is called before the first frame update
-    void Start()
-    {
-        FindObjectOfType<AudioManager>().Play("Footstep");
-        FindObjectOfType<AudioManager>().Play("FootstepSprint");
-        FindObjectOfType<AudioManager>().Play("Sneakstep");
-        footstepAudioSource = GetComponent<AudioSource[]>();
-        foreach (AudioSource a in footstepAudioSource)
-        {
-            a.Stop();
-            a.spatialBlend = 1;
-        }
-    }
-
+   
     private bool isCrouching = false;
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            isCrouching = true;
+            if (!isCrouching)
+            {
+                isCrouching = true;
+            }
+            else
+                isCrouching = false;
         }
     }
 
@@ -37,10 +31,6 @@ public class FootstepSound : MonoBehaviour
         if(Input.GetKey(KeyCode.LeftShift) && !isCrouching)
         {
             footstepAudioSource[1].Play();
-        }
-        if (isCrouching)
-        {
-            footstepAudioSource[2].Play();
-        }       
+        }     
     }
 }
