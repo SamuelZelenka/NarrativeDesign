@@ -13,6 +13,9 @@ public class TabletInteractable : Interactible
     public override void Start()
     {
         base.Start();
+        textBox.GetComponent<Image>().CrossFadeAlpha(0, 0, false);
+        textComponent.CrossFadeAlpha(0, 0, false);
+
     }
     public override void Update()
     {
@@ -34,20 +37,19 @@ public class TabletInteractable : Interactible
 
     public void toggleTextBox()
     {
-        if (!active)
+        if (active)
         {
             active = !active;
-            textBox.CrossFadeAlpha(0, 2, false);
-            textComponent.CrossFadeAlpha(0, 2, false);
-
-            StopAllCoroutines();
-            StartCoroutine(WaitForLetter());
-
+            textBox.GetComponent<Image>().CrossFadeAlpha(0, 1, false);
+            textComponent.CrossFadeAlpha(0, 1, false);
         }
         else
         {
-            textBox.GetComponent<Image>().CrossFadeAlpha(1, 2, false);
-            textComponent.CrossFadeAlpha(1, 2, false);
+            textBox.GetComponent<Image>().CrossFadeAlpha(1, 1, false);
+            textComponent.CrossFadeAlpha(1, 1, false);
+
+            StopAllCoroutines();
+            StartCoroutine(WaitForLetter());
             active = !active;
         }
     }
