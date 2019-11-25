@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ObjectiveManager : MonoBehaviour
 {
     public event Action<Objective> onObjectiveInteractAdd;
-    public event Action<string> onObjectiveInteractComplete;
+    public event Action<int> onObjectiveInteractComplete;
     public event Action objectiveComplete;
 
 
@@ -30,11 +30,11 @@ public class ObjectiveManager : MonoBehaviour
         }
     }
 
-    public void ObjectiveInteractComplete(string completeTitle)
+    public void ObjectiveInteractComplete(int completeID)
     {
         if (onObjectiveInteractAdd != null)
         {
-            onObjectiveInteractComplete(completeTitle);
+            onObjectiveInteractComplete(completeID);
         }
     }
     public void ObjectiveComplete()

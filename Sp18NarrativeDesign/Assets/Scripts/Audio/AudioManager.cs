@@ -19,18 +19,31 @@ public class AudioManager : MonoBehaviour
            s.source.volume = s.volume;
            s.source.pitch = s.pitch;
            s.source.loop = s.loop;
-           s.source.outputAudioMixerGroup = audioMixer;
+           if (s.music)
+           {
+               s.source.outputAudioMixerGroup = audioMasterMixer;
+           }
+           else if (s.SFX)
+           {
+               s.source.outputAudioMixerGroup = audioSFXMixer;
+           }
+           else
+           {
+               s.source.outputAudioMixerGroup = audioMasterMixer;
+           }  
         }
     }
 
     [SerializeField]
-    private AudioMixerGroup audioMixer;
+    private AudioMixerGroup audioMasterMixer;
+    [SerializeField]
+    private AudioMixerGroup audioSFXMixer;
     void Start()
     {
         Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "MainMenu")
         {
-           Play("MainMenuTheme"); 
+           Play("MainMenuTheme");
         } 
     }
 
