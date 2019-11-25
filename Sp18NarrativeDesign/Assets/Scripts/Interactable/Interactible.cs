@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Interactible : MonoBehaviour
 {
@@ -27,13 +28,18 @@ public class Interactible : MonoBehaviour
     [Tooltip("Should the interaction icon be affected by the objects rotation")]
     [SerializeField] bool rotateInteractionVisWithRotation = true;
     [Tooltip("How close the player has to be to the interactionpoint in order to be able to interact")]
-    [SerializeField]protected float interactionRadius = .5f;
+    [SerializeField] protected float interactionRadius = .5f;
     [SerializeField]
-  protected  bool interactible = true;
+    protected bool interactible = true;
     [Tooltip("Leave on everything")]
     [SerializeField] protected LayerMask interactionMask = ~0;
     GameObject interactVisualiser;
     public UnityEvent interactionEvent = new UnityEvent();
+
+    [SerializeField] Sprite customInteractionIcon;
+
+
+
     public virtual bool CanInteract
     {
         get
@@ -77,7 +83,7 @@ public class Interactible : MonoBehaviour
         Gizmos.DrawSphere(InteractionPoint, interactionRadius);
     }
 
-   public virtual void Start()
+    public virtual void Start()
     {
         InstantiateInteractVisualiser();
     }
@@ -87,6 +93,10 @@ public class Interactible : MonoBehaviour
         interactVisualiser = Instantiate(Resources.Load("InteractionCanvas") as GameObject);
         interactVisualiser.transform.position = InteractVisualiserObjectOffset;
         interactVisualiser.SetActive(false);
+        if (customInteractionIcon != null)
+        {
+            interactVisualiser.GetComponent<BillScript>().image.sprite = customInteractionIcon;
+        }
     }
 
     //Show or hide the interaction icon
