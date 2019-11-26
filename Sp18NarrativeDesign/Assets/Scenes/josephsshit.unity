@@ -725,6 +725,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &105116572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105116570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc23df3665993434883901be6a89fcfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locked: 0
+  open: 1
+  animator: {fileID: 105116571}
+  autoClose: 0
+  timeUntilClose: 1
 --- !u!1001 &230415204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -740,7 +757,7 @@ PrefabInstance:
     - target: {fileID: 7747670036202258110, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.39
+      value: 5.43
       objectReference: {fileID: 0}
     - target: {fileID: 7747670036202258110, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
@@ -750,7 +767,7 @@ PrefabInstance:
     - target: {fileID: 7747670036202258110, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.41
+      value: -34.19
       objectReference: {fileID: 0}
     - target: {fileID: 7747670036202258110, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
@@ -20538,6 +20555,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 105116572}
+        m_MethodName: ToggleDoorOpen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   customInteractionIcon: {fileID: 0}
 --- !u!65 &1431839843
 BoxCollider:
@@ -20606,7 +20634,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431839841}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.00000058114523}
-  m_LocalPosition: {x: 1.067, y: 1.03, z: -8.356}
+  m_LocalPosition: {x: 1.067, y: 1.03, z: -8.58}
   m_LocalScale: {x: 0.47858, y: 0.47858, z: 0.47858}
   m_Children: []
   m_Father: {fileID: 0}
