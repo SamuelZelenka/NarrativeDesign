@@ -13,19 +13,14 @@ public class GameOver : MonoBehaviour
         if (collision.transform.tag == "Enemy" && collision.gameObject.GetComponent<AIDetection>().currentState == AIDetection.AIState.pursuing)
         {
             gameOver();
-            
         }
     }
     void gameOver()
     {
-
         Time.timeScale = 0;
 
         ObjectiveManager.activeObjectives.Clear();
         gameOverMenu.SetActive(true);
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-        
     }
 
 
@@ -33,7 +28,5 @@ public class GameOver : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
     }
 }
