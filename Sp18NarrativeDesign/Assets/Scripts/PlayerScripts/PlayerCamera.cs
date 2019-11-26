@@ -10,11 +10,11 @@ public class PlayerCamera : MonoBehaviour
     [SerializeField] Vector3 minPosOffset;
     float yAxisRotation = 0;
     float xAxisRotation = 0;
-
+    [SerializeField] LayerMask cameraCheckMask;
 
     [SerializeField] float minCameraXAngle = -7.5f;
     [SerializeField] float maxCameraXAngle = 45;
-
+    [SerializeField] Collider playerCollider;
     [SerializeField] float sensitivity = 1.0f;
 
     // Update is called once per frame
@@ -37,6 +37,26 @@ public class PlayerCamera : MonoBehaviour
                 ));
             transform.eulerAngles = new Vector3(xAxisRotation, transform.eulerAngles.y, transform.eulerAngles.z);
             //   transform.RotateAround(PlayerObject.transform.position,new Vector3(0,1,0),5 * Time.deltaTime );
+
+            RaycastHit cameraObstructHit;
+            Vector3 diretctionToPlayer = PlayerObject.transform.position - transform.position;
+            diretctionToPlayer = diretctionToPlayer.normalized;
+            Debug.DrawRay(transform.position, diretctionToPlayer);
+            if (Physics.Raycast(transform.position, diretctionToPlayer, out cameraObstructHit, 100f, cameraCheckMask))
+            {
+                if (cameraObstructHit.collider == playerCollider)
+                {
+                    //Debug.Log("Not obstructed");
+
+                }
+                else
+                {
+                    transform.position = PlayerObject.transform.position + Quaternion.Euler(xAxisRotation, yAxisRotation, 0) * new Vector3(0, 0, .8f);
+                    //Debug.Log("Obstructed");
+                }
+            }
+
+
         }
     }
 

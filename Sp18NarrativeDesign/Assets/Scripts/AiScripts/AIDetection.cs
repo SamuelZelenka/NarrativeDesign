@@ -44,8 +44,8 @@ public class AIDetection : MonoBehaviour
     [ColorUsage(true,true)][SerializeField] Color materialPatrolColor;
     [ColorUsage(true,true)][SerializeField] Color materialPursuitColor;
     [ColorUsage(true, true)] [SerializeField] Color materialCheckColor;
-    
-    
+
+    [SerializeField] AudioSource detectedSource;
 
     [SerializeField] Renderer lens;
     [SerializeField] Light[] patrolLights;
@@ -198,7 +198,7 @@ public class AIDetection : MonoBehaviour
     }
     public void PlayerDetected()
     {
-
+        if (currentState != AIState.pursuing && detectedSource != null) detectedSource.Play();
         currentState = AIState.pursuing;
         detectedTimer = 0;
         detectedPlayer = true;
