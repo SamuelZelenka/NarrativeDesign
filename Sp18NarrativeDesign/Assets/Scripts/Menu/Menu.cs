@@ -95,22 +95,26 @@ public class Menu : MonoBehaviour
     [SerializeField]
     private GameObject playerControls;
 
+    [SerializeField]
+    GameObject gameOverScreen;
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape))
         {  
-            if (optionsMenu.activeSelf)
+            if (gameOverScreen.activeSelf == false)
             {
-                Cursor.visible = false;
-                Cursor.lockState = CursorLockMode.Locked;
-                optionsMenu.SetActive(false);
-            }
-            else
-            {
-                
-                Cursor.visible = true;
-                Cursor.lockState = CursorLockMode.None;
-
-                PauseMenu();
+              
+                if (optionsMenu.activeSelf)
+                {
+                    Cursor.visible = false;
+                    Cursor.lockState = CursorLockMode.Locked;
+                    optionsMenu.SetActive(false);
+                }
+                else
+                {
+                    Cursor.visible = true;
+                    Cursor.lockState = CursorLockMode.None;
+                    PauseMenu();
+                }
             }
         }
     }
