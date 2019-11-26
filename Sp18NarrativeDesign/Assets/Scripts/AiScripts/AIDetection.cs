@@ -7,9 +7,9 @@ using UnityEngine.AI;
 public class AIDetection : MonoBehaviour
 {
 
-   public enum AIState { patrolling, pursuing, checking, stunned }
-    [SerializeField]public AIState currentState;
-    
+    public enum AIState { patrolling, pursuing, checking, stunned }
+    [SerializeField] public AIState currentState;
+
     [SerializeField] Transform player;
     [SerializeField] float viewDistance = 5f;
     [SerializeField] float angle = 100;
@@ -32,11 +32,25 @@ public class AIDetection : MonoBehaviour
     float waitAtWaypointTimer = 0f;
     float stunTime;
     float stunTimer = 0;
+
+    [SerializeField] Color lightPatrolColor;
+    [SerializeField] Color lightPursuitColor;
+    [SerializeField] Color lightCheckColor;
+    [ColorUsage(true,true)][SerializeField] Color materialPatrolColor;
+    [ColorUsage(true,true)][SerializeField] Color materialPursuitColor;
+    [ColorUsage(true, true)] [SerializeField] Color materialCheckColor;
+    
+    
+
+    [SerializeField] Renderer lens;
+    [SerializeField] Light[] patrolLights;
+
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
+        setLights(currentState);
         agent = gameObject.GetComponent<NavMeshAgent>();
         if (waypoints.Count > 0)
         {
@@ -61,13 +75,6 @@ public class AIDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (target != null)
-        //{
-        //    target = GameObject.FindGameObjectWithTag("Player");
-        ////}
-
-        //agent.SetDestination(target.transform.position); //Sets the target for the AI
-
         RaycastHit hit;
         Debug.DrawRay(gameObject.transform.position, transform.forward, Color.red);
         Debug.DrawLine(gameObject.transform.position, transform.position + transform.forward * viewDistance, Color.green);
@@ -75,19 +82,25 @@ public class AIDetection : MonoBehaviour
         //      Debug.Log(rayCone(player, transform.position, transform.forward, angle));
         if (rayCone(player, transform.position, transform.forward, angle) && currentState != AIState.stunned)
         {
+
+
+            if (detectedPlayer == true)
+            {
+                //gameOver(); //End the game if found
+            }
+
+
             RaycastHit raycastHit;
             if (Physics.Linecast(transform.position, player.position, out raycastHit))
             {
                 if (raycastHit.transform.tag == "Player")
                 {
-                    Debug.Log("saodja");
                     PlayerDetected();
                 }
             }
 
 
 
-            //What happens when the player is discovered.
         }
 
 
@@ -140,7 +153,8 @@ public class AIDetection : MonoBehaviour
                 if (checkPositionTimer >= checkPositionTime)
                 {
                     currentState = AIState.patrolling;
-                    agent.SetDestination(waypoints[currentWaypointTarget].transform.position);
+                   if (waypoints.Count > 0) agent.SetDestination(waypoints[currentWaypointTarget].transform.position);
+                    setLights(AIState.patrolling);
                 }
                 detectedPlayer = false;
                 break;
@@ -158,18 +172,7 @@ public class AIDetection : MonoBehaviour
 
         }
 
-        if (detectedPlayer)
-        {
 
-        }
-        else
-        {
-
-
-
-
-
-        }
 
 
     }
@@ -187,22 +190,61 @@ public class AIDetection : MonoBehaviour
     }
     public void PlayerDetected()
     {
-        Debug.Log("Detected player");
+
         currentState = AIState.pursuing;
         detectedTimer = 0;
         detectedPlayer = true;
+        setLights(AIState.pursuing);
     }
     public void CheckPosition(Vector3 positionToCheck)
     {
         
         if (currentState != AIState.pursuing && currentState != AIState.stunned)
         {
-            Debug.Log("Checking: " + positionToCheck);
+
             currentState = AIState.checking;
             checkPositionTimer = 0;
             agent.SetDestination(positionToCheck);
+
+            setLights(AIState.checking);
         }
     }
+
+    void setLights(AIState aIState)
+    {
+//        Debug.Log(aIState);
+        Color lensColor = new Color();
+        Color lightColor = new Color();
+
+        switch (aIState)
+        {
+            case AIState.patrolling:
+                lensColor = materialPatrolColor;
+                lightColor = lightPatrolColor;
+                break;
+            case AIState.pursuing:
+                lensColor = materialPursuitColor;
+                lightColor = lightPursuitColor;
+                break;
+            case AIState.checking:
+                lensColor = materialCheckColor;
+                lightColor = lightCheckColor;
+                break;
+            case AIState.stunned:
+                //lensColor = materialPatrolColor;
+                //lightColor = lightPatrolColor;
+                break;
+            default:
+                break;
+        }
+
+        foreach (Light light in patrolLights)
+        {
+            light.color = lightColor;
+        }
+        lens.material.SetColor("_EmissionColor", lensColor);
+    }
+
 
     bool rayCone(Transform player, Vector3 coneTipPos, Vector3 coneDirection, float angle)
     {
@@ -212,6 +254,13 @@ public class AIDetection : MonoBehaviour
         return angleFromConeCenter <= coneHalfAngle;
 
     }
+
+    //Function to end the game.
+    void gameOver()
+    {
+
+    }
+
 
     private void OnDrawGizmosSelected()
     {
@@ -231,6 +280,5 @@ public class AIDetection : MonoBehaviour
             Gizmos.DrawLine(transform.position, agent.destination);
 
     }
-
 
 }

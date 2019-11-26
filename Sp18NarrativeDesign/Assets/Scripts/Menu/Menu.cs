@@ -11,6 +11,8 @@ public class Menu : MonoBehaviour
     [SerializeField]
     private GameObject optionsMenu;
     [SerializeField]
+    private GameObject tutorialWindow;
+    [SerializeField]
     private GameObject creditsWindow;
     //
     //These open and close optios and credits windows
@@ -26,6 +28,17 @@ public class Menu : MonoBehaviour
     public void OptionsCloseButtonPressed(){
         optionsMenu.SetActive(false);
     }
+    public void TutorialButtonPressed(){
+        if (!tutorialWindow.activeSelf){
+            tutorialWindow.SetActive(true);
+        }
+        else{
+            tutorialWindow.SetActive(false);
+        } 
+    }
+    public void TutorialCloseButtonPressed(){
+        tutorialWindow.SetActive(false);
+    }
     public void CreditsButtonPressed(){
         if (!creditsWindow.activeSelf){
             creditsWindow.SetActive(true);
@@ -39,6 +52,7 @@ public class Menu : MonoBehaviour
     }
     public void PlayButtonPressed()
 	{
+        Time.timeScale = 1;
 		SceneManager.LoadScene("MainScene");
 	}
     public void ExitGame(){
@@ -86,10 +100,16 @@ public class Menu : MonoBehaviour
         {  
             if (optionsMenu.activeSelf)
             {
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
                 optionsMenu.SetActive(false);
             }
             else
-            { 
+            {
+                
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+
                 PauseMenu();
             }
         }
@@ -100,7 +120,17 @@ public class Menu : MonoBehaviour
     private Dropdown dropdownMenu;
     void Start()
     {
-        
+        Scene activeScene = SceneManager.GetActiveScene();
+        if(activeScene.name == "MainMenu")
+        { 
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        } else if (activeScene.name == "MainScene")
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
         resolutions = Screen.resolutions;
         for (int i = 0; i < resolutions.Length; i++){
              dropdownMenu.options.Add (new Dropdown.OptionData (ResToString (resolutions [i])));
