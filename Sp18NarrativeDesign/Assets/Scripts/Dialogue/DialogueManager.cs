@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.ThirdPerson;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -14,6 +15,11 @@ public class DialogueManager : MonoBehaviour
     Dialogue.Character currentCharacter;
     public Image characterPortrait;
     public Animator animator;
+
+    [SerializeField]
+    private GameObject playerCamera;
+    [SerializeField]
+    private GameObject playerControls;
 
     public Button choice01;
     public Button choice02;
@@ -35,6 +41,9 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue)
     {
+        playerCamera.GetComponent<PlayerCamera>().enabled = false;
+        playerControls.GetComponent<ThirdPersonUserControl>().enabled = false;
+        Cursor.lockState = CursorLockMode.None;
         animator.SetBool("IsOpen", true);
         Dialogue.Character character = new Dialogue.Character();
         sentences.Clear();
@@ -116,6 +125,9 @@ public class DialogueManager : MonoBehaviour
     public void QuitDialogue()
     {
         animator.SetBool("IsOpen", false);
+        playerCamera.GetComponent<PlayerCamera>().enabled = true;
+        playerControls.GetComponent<ThirdPersonUserControl>().enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
         endButton.SetActive(false);
     }
     void DeactivateChoice()

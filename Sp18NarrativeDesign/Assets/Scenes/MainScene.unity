@@ -2309,6 +2309,8 @@ MonoBehaviour:
   endButton: {fileID: 1733165441}
   characterPortrait: {fileID: 1974744051}
   animator: {fileID: 1277855856}
+  playerCamera: {fileID: 676410415}
+  playerControls: {fileID: 127528663}
   choice01: {fileID: 845257212}
   choice02: {fileID: 1269618695}
   choice03: {fileID: 1836377614}
@@ -10421,6 +10423,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 789006124352054867, guid: 78c7bd9c27c7b174aaf7a17d58f81dbe,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -652
       objectReference: {fileID: 0}
     - target: {fileID: 789006124315138106, guid: 78c7bd9c27c7b174aaf7a17d58f81dbe,
         type: 3}
