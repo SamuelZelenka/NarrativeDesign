@@ -14,7 +14,7 @@ public class AIDetection : MonoBehaviour
     [SerializeField] float viewDistance = 5f;
     [SerializeField] float angle = 100;
 
-    [SerializeField] GameObject target; //current target for AI
+   // [SerializeField] GameObject target; //current target for AI
     [SerializeField] float detectedTime = 10f;
     float detectedTimer = 0f;
     NavMeshAgent agent;
