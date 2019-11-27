@@ -118,7 +118,10 @@ public class Interactible : MonoBehaviour
     {
         Destroy(interactVisualiser);
     }
-
+    public virtual void OnDisable()
+    {
+        interactVisualiser.SetActive(false);
+    }
 
 
 }
