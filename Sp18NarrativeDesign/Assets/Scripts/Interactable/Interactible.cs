@@ -120,7 +120,8 @@ public class Interactible : MonoBehaviour
     }
     public virtual void OnDisable()
     {
-        interactVisualiser.SetActive(false);
+        if (interactVisualiser != null)
+            interactVisualiser.SetActive(false);
     }
 
 

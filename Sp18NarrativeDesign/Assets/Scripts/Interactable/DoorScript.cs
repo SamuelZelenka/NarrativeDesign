@@ -55,7 +55,8 @@ public class DoorScript : MonoBehaviour
             animator.SetBool("Open", shouldOpen);
             doorTimer = 0;
             open = shouldOpen;
-            FindObjectOfType<AudioManager>().Play("SlidingDoor");
+            if (FindObjectOfType<AudioManager>() != null)
+                FindObjectOfType<AudioManager>().Play("SlidingDoor");
         }
 
     }
