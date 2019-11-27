@@ -37,17 +37,14 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue (Dialogue dialogue)
     {
         animator.SetBool("IsOpen", true);
-
         Dialogue.Character character = new Dialogue.Character();
-        
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences)
         {
             string[] splitSentence = sentence.Split(':');
             splitSentence = sentence.Split(':');
-
-            if (splitSentence.Length <= 2)
+            if (splitSentence.Length <= 3)
             {
                 character.text = splitSentence[1];
                 character.name = splitSentence[0];
@@ -59,14 +56,14 @@ public class DialogueManager : MonoBehaviour
                     }
                 }
             }
-
-            else
+            if (splitSentence[2] != null && splitSentence[2] == ">")
             {
                 enterDialogueChoices = splitSentence[2];
             }
-            
+            Debug.Log(enterDialogueChoices);
             sentences.Enqueue(new Dialogue.Character(splitSentence[0], splitSentence[1], characterPortrait.sprite));
         }
+
         currentCharacter = character;
         DisplayNextSentence();
     }
@@ -84,28 +81,32 @@ public class DialogueManager : MonoBehaviour
         {
             continueButton.SetActive(true);
         }
-        
     }
 
     public void DisplayNextSentence()
     {
         DeactivateChoice();
         continueButton.SetActive(false);
-        if (sentences.Count == 0 && enterDialogueChoices != ">")
+        if (sentences.Count == 0 && enterDialogueChoices == "")
         {
             EndDialogue();
             return;
         }
-
-        /*if (sentences.Count == 0 && enterDialogueChoices == ">")
+        else if (sentences.Count == 0 && enterDialogueChoices == ">")
         {
             ActivateChoice();
-        }*/
-        currentCharacter = sentences.Dequeue();
+            enterDialogueChoices = "";
+        }
+        if(sentences.Count != 0)
+        {
+            currentCharacter = sentences.Dequeue();
 
-        StopAllCoroutines();
-        nameText.text = currentCharacter.name;
-        StartCoroutine(TypeSentence(currentCharacter.text));
+            StopAllCoroutines();
+            nameText.text = currentCharacter.name;
+            StartCoroutine(TypeSentence(currentCharacter.text));
+        }
+        
+
     }
     
     void EndDialogue()

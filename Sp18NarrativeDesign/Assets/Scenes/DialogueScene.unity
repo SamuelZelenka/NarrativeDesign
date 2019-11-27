@@ -289,7 +289,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: What are you, daft?
+  m_Text: No
 --- !u!222 &178002122
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -764,9 +764,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - 'Red: Ye'
-    - 'Blue: E'
-    - 'Red: Er'
+    - 'Red: Ye:'
+    - 'Blue: E:'
+    - 'Red: Er:'
 --- !u!114 &528589860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1532,9 +1532,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - 'Red: We'
-    - 'Blue: er'
-    - 'Red: te'
+    - 'Red:We:'
+    - 'Blue:er:'
+    - 'Red:te:'
 --- !u!114 &1464529742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1770,7 +1770,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: No, I would not like to do that right now at this very moment at this time
+  m_Text: Maybe
 --- !u!222 &1721673680
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1833,9 +1833,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - 'Red: Da'
-    - 'Blue: A'
-    - 'Red: F'
+    - 'Red: Da:'
+    - 'Blue: A:'
+    - 'Red: F:'
 --- !u!114 &1972371819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1994,7 +1994,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Yes, I would like that very much!
+  m_Text: Yes
 --- !u!222 &1988340609
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2040,7 +2040,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.2, y: 82.3}
+  m_AnchoredPosition: {x: 0, y: 340}
   m_SizeDelta: {x: 690.1, y: 129.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2012158480
@@ -2057,10 +2057,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - Red:Hello there.
-    - Blue:Greetings
-    - Red:How are you
-    - Blue:Byebye:>
+    - 'Red:Hello there:'
+    - 'Blue:Greetings:'
+    - Red:How are you:>
+    - 'Blue:Byebye:'
 --- !u!114 &2012158481
 MonoBehaviour:
   m_ObjectHideFlags: 0
