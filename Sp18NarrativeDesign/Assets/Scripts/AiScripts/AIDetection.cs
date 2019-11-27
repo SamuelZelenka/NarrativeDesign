@@ -7,14 +7,14 @@ using UnityEngine.AI;
 public class AIDetection : MonoBehaviour
 {
 
-   public enum AIState { patrolling, pursuing, checking, stunned }
-    [SerializeField]public AIState currentState;
-    
+    public enum AIState { patrolling, pursuing, checking, stunned }
+    [SerializeField] public AIState currentState;
+
     [SerializeField] Transform player;
     [SerializeField] float viewDistance = 5f;
     [SerializeField] float angle = 100;
 
-    [SerializeField] GameObject target; //current target for AI
+   // [SerializeField] GameObject target; //current target for AI
     [SerializeField] float detectedTime = 10f;
     float detectedTimer = 0f;
     NavMeshAgent agent;
@@ -32,11 +32,25 @@ public class AIDetection : MonoBehaviour
     float waitAtWaypointTimer = 0f;
     float stunTime;
     float stunTimer = 0;
+
+    [SerializeField] Color lightPatrolColor;
+    [SerializeField] Color lightPursuitColor;
+    [SerializeField] Color lightCheckColor;
+    [ColorUsage(true,true)][SerializeField] Color materialPatrolColor;
+    [ColorUsage(true,true)][SerializeField] Color materialPursuitColor;
+    [ColorUsage(true, true)] [SerializeField] Color materialCheckColor;
+
+
+    [SerializeField] AudioSource movementAudioSource;
+    [SerializeField] Renderer lens;
+    [SerializeField] Light[] patrolLights;
+
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
+        setLights(currentState);
         agent = gameObject.GetComponent<NavMeshAgent>();
         if (waypoints.Count > 0)
         {
@@ -139,7 +153,8 @@ public class AIDetection : MonoBehaviour
                 if (checkPositionTimer >= checkPositionTime)
                 {
                     currentState = AIState.patrolling;
-                    agent.SetDestination(waypoints[currentWaypointTarget].transform.position);
+                   if (waypoints.Count > 0) agent.SetDestination(waypoints[currentWaypointTarget].transform.position);
+                    setLights(AIState.patrolling);
                 }
                 detectedPlayer = false;
                 break;
@@ -149,6 +164,7 @@ public class AIDetection : MonoBehaviour
                 {
                     currentState = prevState;
                     agent.SetDestination(prevDestination);
+                    movementAudioSource.enabled = true;
                 }
                 else stunTimer += Time.deltaTime * 1;
 
@@ -172,6 +188,7 @@ public class AIDetection : MonoBehaviour
         currentState = AIState.stunned;
         prevDestination = agent.destination;
         agent.SetDestination(transform.position);
+        movementAudioSource.enabled = false;
     }
     public void PlayerDetected()
     {
@@ -179,6 +196,7 @@ public class AIDetection : MonoBehaviour
         currentState = AIState.pursuing;
         detectedTimer = 0;
         detectedPlayer = true;
+        setLights(AIState.pursuing);
     }
     public void CheckPosition(Vector3 positionToCheck)
     {
@@ -189,8 +207,46 @@ public class AIDetection : MonoBehaviour
             currentState = AIState.checking;
             checkPositionTimer = 0;
             agent.SetDestination(positionToCheck);
+
+            setLights(AIState.checking);
         }
     }
+
+    void setLights(AIState aIState)
+    {
+//        Debug.Log(aIState);
+        Color lensColor = new Color();
+        Color lightColor = new Color();
+
+        switch (aIState)
+        {
+            case AIState.patrolling:
+                lensColor = materialPatrolColor;
+                lightColor = lightPatrolColor;
+                break;
+            case AIState.pursuing:
+                lensColor = materialPursuitColor;
+                lightColor = lightPursuitColor;
+                break;
+            case AIState.checking:
+                lensColor = materialCheckColor;
+                lightColor = lightCheckColor;
+                break;
+            case AIState.stunned:
+                //lensColor = materialPatrolColor;
+                //lightColor = lightPatrolColor;
+                break;
+            default:
+                break;
+        }
+
+        foreach (Light light in patrolLights)
+        {
+            light.color = lightColor;
+        }
+        lens.material.SetColor("_EmissionColor", lensColor);
+    }
+
 
     bool rayCone(Transform player, Vector3 coneTipPos, Vector3 coneDirection, float angle)
     {

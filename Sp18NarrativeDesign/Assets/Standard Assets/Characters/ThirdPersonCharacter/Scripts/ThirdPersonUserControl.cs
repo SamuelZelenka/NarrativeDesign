@@ -39,6 +39,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
+
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                crouch = !crouch;
+            }
         }
 
 
@@ -49,10 +54,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
             float v = CrossPlatformInputManager.GetAxis("Vertical");
 
-            if (Input.GetKeyDown(KeyCode.C))
-            {
-                crouch = !crouch;
-            }
+
 
 
             // calculate move direction to pass to character
@@ -71,12 +73,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 #if !MOBILE_INPUT
 
             // walk speed multiplier
-            if (Input.GetKey(KeyCode.LeftShift) && !crouch)
-            {
-                m_Move *= 2f;
-            }
-
-            if (crouch)
+            if (Input.GetKey(KeyCode.LeftShift) || crouch)
             {
                 m_Move *= 2f;
             }
