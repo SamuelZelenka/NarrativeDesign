@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2873400061147412647}
   - component: {fileID: 6537916722379866769}
   - component: {fileID: 686748322358247016}
+  - component: {fileID: 4947031529323248493}
   m_Layer: 0
   m_Name: Barstool
   m_TagString: Untagged
@@ -78,3 +79,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4947031529323248493
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277623686824725172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48053497, y: 0.75829095, z: 0.4858676}
+  m_Center: {x: 0, y: 0, z: 0}

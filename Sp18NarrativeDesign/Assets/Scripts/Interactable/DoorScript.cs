@@ -18,15 +18,6 @@ public class DoorScript : MonoBehaviour
         Open(open);
     }
 
-    public void SetLocked(bool locked)
-    {
-        this.locked = locked;
-    }
-    public void ToggleLocked()
-    {
-        locked = !locked;
-    }
-
     public void ToggleDoorOpen()
     {
 
