@@ -39,9 +39,9 @@ public class AIDetection : MonoBehaviour
     [ColorUsage(true,true)][SerializeField] Color materialPatrolColor;
     [ColorUsage(true,true)][SerializeField] Color materialPursuitColor;
     [ColorUsage(true, true)] [SerializeField] Color materialCheckColor;
-    
-    
 
+
+    [SerializeField] AudioSource movementAudioSource;
     [SerializeField] Renderer lens;
     [SerializeField] Light[] patrolLights;
 
@@ -164,6 +164,7 @@ public class AIDetection : MonoBehaviour
                 {
                     currentState = prevState;
                     agent.SetDestination(prevDestination);
+                    movementAudioSource.enabled = true;
                 }
                 else stunTimer += Time.deltaTime * 1;
 
@@ -187,6 +188,7 @@ public class AIDetection : MonoBehaviour
         currentState = AIState.stunned;
         prevDestination = agent.destination;
         agent.SetDestination(transform.position);
+        movementAudioSource.enabled = false;
     }
     public void PlayerDetected()
     {
