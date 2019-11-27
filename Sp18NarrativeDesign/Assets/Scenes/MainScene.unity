@@ -849,7 +849,7 @@ PrefabInstance:
     - target: {fileID: 8866383793356104141, guid: 139deefbf6b4db84f8929ecbd982c807,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2100000, guid: f19c9fa29c4f18d458d3d1097dc52aed, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 139deefbf6b4db84f8929ecbd982c807, type: 3}
@@ -1227,8 +1227,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4f6af49e93d5b046ab4aecb2a6a2fb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!64 &127974141
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1479,8 +1479,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42d988add154ec3499930cb44f7401ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1 &203236722 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8141822166250207295, guid: 36d384349cf61134f9b12bce19a26e4d,
@@ -1497,8 +1497,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c88e8b79e95d0449a690aad7b10a46b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactionOriginPointOffset: {x: 0.37, y: 0, z: 0.48}
   interactVisualiserObjectOffset: {x: 0, y: 0.58, z: 0}
   rotateInteractionVisWithRotation: 1
@@ -1518,7 +1518,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 0
         m_CallState: 2
   customInteractionIcon: {fileID: 21300000, guid: f57d9aa37cb92284f908df97108facd8,
@@ -1644,6 +1644,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 146e138b457b20949867d1e412587dfe, type: 3}
+--- !u!114 &214093225 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 789006124867424687, guid: 78c7bd9c27c7b174aaf7a17d58f81dbe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1645811310}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &218306668 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1976344460875875386, guid: fcbbcd7ab4330e64b9fcd2136ee81f15,
@@ -1678,8 +1690,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -1697,8 +1709,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
@@ -1953,8 +1965,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc9e55310a12e074b9cc7237eef3e860, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Xray: {fileID: 2100000, guid: 46b88b5d17ddf564c8ffe4a63c233805, type: 2}
   audioSource: {fileID: 0}
   audioClip: {fileID: 0}
@@ -1982,8 +1994,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc23df3665993434883901be6a89fcfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &298729133 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5290527327839560741, guid: 51f2e3e325af1cb4584cc1ef27aaf805,
@@ -2411,6 +2423,7 @@ GameObject:
   - component: {fileID: 380628178}
   - component: {fileID: 380628177}
   - component: {fileID: 380628181}
+  - component: {fileID: 380628182}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2428,8 +2441,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -2445,8 +2458,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -2492,6 +2505,7 @@ RectTransform:
   - {fileID: 929468936}
   - {fileID: 306774639}
   - {fileID: 473955238}
+  - {fileID: 489355626}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2510,8 +2524,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec2e34b4280a18c4fb0e21d5ed03d404, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   optionsMenu: {fileID: 166984493}
   tutorialWindow: {fileID: 0}
   creditsWindow: {fileID: 0}
@@ -2521,6 +2535,30 @@ MonoBehaviour:
   playerCamera: {fileID: 676410415}
   playerControls: {fileID: 127528663}
   dropdownMenu: {fileID: 1918116702}
+--- !u!114 &380628182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380628176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9d9906dc99ed24e8140f87224fd127, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  nameText: {fileID: 214093225}
+  dialogueText: {fileID: 412371303}
+  continueButton: {fileID: 1957912550}
+  endButton: {fileID: 1733165441}
+  characterPortrait: {fileID: 1974744051}
+  animator: {fileID: 1277855856}
+  playerCamera: {fileID: 676410415}
+  playerControls: {fileID: 127528663}
+  choice01: {fileID: 845257212}
+  choice02: {fileID: 1269618695}
+  choice03: {fileID: 1836377614}
+  choiceMade: 0
 --- !u!1001 &385927936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2673,6 +2711,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b27faee52d5cea4380a5008ec810f6e, type: 3}
+--- !u!114 &412371303 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 789006124315138106, guid: 78c7bd9c27c7b174aaf7a17d58f81dbe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1645811310}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1001 &415376171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2752,8 +2802,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1 &423099283
 GameObject:
   m_ObjectHideFlags: 0
@@ -2882,8 +2932,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c88e8b79e95d0449a690aad7b10a46b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactionOriginPointOffset: {x: 0, y: 0, z: 0.48}
   interactVisualiserObjectOffset: {x: 0, y: 0.58, z: 0}
   rotateInteractionVisWithRotation: 1
@@ -2903,7 +2953,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 0
         m_CallState: 2
   customInteractionIcon: {fileID: 21300000, guid: f57d9aa37cb92284f908df97108facd8,
@@ -2926,8 +2976,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c88e8b79e95d0449a690aad7b10a46b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactionOriginPointOffset: {x: 0.37, y: 0, z: 0.48}
   interactVisualiserObjectOffset: {x: 0, y: 0.58, z: 0}
   rotateInteractionVisWithRotation: 1
@@ -2947,7 +2997,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 0
         m_CallState: 2
   customInteractionIcon: {fileID: 21300000, guid: f57d9aa37cb92284f908df97108facd8,
@@ -3141,8 +3191,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42d988add154ec3499930cb44f7401ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &478523198 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5459128604944363647, guid: cc55e39ce54a8624db083b25a9df8033,
@@ -3293,6 +3343,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcbbcd7ab4330e64b9fcd2136ee81f15, type: 3}
+--- !u!1 &489355625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 789006124154437863, guid: 78c7bd9c27c7b174aaf7a17d58f81dbe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1645811310}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &489355626 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 789006124154437864, guid: 78c7bd9c27c7b174aaf7a17d58f81dbe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1645811310}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &499500420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3386,8 +3448,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42d988add154ec3499930cb44f7401ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &509447975 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5459128604944363647, guid: cc55e39ce54a8624db083b25a9df8033,
@@ -3440,8 +3502,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42d988add154ec3499930cb44f7401ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &554250868 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5459128604944363647, guid: cc55e39ce54a8624db083b25a9df8033,
@@ -3731,37 +3793,37 @@ PrefabInstance:
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 176384029}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 698929993}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 2001139497}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[3]
-      value: 
+      value:
       objectReference: {fileID: 1392277905}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[4]
-      value: 
+      value:
       objectReference: {fileID: 1208398769}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[5]
-      value: 
+      value:
       objectReference: {fileID: 1844318136}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[6]
-      value: 
+      value:
       objectReference: {fileID: 1208398769}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cacf8e4cb674834886ae7d2bd594583, type: 3}
@@ -3794,8 +3856,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ded79b291c881004f9b3f8d6a4e1515b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   myType: 0
   startID: 0
   endID: 0
@@ -3900,8 +3962,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc23df3665993434883901be6a89fcfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &605916192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5290527327839560741, guid: 51f2e3e325af1cb4584cc1ef27aaf805,
@@ -3924,8 +3986,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc9e55310a12e074b9cc7237eef3e860, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Xray: {fileID: 2100000, guid: 46b88b5d17ddf564c8ffe4a63c233805, type: 2}
   audioSource: {fileID: 0}
   audioClip: {fileID: 0}
@@ -4028,6 +4090,7 @@ GameObject:
   - component: {fileID: 626202996}
   - component: {fileID: 626202995}
   - component: {fileID: 626203000}
+  - component: {fileID: 626203001}
   m_Layer: 0
   m_Name: Objective (5)
   m_TagString: Untagged
@@ -4045,8 +4108,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd99d914e242af640b8e42398df09768, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactionOriginPointOffset: {x: 0, y: 0, z: 0}
   interactVisualiserObjectOffset: {x: 0, y: 0.3, z: 0}
   rotateInteractionVisWithRotation: 1
@@ -4057,7 +4120,29 @@ MonoBehaviour:
     m_Bits: 4294967295
   interactionEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 489355625}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument:
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 626203001}
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument:
+          m_BoolArgument: 1
+        m_CallState: 2
   customInteractionIcon: {fileID: 0}
   myType: 1
   startID: 0
@@ -4146,11 +4231,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc9e55310a12e074b9cc7237eef3e860, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Xray: {fileID: 2100000, guid: 46b88b5d17ddf564c8ffe4a63c233805, type: 2}
   audioSource: {fileID: 0}
   audioClip: {fileID: 0}
+--- !u!114 &626203001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626202994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  dialogue:
+    sentences:
+    - 'Red:Hello:'
+    - 'Blue:Hello:'
+    - 'Red:Hello:'
+    - Blue:Hello:>
 --- !u!64 &629318395
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4334,8 +4437,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c88e8b79e95d0449a690aad7b10a46b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactionOriginPointOffset: {x: 0, y: 0, z: 0.48}
   interactVisualiserObjectOffset: {x: 0, y: 0.58, z: 0}
   rotateInteractionVisWithRotation: 1
@@ -4355,7 +4458,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 0
         m_CallState: 2
   customInteractionIcon: {fileID: 21300000, guid: f57d9aa37cb92284f908df97108facd8,
@@ -4685,62 +4788,62 @@ PrefabInstance:
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 478523197}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 509447974}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 684146748}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[3]
-      value: 
+      value:
       objectReference: {fileID: 1362400230}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[4]
-      value: 
+      value:
       objectReference: {fileID: 1452501228}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[5]
-      value: 
+      value:
       objectReference: {fileID: 1592626673}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[6]
-      value: 
+      value:
       objectReference: {fileID: 1452501228}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[7]
-      value: 
+      value:
       objectReference: {fileID: 1362400230}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[8]
-      value: 
+      value:
       objectReference: {fileID: 684146748}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[9]
-      value: 
+      value:
       objectReference: {fileID: 509447974}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[10]
-      value: 
+      value:
       objectReference: {fileID: 554250867}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[11]
-      value: 
+      value:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cacf8e4cb674834886ae7d2bd594583, type: 3}
@@ -4978,8 +5081,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42d988add154ec3499930cb44f7401ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &684146749 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5459128604944363647, guid: cc55e39ce54a8624db083b25a9df8033,
@@ -5201,37 +5304,37 @@ PrefabInstance:
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2001139497}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 1392277905}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 1208398769}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[3]
-      value: 
+      value:
       objectReference: {fileID: 1844318136}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[4]
-      value: 
+      value:
       objectReference: {fileID: 1208398769}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[5]
-      value: 
+      value:
       objectReference: {fileID: 176384029}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
       propertyPath: waypoints.Array.data[6]
-      value: 
+      value:
       objectReference: {fileID: 698929993}
     - target: {fileID: 7747670036202258106, guid: 8cacf8e4cb674834886ae7d2bd594583,
         type: 3}
@@ -5266,8 +5369,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42d988add154ec3499930cb44f7401ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!64 &699578919
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5387,8 +5490,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c88e8b79e95d0449a690aad7b10a46b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactionOriginPointOffset: {x: 0, y: 0, z: 0.48}
   interactVisualiserObjectOffset: {x: 0, y: 0.58, z: 0}
   rotateInteractionVisWithRotation: 1
@@ -5408,7 +5511,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 0
         m_CallState: 2
   customInteractionIcon: {fileID: 21300000, guid: f57d9aa37cb92284f908df97108facd8,
@@ -5621,6 +5724,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 3723216222012381115, guid: eb7a33d74727e6441a79de9590a2f518,
+        type: 3}
+      propertyPath: gameOverMenu
+      value:
+      objectReference: {fileID: 473955237}
     - target: {fileID: 8589832250669427766, guid: eb7a33d74727e6441a79de9590a2f518,
         type: 3}
       propertyPath: m_GroundCheckDistance
@@ -5701,11 +5809,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.1785364
       objectReference: {fileID: 0}
-    - target: {fileID: 3723216222012381115, guid: eb7a33d74727e6441a79de9590a2f518,
-        type: 3}
-      propertyPath: gameOverMenu
-      value: 
-      objectReference: {fileID: 473955237}
     - target: {fileID: 5456047874178422338, guid: eb7a33d74727e6441a79de9590a2f518,
         type: 3}
       propertyPath: m_Layer
@@ -6373,8 +6476,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0099b8528b5d4044caa02cc7a69ca096, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   objectiveDescription: {fileID: 416628229}
 --- !u!4 &884810277 stripped
 Transform:
@@ -6690,8 +6793,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c88e8b79e95d0449a690aad7b10a46b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactionOriginPointOffset: {x: 0, y: 0, z: 0.48}
   interactVisualiserObjectOffset: {x: 0, y: 0.58, z: 0}
   rotateInteractionVisWithRotation: 1
@@ -6711,7 +6814,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 0
         m_CallState: 2
   customInteractionIcon: {fileID: 21300000, guid: f57d9aa37cb92284f908df97108facd8,
@@ -6734,8 +6837,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c88e8b79e95d0449a690aad7b10a46b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactionOriginPointOffset: {x: 0, y: 0, z: 0.48}
   interactVisualiserObjectOffset: {x: 0, y: 0.58, z: 0}
   rotateInteractionVisWithRotation: 1
@@ -6755,7 +6858,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 0
         m_CallState: 2
   customInteractionIcon: {fileID: 21300000, guid: f57d9aa37cb92284f908df97108facd8,
@@ -6875,8 +6978,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc9e55310a12e074b9cc7237eef3e860, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Xray: {fileID: 2100000, guid: 46b88b5d17ddf564c8ffe4a63c233805, type: 2}
   audioSource: {fileID: 0}
   audioClip: {fileID: 0}
@@ -7846,8 +7949,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd99d914e242af640b8e42398df09768, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactionOriginPointOffset: {x: 0, y: 0, z: 0}
   interactVisualiserObjectOffset: {x: 0, y: 0.3, z: 0}
   rotateInteractionVisWithRotation: 1
@@ -8220,7 +8323,7 @@ PrefabInstance:
     - target: {fileID: 716214471397055932, guid: 9ffb10055e4eb62478bb7fdc9e2c9512,
         type: 3}
       propertyPath: interactionEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
+      value:
       objectReference: {fileID: 146601615}
     - target: {fileID: 716214471397055932, guid: 9ffb10055e4eb62478bb7fdc9e2c9512,
         type: 3}
@@ -8446,8 +8549,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42d988add154ec3499930cb44f7401ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!64 &1212505823
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8655,8 +8758,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc23df3665993434883901be6a89fcfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &1234696147 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5290527327839560741, guid: 51f2e3e325af1cb4584cc1ef27aaf805,
@@ -8790,6 +8893,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1214209325}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1269618695 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 789006123855862971, guid: 78c7bd9c27c7b174aaf7a17d58f81dbe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1645811310}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &1275276575 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1976344460875875386, guid: fcbbcd7ab4330e64b9fcd2136ee81f15,
@@ -8827,8 +8942,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd99d914e242af640b8e42398df09768, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactionOriginPointOffset: {x: 0, y: 0, z: 0}
   interactVisualiserObjectOffset: {x: 0, y: 0.3, z: 0}
   rotateInteractionVisWithRotation: 1
@@ -8848,7 +8963,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 1
         m_CallState: 2
   customInteractionIcon: {fileID: 0}
@@ -8939,8 +9054,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc9e55310a12e074b9cc7237eef3e860, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Xray: {fileID: 2100000, guid: 46b88b5d17ddf564c8ffe4a63c233805, type: 2}
   audioSource: {fileID: 0}
   audioClip: {fileID: 0}
@@ -9036,6 +9151,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277552197}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1277855856 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 789006124352054864, guid: 78c7bd9c27c7b174aaf7a17d58f81dbe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1645811310}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1288144650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9442,8 +9563,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42d988add154ec3499930cb44f7401ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &1362400231 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5459128604944363647, guid: cc55e39ce54a8624db083b25a9df8033,
@@ -9522,8 +9643,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42d988add154ec3499930cb44f7401ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &1392501112 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2068107346371296813, guid: 386d772635b11c14e93b03cc1aa03a80,
@@ -9560,8 +9681,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c88e8b79e95d0449a690aad7b10a46b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactionOriginPointOffset: {x: 0, y: 0, z: 0.48}
   interactVisualiserObjectOffset: {x: 0, y: 0.58, z: 0}
   rotateInteractionVisWithRotation: 1
@@ -9581,7 +9702,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 0
         m_CallState: 2
   customInteractionIcon: {fileID: 21300000, guid: f57d9aa37cb92284f908df97108facd8,
@@ -9604,8 +9725,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c88e8b79e95d0449a690aad7b10a46b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactionOriginPointOffset: {x: 0, y: 0, z: 0.48}
   interactVisualiserObjectOffset: {x: 0, y: 0.58, z: 0}
   rotateInteractionVisWithRotation: 1
@@ -9625,7 +9746,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 0
         m_CallState: 2
   customInteractionIcon: {fileID: 21300000, guid: f57d9aa37cb92284f908df97108facd8,
@@ -9727,7 +9848,7 @@ PrefabInstance:
     - target: {fileID: 507434150160972327, guid: 0bf3941f56fcbcf49b3ee38049745229,
         type: 3}
       propertyPath: interactionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
+      value:
       objectReference: {fileID: 2061227022}
     - target: {fileID: 507434150160972327, guid: 0bf3941f56fcbcf49b3ee38049745229,
         type: 3}
@@ -9802,8 +9923,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c88e8b79e95d0449a690aad7b10a46b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactionOriginPointOffset: {x: 0, y: 0, z: 0.48}
   interactVisualiserObjectOffset: {x: 0, y: 0.58, z: 0}
   rotateInteractionVisWithRotation: 1
@@ -9823,7 +9944,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 0
         m_CallState: 2
   customInteractionIcon: {fileID: 21300000, guid: f57d9aa37cb92284f908df97108facd8,
@@ -9840,8 +9961,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42d988add154ec3499930cb44f7401ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &1452501229 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5459128604944363647, guid: cc55e39ce54a8624db083b25a9df8033,
@@ -9864,8 +9985,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c88e8b79e95d0449a690aad7b10a46b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactionOriginPointOffset: {x: 0, y: 0, z: 0.48}
   interactVisualiserObjectOffset: {x: 0, y: 0.58, z: 0}
   rotateInteractionVisWithRotation: 1
@@ -9885,7 +10006,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 0
         m_CallState: 2
   customInteractionIcon: {fileID: 21300000, guid: f57d9aa37cb92284f908df97108facd8,
@@ -10507,8 +10628,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42d988add154ec3499930cb44f7401ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &1592626674 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5459128604944363647, guid: cc55e39ce54a8624db083b25a9df8033,
@@ -11243,6 +11364,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733031447}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1733165441 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 789006124903494775, guid: 78c7bd9c27c7b174aaf7a17d58f81dbe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1645811310}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &1739891116
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11273,8 +11400,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc23df3665993434883901be6a89fcfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!64 &1745976162
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11702,6 +11829,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 488096593}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1836377614 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 789006123699114251, guid: 78c7bd9c27c7b174aaf7a17d58f81dbe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1645811310}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &1837490316 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1976344460875875386, guid: fcbbcd7ab4330e64b9fcd2136ee81f15,
@@ -11807,8 +11946,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42d988add154ec3499930cb44f7401ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!64 &1856949536
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11960,8 +12099,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d0b652f32a2cc243917e4028fa0f046, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!114 &1923798523 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 686665985, guid: 51f2e3e325af1cb4584cc1ef27aaf805,
@@ -11972,8 +12111,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc23df3665993434883901be6a89fcfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &1923798525 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5290527327839560741, guid: 51f2e3e325af1cb4584cc1ef27aaf805,
@@ -12265,6 +12404,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc55e39ce54a8624db083b25a9df8033, type: 3}
+--- !u!1 &1957912550 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 789006123764301978, guid: 78c7bd9c27c7b174aaf7a17d58f81dbe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1645811310}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &1960256721
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12293,6 +12438,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 8143623091060960673, guid: 8c8849c18f5e3d942a8f10533fddd2b6, type: 3}
+--- !u!114 &1974744051 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 789006125096783942, guid: 78c7bd9c27c7b174aaf7a17d58f81dbe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1645811310}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1001 &1982775388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12491,6 +12648,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOverScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 8243181069829921437, guid: de8ecdb6abeecd8429b1647c6efe014c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8243181069829921436, guid: de8ecdb6abeecd8429b1647c6efe014c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12599,7 +12761,7 @@ PrefabInstance:
     - target: {fileID: 8243181068921400219, guid: de8ecdb6abeecd8429b1647c6efe014c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
+      value:
       objectReference: {fileID: 380628181}
     - target: {fileID: 8243181068921400219, guid: de8ecdb6abeecd8429b1647c6efe014c,
         type: 3}
@@ -12609,7 +12771,7 @@ PrefabInstance:
     - target: {fileID: 8243181069507345682, guid: de8ecdb6abeecd8429b1647c6efe014c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
+      value:
       objectReference: {fileID: 127528670}
     - target: {fileID: 8243181069507345682, guid: de8ecdb6abeecd8429b1647c6efe014c,
         type: 3}
@@ -12642,8 +12804,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42d988add154ec3499930cb44f7401ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!23 &2008035197 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 5296013789995200686, guid: 36d384349cf61134f9b12bce19a26e4d,
@@ -12757,8 +12919,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc23df3665993434883901be6a89fcfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!4 &2038956215 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5290527327839560741, guid: 51f2e3e325af1cb4584cc1ef27aaf805,
@@ -13074,8 +13236,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 791dc17c1430da94da1f5e84a4e0bc1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!64 &2065827249
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13429,8 +13591,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c88e8b79e95d0449a690aad7b10a46b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactionOriginPointOffset: {x: 0.37, y: 0, z: 0.48}
   interactVisualiserObjectOffset: {x: 0, y: 0.58, z: 0}
   rotateInteractionVisWithRotation: 1
@@ -13450,7 +13612,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 0
         m_CallState: 2
   customInteractionIcon: {fileID: 21300000, guid: f57d9aa37cb92284f908df97108facd8,
@@ -14454,8 +14616,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ded79b291c881004f9b3f8d6a4e1515b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   myType: 2
   startID: 1
   endID: 0
@@ -14483,8 +14645,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd99d914e242af640b8e42398df09768, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   interactionOriginPointOffset: {x: 0, y: 0, z: 0}
   interactVisualiserObjectOffset: {x: 0, y: 0.3, z: 0}
   rotateInteractionVisWithRotation: 1
@@ -14504,7 +14666,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1742379293}
@@ -14515,7 +14677,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 298729131}
@@ -14526,7 +14688,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 2038956213}
@@ -14537,7 +14699,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1923798523}
@@ -14548,7 +14710,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 1
         m_CallState: 2
   customInteractionIcon: {fileID: 0}
@@ -14614,8 +14776,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc9e55310a12e074b9cc7237eef3e860, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Xray: {fileID: 2100000, guid: 46b88b5d17ddf564c8ffe4a63c233805, type: 2}
   audioSource: {fileID: 0}
   audioClip: {fileID: 0}
@@ -15365,22 +15527,22 @@ PrefabInstance:
     - target: {fileID: 2057783472003246923, guid: 026d6f538b13f2e4481aa85ea1210feb,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
+      value:
       objectReference: {fileID: 380628181}
     - target: {fileID: 2057783472021426787, guid: 026d6f538b13f2e4481aa85ea1210feb,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
+      value:
       objectReference: {fileID: 380628181}
     - target: {fileID: 2057783471695514331, guid: 026d6f538b13f2e4481aa85ea1210feb,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
+      value:
       objectReference: {fileID: 380628181}
     - target: {fileID: 2057783471099471062, guid: 026d6f538b13f2e4481aa85ea1210feb,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
+      value:
       objectReference: {fileID: 380628181}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 026d6f538b13f2e4481aa85ea1210feb, type: 3}
