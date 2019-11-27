@@ -15,13 +15,23 @@ public class DialogueManager : MonoBehaviour
     Dialogue.Character currentCharacter;
     public Image characterPortrait;
     public Animator animator;
+
+    public Button choice01;
+    public Button choice02;
+    public Button choice03;
+
+    public int choiceMade;
+
+    private string enterDialogueChoices;
     
     void Start()
     {
         endButton.SetActive(false);
-        continueButton.SetActive(true);
+        continueButton.SetActive(false);
         typingSpeed = 0.03f;
         sentences = new Queue<Dialogue.Character>();
+
+        DeactivateChoice();
     }
 
     public void StartDialogue (Dialogue dialogue)
@@ -34,10 +44,11 @@ public class DialogueManager : MonoBehaviour
 
         foreach (string sentence in dialogue.sentences)
         {
-            string[] splitSentence = new string[2];
-            if (sentence.Split(':').Length > 1)
+            string[] splitSentence = sentence.Split(':');
+            splitSentence = sentence.Split(':');
+
+            if (splitSentence.Length <= 2)
             {
-                splitSentence = sentence.Split(':');
                 character.text = splitSentence[1];
                 character.name = splitSentence[0];
                 for (int i = 0; i < DialoguePortraits.characters.Count; i++)
@@ -48,6 +59,12 @@ public class DialogueManager : MonoBehaviour
                     }
                 }
             }
+
+            else
+            {
+                enterDialogueChoices = splitSentence[2];
+            }
+            
             sentences.Enqueue(new Dialogue.Character(splitSentence[0], splitSentence[1], characterPortrait.sprite));
         }
         currentCharacter = character;
@@ -57,7 +74,6 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TypeSentence (string sentence)
     {
         dialogueText.text = "";
-
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
@@ -68,19 +84,25 @@ public class DialogueManager : MonoBehaviour
         {
             continueButton.SetActive(true);
         }
+        
     }
-    
+
     public void DisplayNextSentence()
     {
+        DeactivateChoice();
         continueButton.SetActive(false);
-        if (sentences.Count == 0)
+        if (sentences.Count == 0 && enterDialogueChoices != ">")
         {
-            endButton.SetActive(true);
             EndDialogue();
             return;
         }
+
+        /*if (sentences.Count == 0 && enterDialogueChoices == ">")
+        {
+            ActivateChoice();
+        }*/
         currentCharacter = sentences.Dequeue();
-        
+
         StopAllCoroutines();
         nameText.text = currentCharacter.name;
         StartCoroutine(TypeSentence(currentCharacter.text));
@@ -88,11 +110,48 @@ public class DialogueManager : MonoBehaviour
     
     void EndDialogue()
     {
-        
+        endButton.SetActive(true);
     }
 
     public void QuitDialogue()
     {
         animator.SetBool("IsOpen", false);
+    }
+    void DeactivateChoice()
+    {
+        choice01.gameObject.SetActive(false);
+        choice02.gameObject.SetActive(false);
+        choice03.gameObject.SetActive(false);
+    }
+    void ActivateChoice()
+    {
+        choice01.gameObject.SetActive(true);
+        choice02.gameObject.SetActive(true);
+        choice03.gameObject.SetActive(true);
+    }
+
+    public void ChoiceOption1()
+    {
+        choiceMade = 1;
+    }
+
+    public void ChoiceOption2()
+    {
+        choiceMade = 2;
+    }
+
+    public void ChoiceOption3()
+    {
+        choiceMade = 3;
+    }
+
+    public void Update()
+    {
+        if (choiceMade >= 1)
+        {
+            choice01.gameObject.SetActive(false);
+            choice02.gameObject.SetActive(false);
+            choice03.gameObject.SetActive(false);
+        }
     }
 }
