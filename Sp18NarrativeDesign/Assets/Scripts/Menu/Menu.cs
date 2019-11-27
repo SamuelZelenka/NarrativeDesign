@@ -100,16 +100,10 @@ public class Menu : MonoBehaviour
         {  
             if (optionsMenu.activeSelf)
             {
-                Cursor.visible = false;
-                Cursor.lockState = CursorLockMode.Locked;
                 optionsMenu.SetActive(false);
             }
             else
-            {
-                
-                Cursor.visible = true;
-                Cursor.lockState = CursorLockMode.None;
-
+            { 
                 PauseMenu();
             }
         }
@@ -120,9 +114,7 @@ public class Menu : MonoBehaviour
     private Dropdown dropdownMenu;
     void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-
+        
         resolutions = Screen.resolutions;
         for (int i = 0; i < resolutions.Length; i++){
              dropdownMenu.options.Add (new Dropdown.OptionData (ResToString (resolutions [i])));
