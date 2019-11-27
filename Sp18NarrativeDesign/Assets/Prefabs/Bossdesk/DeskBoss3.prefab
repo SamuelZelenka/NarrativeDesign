@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3047512627273290547}
   - component: {fileID: 6274066414473799941}
   - component: {fileID: 301036675157497340}
+  - component: {fileID: 937860505675275505}
+  - component: {fileID: 5188558877998419451}
   m_Layer: 0
   m_Name: DeskBoss3
   m_TagString: Untagged
@@ -78,3 +80,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &937860505675275505
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022583861794480416}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7141752, y: 0.70266247, z: 0.5158777}
+  m_Center: {x: 0, y: -0.062620044, z: -1.0571702}
+--- !u!65 &5188558877998419451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022583861794480416}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1562914, y: 0.8279025, z: 2.0986867}
+  m_Center: {x: 0.28931493, y: 0, z: 0.2657656}
