@@ -10,22 +10,17 @@ public class GameOver : MonoBehaviour
     // Start is called before the first frame update
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.tag == "Enemy" && collision.transform.gameObject.GetComponent<AIDetection>().currentState == AIDetection.AIState.pursuing)
+        if (collision.transform.tag == "Enemy")
         {
             gameOver();
-            
         }
     }
     void gameOver()
     {
-
         Time.timeScale = 0;
 
         ObjectiveManager.activeObjectives.Clear();
         gameOverMenu.SetActive(true);
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-        
     }
 
 
@@ -33,7 +28,5 @@ public class GameOver : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
     }
 }

@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Xray : MonoBehaviour
 {
-    Material m_Original;
-    float fadeSpeed = .5f;
-    bool fading = false;
+    Material m_Original;    
+    
     [SerializeField]
     Material m_Xray;
 
@@ -31,46 +30,18 @@ public class Xray : MonoBehaviour
         audioSource = AudioSource;
     }
 
-
-    float opacity = 1;
-    private void Update()
-    {
-        if (fading)
-        {
-            opacity -= fadeSpeed * Time.deltaTime;
-            if (opacity >= 0)
-                GetComponent<Renderer>().material.SetFloat("_Opacity", opacity);
-        }
-        if (opacity <= 0 && fading)
-        {
-            opacity -= fadeSpeed * Time.deltaTime;
-            if (opacity <= -1f)
-            {
-                GetComponent<Renderer>().material = m_Original;
-                fading = false;
-                opacity = 1;
-            }
-        }
-    }
-
     bool played = false;
 
 
-    public virtual void ShowThroughWalls(bool doit)
+   public virtual void ShowThroughWalls(bool doit)
     {
         if (!doit)
         {
-            fading = true;
-            opacity = 1;
-            //  GetComponent<Renderer>().material = m_Original;
+            GetComponent<Renderer>().material = m_Original;
             played = false;
         }
         else
         {
-            fading = false;
-            opacity = 1;
-            GetComponent<Renderer>().material.SetFloat("_Opacity", opacity);
-
             GetComponent<Renderer>().material = m_Xray;
             _xRayActive = false;
             if (audioClip != null && !played)
