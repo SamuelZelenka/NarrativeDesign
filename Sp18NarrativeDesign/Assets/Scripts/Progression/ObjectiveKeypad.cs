@@ -5,11 +5,19 @@ using UnityEngine;
 public class ObjectiveKeypad : Interactible
 {
     [SerializeField] DoorScript door;
-    [SerializeField] Material lightMaterial;
+    [SerializeField] Renderer lightRenderer;
 
     public override void Start()
     {
-        lightMaterial.color = Color.red;
+        base.Start();
+        if (!door.locked)
+        {
+            lightRenderer.material.color = Color.green;
+        }
+        else
+        {
+            lightRenderer.material.color = Color.red;
+        }
     }
 
     public override void Interact()
@@ -18,11 +26,11 @@ public class ObjectiveKeypad : Interactible
         if (!door.locked)
         {
             door.ToggleDoorOpen();
-            lightMaterial.color = Color.green;
+            lightRenderer.material.color = Color.green;
         }
         else
         {
-            lightMaterial.color = Color.red;
+            lightRenderer.material.color = Color.red;
         }
 
     }

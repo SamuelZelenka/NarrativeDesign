@@ -22,6 +22,10 @@ public class DoorScript : MonoBehaviour
     {
         this.locked = locked;
     }
+    public void ToggleLocked()
+    {
+        locked = !locked;
+    }
 
     public void ToggleDoorOpen()
     {
@@ -51,7 +55,8 @@ public class DoorScript : MonoBehaviour
             animator.SetBool("Open", shouldOpen);
             doorTimer = 0;
             open = shouldOpen;
-            FindObjectOfType<AudioManager>().Play("SlidingDoor");
+            if (FindObjectOfType<AudioManager>() != null)
+                FindObjectOfType<AudioManager>().Play("SlidingDoor");
         }
 
     }
