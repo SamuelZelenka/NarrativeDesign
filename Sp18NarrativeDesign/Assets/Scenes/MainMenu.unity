@@ -542,6 +542,7 @@ MonoBehaviour:
   missionsText: {fileID: 0}
   playerCamera: {fileID: 0}
   playerControls: {fileID: 0}
+  gameOverScreen: {fileID: 0}
   dropdownMenu: {fileID: 1283789332}
 --- !u!1 &75641067
 GameObject:
@@ -759,6 +760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3d0dc76f81795408c50477e03a5e65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 63916b9caaf77454cbd0e1364d341ad7, type: 2}
 --- !u!114 &130128714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1278,7 +1280,7 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 30
+    m_MaxSize: 29
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1288,7 +1290,10 @@ MonoBehaviour:
   m_Text: 'WASD - Movement
 
 
-    E - Interact
+    C - Crouch
+
+
+    E - Interact / Takedown Drone
 
 
     Space - Jump
@@ -4562,6 +4567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3d0dc76f81795408c50477e03a5e65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 63916b9caaf77454cbd0e1364d341ad7, type: 2}
 --- !u!1 &1957279269
 GameObject:
   m_ObjectHideFlags: 0
