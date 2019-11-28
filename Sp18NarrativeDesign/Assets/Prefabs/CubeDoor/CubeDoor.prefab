@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5290527327839560741}
+  - component: {fileID: 686665986}
+  - component: {fileID: 686665985}
   m_Layer: 0
   m_Name: CubeDoor
   m_TagString: Untagged
@@ -32,6 +34,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &686665986
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5290527327839561178}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 148d5376864ca9e4487a523bc4e7b748, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &686665985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5290527327839561178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc23df3665993434883901be6a89fcfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locked: 0
+  open: 0
+  animator: {fileID: 686665986}
+  autoClose: 0
+  timeUntilClose: 5
 --- !u!1 &5290527328996905003
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,6 +82,7 @@ GameObject:
   - component: {fileID: 5290527328996905015}
   - component: {fileID: 5290527328996905012}
   - component: {fileID: 5290527328996905013}
+  - component: {fileID: 633251103}
   m_Layer: 0
   m_Name: DoorRight
   m_TagString: Untagged
@@ -59,7 +98,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5290527328996905003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.33, y: 0.49399996, z: 0}
+  m_LocalPosition: {x: 0.66, y: 0.49399996, z: 0}
   m_LocalScale: {x: 0.66, y: 1, z: 0.16620499}
   m_Children: []
   m_Father: {fileID: 5290527327839560741}
@@ -124,6 +163,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &633251103
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5290527328996905003}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &5290527329337674802
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,6 +191,7 @@ GameObject:
   - component: {fileID: 5290527329337674814}
   - component: {fileID: 5290527329337674815}
   - component: {fileID: 5290527329337674812}
+  - component: {fileID: 410935163}
   m_Layer: 0
   m_Name: DoorLeft
   m_TagString: Untagged
@@ -151,7 +207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5290527329337674802}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.33, y: 0.494, z: 0}
+  m_LocalPosition: {x: -0.66, y: 0.494, z: 0}
   m_LocalScale: {x: 0.66, y: 1, z: 0.16620499}
   m_Children: []
   m_Father: {fileID: 5290527327839560741}
@@ -216,3 +272,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &410935163
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5290527329337674802}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
