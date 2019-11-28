@@ -23,7 +23,7 @@ public class Menu : MonoBehaviour
         }
         else{
             optionsMenu.SetActive(false);
-        } 
+        }
     }
     public void OptionsCloseButtonPressed(){
         optionsMenu.SetActive(false);
@@ -34,7 +34,7 @@ public class Menu : MonoBehaviour
         }
         else{
             tutorialWindow.SetActive(false);
-        } 
+        }
     }
     public void TutorialCloseButtonPressed(){
         tutorialWindow.SetActive(false);
@@ -45,7 +45,7 @@ public class Menu : MonoBehaviour
         }
         else{
             creditsWindow.SetActive(false);
-        } 
+        }
     }
     public void CreditsCloseButtonPressed(){
         creditsWindow.SetActive(false);
@@ -53,13 +53,16 @@ public class Menu : MonoBehaviour
     public void PlayButtonPressed()
 	{
         Time.timeScale = 1;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 		SceneManager.LoadScene("MainScene");
 	}
     public void ExitGame(){
         Application.Quit();
     }
 
-    public void PauseMenu(){   
+    public void PauseMenu(){
         Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "MainScene")
         {
@@ -69,9 +72,10 @@ public class Menu : MonoBehaviour
                 playerControls.GetComponent<ThirdPersonUserControl>().enabled = false;
                 pauseMenu.SetActive(true);
                 Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 pauseButtons.SetBool("Paused", true);
                 missionsText.SetBool("Paused", true);
- 
+
             }
             else{
                 Time.timeScale = 1;
@@ -80,8 +84,9 @@ public class Menu : MonoBehaviour
                 playerCamera.GetComponent<PlayerCamera>().enabled = true;
                 playerControls.GetComponent<ThirdPersonUserControl>().enabled = true;
                 Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
                 pauseMenu.SetActive(false);
-            } 
+            }
         }
     }
     [SerializeField]
@@ -95,16 +100,26 @@ public class Menu : MonoBehaviour
     [SerializeField]
     private GameObject playerControls;
 
+    [SerializeField]
+    GameObject gameOverScreen;
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape))
-        {  
-            if (optionsMenu.activeSelf)
+        {
+            if (gameOverScreen.activeSelf == false)
             {
-                optionsMenu.SetActive(false);
-            }
-            else
-            { 
-                PauseMenu();
+
+                if (optionsMenu.activeSelf)
+                {
+                    Cursor.visible = false;
+                    Cursor.lockState = CursorLockMode.Locked;
+                    optionsMenu.SetActive(false);
+                }
+                else
+                {
+                    Cursor.visible = true;
+                    Cursor.lockState = CursorLockMode.None;
+                    PauseMenu();
+                }
             }
         }
     }
@@ -114,18 +129,18 @@ public class Menu : MonoBehaviour
     private Dropdown dropdownMenu;
     void Start()
     {
-        
+
         resolutions = Screen.resolutions;
         for (int i = 0; i < resolutions.Length; i++){
              dropdownMenu.options.Add (new Dropdown.OptionData (ResToString (resolutions [i])));
- 
+
              dropdownMenu.value = i;
- 
+
              dropdownMenu.onValueChanged.AddListener(delegate { Screen.SetResolution(resolutions[dropdownMenu.value].width, resolutions[dropdownMenu.value].height, true);});
- 
+
          }
      }
- 
+
       string ResToString(Resolution res)
      {
          return res.width + " x " + res.height;
