@@ -49,6 +49,8 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 1
+    music: 1
+    SFX: 0
     source: {fileID: 0}
   audioMasterMixer: {fileID: 24300002, guid: 63916b9caaf77454cbd0e1364d341ad7, type: 2}
   audioSFXMixer: {fileID: 814641758123283166, guid: 63916b9caaf77454cbd0e1364d341ad7,

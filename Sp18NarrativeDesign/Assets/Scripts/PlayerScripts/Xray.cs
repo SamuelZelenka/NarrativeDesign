@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Xray : MonoBehaviour
 {
-    Material m_Original;    
+    Material[] m_Original;    
     
     [SerializeField]
     Material m_Xray;
@@ -25,7 +25,7 @@ public class Xray : MonoBehaviour
     bool _xRayActive = false;
     void Start()
     {
-        m_Original = GetComponent<Renderer>().material;
+        m_Original = GetComponent<Renderer>().materials;
         audioClip = Resources.Load("ScanFound") as AudioClip;
         audioSource = AudioSource;
     }
@@ -37,11 +37,17 @@ public class Xray : MonoBehaviour
     {
         if (!doit)
         {
-            GetComponent<Renderer>().material = m_Original;
+            GetComponent<Renderer>().materials = m_Original;
             played = false;
         }
         else
         {
+            Material[] mats = new Material[GetComponent<Renderer>().materials.Length];
+            for (int i = 0; i < mats.Length; i++)
+            {
+                mats[i] = m_Xray;
+            }
+            GetComponent<Renderer>().materials = mats;
             GetComponent<Renderer>().material = m_Xray;
             _xRayActive = false;
             if (audioClip != null && !played)

@@ -18,6 +18,8 @@ public class Menu : MonoBehaviour
     //These open and close optios and credits windows
     //
     public void OptionsButtonPressed(){
+        tutorialWindow.SetActive(false);
+        creditsWindow.SetActive(false);
         if (!optionsMenu.activeSelf){
             optionsMenu.SetActive(true);
         }
@@ -29,6 +31,8 @@ public class Menu : MonoBehaviour
         optionsMenu.SetActive(false);
     }
     public void TutorialButtonPressed(){
+        optionsMenu.SetActive(false);
+        creditsWindow.SetActive(false);
         if (!tutorialWindow.activeSelf){
             tutorialWindow.SetActive(true);
         }
@@ -40,6 +44,8 @@ public class Menu : MonoBehaviour
         tutorialWindow.SetActive(false);
     }
     public void CreditsButtonPressed(){
+        tutorialWindow.SetActive(false);
+        optionsMenu.SetActive(false);
         if (!creditsWindow.activeSelf){
             creditsWindow.SetActive(true);
         }
