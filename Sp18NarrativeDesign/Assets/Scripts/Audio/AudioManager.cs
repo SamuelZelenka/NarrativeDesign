@@ -44,7 +44,12 @@ public class AudioManager : MonoBehaviour
         if (scene.name == "MainMenu")
         {
            Play("MainMenuTheme");
-        } 
+        }
+
+        if (scene.name == "MainScene")
+        {
+            Play("LofiBeat");
+        }
     }
 
     // Update is called once per frame

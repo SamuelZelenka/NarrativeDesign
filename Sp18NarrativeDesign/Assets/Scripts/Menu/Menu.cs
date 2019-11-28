@@ -124,17 +124,7 @@ public class Menu : MonoBehaviour
     private Dropdown dropdownMenu;
     void Start()
     {
-        Scene activeScene = SceneManager.GetActiveScene();
-        if(activeScene.name == "MainMenu")
-        { 
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-        } else if (activeScene.name == "MainScene")
-        {
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-
+        
         resolutions = Screen.resolutions;
         for (int i = 0; i < resolutions.Length; i++){
              dropdownMenu.options.Add (new Dropdown.OptionData (ResToString (resolutions [i])));

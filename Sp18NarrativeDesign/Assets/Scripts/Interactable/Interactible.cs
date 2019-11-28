@@ -12,7 +12,7 @@ public class Interactible : MonoBehaviour
     public Vector3 InteractionPoint { get => transform.position + (transform.rotation * interactionOriginPointOffset); }
 
 
-    //The offset from the objects origin the check happens from 
+    //The offset from the objects origin the check happens from
     [SerializeField] Vector3 interactionOriginPointOffset;
     //Interaction icon offset
     [SerializeField] Vector3 interactVisualiserObjectOffset;
@@ -118,7 +118,11 @@ public class Interactible : MonoBehaviour
     {
         Destroy(interactVisualiser);
     }
-
+    public virtual void OnDisable()
+    {
+        if (interactVisualiser != null)
+            interactVisualiser.SetActive(false);
+    }
 
 
 }
