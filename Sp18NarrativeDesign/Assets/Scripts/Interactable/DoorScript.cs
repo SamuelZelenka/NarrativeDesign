@@ -29,6 +29,11 @@ public class DoorScript : MonoBehaviour
         Open(!open);
 
     }
+
+    public void ToggleLocked()
+    {
+        locked = !locked;
+    }
     private void Update()
     {
         //   Debug.Log(doorTimer);
