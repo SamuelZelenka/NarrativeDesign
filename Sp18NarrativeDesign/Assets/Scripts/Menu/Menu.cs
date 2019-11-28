@@ -53,6 +53,9 @@ public class Menu : MonoBehaviour
     public void PlayButtonPressed()
 	{
         Time.timeScale = 1;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 		SceneManager.LoadScene("MainScene");
 	}
     public void ExitGame(){
@@ -69,6 +72,7 @@ public class Menu : MonoBehaviour
                 playerControls.GetComponent<ThirdPersonUserControl>().enabled = false;
                 pauseMenu.SetActive(true);
                 Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 pauseButtons.SetBool("Paused", true);
                 missionsText.SetBool("Paused", true);
 
@@ -80,6 +84,7 @@ public class Menu : MonoBehaviour
                 playerCamera.GetComponent<PlayerCamera>().enabled = true;
                 playerControls.GetComponent<ThirdPersonUserControl>().enabled = true;
                 Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
                 pauseMenu.SetActive(false);
             }
         }
