@@ -39,6 +39,7 @@ public class TalkingDialougue : Interactible
             _AudioSource.pitch = item.pitch;
             _AudioSource.clip = item.audioClip;
             _AudioSource.Play();
+            //uitext.text = item.subtitle;
             yield return new WaitForSeconds(item.audioClip.length);
             yield return new WaitForSeconds(item.delayAfterPlayed);
         }
@@ -51,4 +52,6 @@ public class DialogueClip
     public AudioClip audioClip;
     public float delayAfterPlayed;
     public float pitch = 1;
+    public string subtitle;
+
 }
