@@ -18,7 +18,8 @@ public class GameOver : MonoBehaviour
     void gameOver()
     {
         Time.timeScale = 0;
-
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         ObjectiveManager.activeObjectives.Clear();
         gameOverMenu.SetActive(true);
     }
