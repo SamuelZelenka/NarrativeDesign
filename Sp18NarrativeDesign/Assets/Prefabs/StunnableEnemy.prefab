@@ -447,6 +447,9 @@ MonoBehaviour:
   player: {fileID: 0}
   viewDistance: 5
   angle: 90.34
+  patrolMoveSpeed: 3.5
+  checkMoveSpeed: 3.5
+  pursuitMoveSpeed: 3.5
   target: {fileID: 0}
   detectedTime: 4
   detectedPlayer: 0
@@ -460,12 +463,12 @@ MonoBehaviour:
   materialPatrolColor: {r: 0.66234064, g: 30.389036, b: 31.626795, a: 1}
   materialPursuitColor: {r: 31.626795, g: 0.49675596, b: 2.8149505, a: 1}
   materialCheckColor: {r: 16, g: 7.592157, b: 0, a: 1}
-  movementAudioSource: {fileID: 2450335809098203536}
+  detectedSource: {fileID: 0}
   lens: {fileID: 5235601638541910394}
   patrolLights:
+  - {fileID: 1236086773}
   - {fileID: 359443603}
   - {fileID: 898112350}
-  - {fileID: 1236086773}
 --- !u!195 &7747670036202258107
 NavMeshAgent:
   m_ObjectHideFlags: 0
