@@ -596,7 +596,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &209303769
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,7 +843,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &266698553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,7 +1078,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &335028060
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,7 +1977,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &633063121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2129,7 +2133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &669848975
 GameObject:
   m_ObjectHideFlags: 0
@@ -2378,7 +2383,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &702265968
 GameObject:
   m_ObjectHideFlags: 0
@@ -2533,7 +2539,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &751940175
 GameObject:
   m_ObjectHideFlags: 0
@@ -2688,7 +2695,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &752417022
 GameObject:
   m_ObjectHideFlags: 0
@@ -2843,7 +2851,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &752434042
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,7 +3007,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &765174863
 GameObject:
   m_ObjectHideFlags: 0
@@ -3230,7 +3240,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &780053461
 GameObject:
   m_ObjectHideFlags: 0
@@ -3794,7 +3805,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &964348839
 GameObject:
   m_ObjectHideFlags: 0
@@ -4028,7 +4040,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &1027961303
 GameObject:
   m_ObjectHideFlags: 0
@@ -4768,7 +4781,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &1270858333
 GameObject:
   m_ObjectHideFlags: 0
@@ -5106,7 +5120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &1318712677
 GameObject:
   m_ObjectHideFlags: 0
@@ -5406,7 +5421,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &1395300986
 GameObject:
   m_ObjectHideFlags: 0
@@ -6017,7 +6033,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &1588155182
 GameObject:
   m_ObjectHideFlags: 0
@@ -6482,7 +6499,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &1678056704
 GameObject:
   m_ObjectHideFlags: 0
@@ -6716,7 +6734,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &1737445585
 GameObject:
   m_ObjectHideFlags: 0
@@ -7027,7 +7046,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &1873901918
 GameObject:
   m_ObjectHideFlags: 0
@@ -7273,7 +7293,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
 --- !u!1 &1927562322
 GameObject:
   m_ObjectHideFlags: 0
@@ -8214,4 +8235,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    sentences: []
+    sentences:
+    - 'Name:Text:'
