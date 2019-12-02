@@ -13,7 +13,7 @@ public class GameOver : MonoBehaviour
     {
         if (collision.transform.tag == "Enemy" && collision.gameObject.GetComponent<AIDetection>().currentState == AIDetection.AIState.pursuing)
         {
-            if (_gameOverMenu.GetComponent<AudioSource>() != null)
+            if (_gameOverMenu != null)
                  _gameOverMenu.GetComponent<AudioSource>().Play();
             gameOver();
         }
