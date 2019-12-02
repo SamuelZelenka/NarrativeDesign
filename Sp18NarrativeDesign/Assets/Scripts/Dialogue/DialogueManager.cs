@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityStandardAssets.Characters.ThirdPerson;
+//using UnityStandardAssets.Characters.ThirdPerson;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -12,16 +12,17 @@ public class DialogueManager : MonoBehaviour
     public GameObject continueButton;
     public GameObject startButton;
     public Queue<Dialogue.Character> sentences;
+    
     Dialogue.Character currentCharacter;
     //public Image characterPortrait;
     public GameObject dialogueBox;
     //public Animator animator;
-
+    public GameObject[] scenes;
     /*[SerializeField]
     private GameObject playerCamera;
     [SerializeField]
     private GameObject playerControls;*/
-
+    
     /*public Button choice01;
     public Button choice02;
     public Button choice03;*/
@@ -32,6 +33,10 @@ public class DialogueManager : MonoBehaviour
     
     void Start()
     {
+        foreach (GameObject childButton in scenes)
+        {
+            childButton.SetActive(false);
+        }
         startButton.SetActive(true);
         continueButton.SetActive(false);
         typingSpeed = 0.03f;
@@ -42,6 +47,10 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue)
     {
+        foreach (GameObject childButton in scenes)
+        {
+            childButton.SetActive(false);
+        }
         startButton.SetActive(false);
         dialogueBox.SetActive(true);
         //playerCamera.GetComponent<PlayerCamera>().enabled = false;
@@ -121,6 +130,10 @@ public class DialogueManager : MonoBehaviour
     
     void EndDialogue()
     {
+        foreach (GameObject childButton in scenes)
+        {
+            childButton.SetActive(true);
+        }
         //endButton.SetActive(true);
     }
 
