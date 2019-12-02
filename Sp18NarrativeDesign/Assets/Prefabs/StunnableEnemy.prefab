@@ -455,14 +455,7 @@ MonoBehaviour:
   detectedTime: 4
   detectedPlayer: 0
   checkPositionTime: 10
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  waypoints: []
   deadArea: 1
   waitAtWaypointTime: 1
   lightPatrolColor: {r: 0.6431373, g: 0.7294118, b: 0.92941177, a: 1}
@@ -5782,6 +5775,48 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a938e71d6ae2233488584f4a0aa10b08, type: 2}
+    - target: {fileID: 8341088139081874663, guid: a032ccba23824a74e9192bc212bb6fd1,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1978687110177645539, guid: f3b218b28269d4b46941e7baffd107f2,
+        type: 3}
+    - target: {fileID: 8595572830763475379, guid: a032ccba23824a74e9192bc212bb6fd1,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -6155294129096131761, guid: f3b218b28269d4b46941e7baffd107f2,
+        type: 3}
+    - target: {fileID: 8979314013309287336, guid: a032ccba23824a74e9192bc212bb6fd1,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 8511133085090648769, guid: f3b218b28269d4b46941e7baffd107f2,
+        type: 3}
+    - target: {fileID: 5265682821011092990, guid: a032ccba23824a74e9192bc212bb6fd1,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 3129880213835083087, guid: f3b218b28269d4b46941e7baffd107f2,
+        type: 3}
+    - target: {fileID: 5631758059590108331, guid: a032ccba23824a74e9192bc212bb6fd1,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -2628498187545688561, guid: f3b218b28269d4b46941e7baffd107f2,
+        type: 3}
+    - target: {fileID: 4018234947847872509, guid: a032ccba23824a74e9192bc212bb6fd1,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -3599651136099244218, guid: f3b218b28269d4b46941e7baffd107f2,
+        type: 3}
+    - target: {fileID: 416532842039343281, guid: a032ccba23824a74e9192bc212bb6fd1,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -6315728783980342450, guid: f3b218b28269d4b46941e7baffd107f2,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a032ccba23824a74e9192bc212bb6fd1, type: 3}
 --- !u!23 &5235601638541910394 stripped
