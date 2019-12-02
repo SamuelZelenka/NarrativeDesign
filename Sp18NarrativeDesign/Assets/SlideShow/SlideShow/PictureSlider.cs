@@ -23,6 +23,7 @@ public class PictureSlider : MonoBehaviour
         pictureNumber = 2;
         ChangePictureForward();
     }
+
     void ChangePictureForward()
     {
         gameObject.SetActive(false);
@@ -30,12 +31,18 @@ public class PictureSlider : MonoBehaviour
     }
     public void ChangePictureBackward()
     {
-            gameObject.SetActive(true);
-            Debug.Log("Can't change to a nonexistant picture");
+        gameObject.SetActive(true);
+        Debug.Log("Can't change to a nonexistant picture");
         futurePicture[pictureNumber].SetActive(false);
     }
     public void ChangeToScene()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         SceneManager.LoadScene("MainScene");
+    }
+    public void ChangeToMenuScene()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

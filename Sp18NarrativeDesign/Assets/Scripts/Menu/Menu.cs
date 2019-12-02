@@ -72,12 +72,11 @@ public class Menu : MonoBehaviour
     {
         Time.timeScale = 1;
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        SceneManager.LoadScene("MainScene");
-    }
-    public void ExitGame()
-    {
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+		SceneManager.LoadScene("SlideShow");
+	}
+    public void ExitGame(){
         Application.Quit();
     }
 
