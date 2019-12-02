@@ -79,6 +79,12 @@ public class Menu : MonoBehaviour
     public void ExitGame(){
         Application.Quit();
     }
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
+    }
+
 
     public void PauseMenu()
     {
@@ -125,13 +131,7 @@ public class Menu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (optionsMenu.activeSelf)
-            {
-                Cursor.visible = false;
-                Cursor.lockState = CursorLockMode.Locked;
-                optionsMenu.SetActive(false);
-            }
-            else
+            if (gameOverScreen != null && gameOverScreen.activeSelf == false)
             {
 
                 Cursor.visible = true;

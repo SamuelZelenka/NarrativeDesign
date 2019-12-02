@@ -17,10 +17,6 @@ public class SoundWave : MonoBehaviour
 
 
     float _CurrentSpeed;
-    void Start()
-    {
-        Debug.Log("Hello World");
-    }
 
     void Update()
     {
