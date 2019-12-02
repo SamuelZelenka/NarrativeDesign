@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public GameObject nextSceneButton;
     public Dialogue dialogue;
 
     public void TriggerDialogue ()
