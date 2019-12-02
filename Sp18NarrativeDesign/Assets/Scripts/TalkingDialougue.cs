@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityStandardAssets.Characters.ThirdPerson;
 [RequireComponent(typeof(AudioSource))]
 public class TalkingDialougue : Interactible
 {
+    [SerializeField] Text subtitleText;
     [SerializeField] List<DialogueClip> audioClips;
+    [SerializeField] GameObject choiceCanvas;
     public AudioSource _AudioSource
     {
         get => GetComponent<AudioSource>();
@@ -39,9 +43,18 @@ public class TalkingDialougue : Interactible
             _AudioSource.pitch = item.pitch;
             _AudioSource.clip = item.audioClip;
             _AudioSource.Play();
+            if (subtitleText != null)
+                subtitleText.text = item.subtitle;
+            //uitext.text = item.subtitle;
             yield return new WaitForSeconds(item.audioClip.length);
             yield return new WaitForSeconds(item.delayAfterPlayed);
         }
+
+        FindObjectOfType<ThirdPersonUserControl>().enabled = false;
+        choiceCanvas.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
     }
 
 }
@@ -51,4 +64,6 @@ public class DialogueClip
     public AudioClip audioClip;
     public float delayAfterPlayed;
     public float pitch = 1;
+    public string subtitle;
+
 }

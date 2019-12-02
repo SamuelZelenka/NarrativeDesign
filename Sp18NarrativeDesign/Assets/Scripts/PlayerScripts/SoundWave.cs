@@ -62,7 +62,7 @@ public class SoundWave : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Mathf.Abs(Input.GetAxis("Horizontal")) > .2f || Mathf.Abs(Input.GetAxis("Vertical")) > .2f)
         {
             // Draw a yellow sphere at the transform's position
             Gizmos.color = Color.red;
