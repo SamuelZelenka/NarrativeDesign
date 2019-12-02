@@ -6,14 +6,15 @@ using UnityEngine;
 public class GameOver : MonoBehaviour
 {
     [SerializeField] GameObject gameOverMenu;
-    [SerializeField] GameObject _gameOverMenu;
+    [SerializeField] AudioSource _gameOverMenu;
 
     // Start is called before the first frame update
     void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.tag == "Enemy" && collision.gameObject.GetComponent<AIDetection>().currentState == AIDetection.AIState.pursuing)
         {
-;           _gameOverMenu.GetComponent<AudioSource>().Play();
+            if (_gameOverMenu.GetComponent<AudioSource>() != null)
+                 _gameOverMenu.GetComponent<AudioSource>().Play();
             gameOver();
         }
     }
