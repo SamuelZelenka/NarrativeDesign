@@ -199,6 +199,195 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31897081}
   m_CullTransparentMesh: 0
+--- !u!1 &60578159
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 60578160}
+  - component: {fileID: 60578164}
+  - component: {fileID: 60578163}
+  - component: {fileID: 60578162}
+  - component: {fileID: 60578161}
+  m_Layer: 5
+  m_Name: Button (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &60578160
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60578159}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1321206310}
+  m_Father: {fileID: 1988486372}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 637, y: -210.5}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &60578161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60578159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - "Nafir: arrives at the leasing company in a automated taxi. He\r\nsteps out
+      on the curb and looks up, he stands outside of the\r building for a moment:"
+    - "Nafir: I need to find out who was in that\r car, I think Safar could be behind\r
+      this somehow.:"
+    - "Nafir: walks into the building towards the front desk where\r he is met by
+      an receptionist where he is greeted:"
+    - "RECEPTIONIST:Hello and welcome to X how can I help\r you today?:"
+    - "Nafir:Evening mam; I'm detective Al-Faisal\r form the NMDP:"
+    - "Nafir:This is urgent ma'am, I'm looking for\r information on the hit and run\r
+      incident from one week ago.:"
+    - "Receptionist:\rI'm sorry sir but I can't disclose this information to you without
+      a\r warrant, sir. Do to our privacy our clients are protected.:"
+    - "Nafir:I want to talk to whomever is in\r charge here.:"
+    - "Receptionist:\rOf course. Sir...:"
+    - ":As the receptionist stands up and starts walking towards the\r door on her
+      left. Nafir takes his chance an runs around to\r the keyboard and start looking
+      for the file.:"
+    - ":In seconds Nafir has found a file with the right car and who\r the owner was.
+      He also noticed that the car was registered\r to the company on 54th st.:"
+    - "Nafir: leaves before the receptionist returns with her boss.\r When he gets
+      outside hes think for himself what he should do\r with this information.:"
+    - ":Option one, I better check up on this Security Corp.\n\nOption two, I believe
+      I have a friend that can do more with\r\nthis information."
+--- !u!114 &60578162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60578159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 60578163}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1988486373}
+        m_MethodName: ForwardChange0
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1502107065}
+        m_MethodName: SetBlueTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 60578161}
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &60578163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60578159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &60578164
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60578159}
+  m_CullTransparentMesh: 0
 --- !u!1 &95821183
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +419,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1510633821}
+  - {fileID: 583323211}
   m_Father: {fileID: 1502107064}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -252,6 +442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   futurePicture:
   - {fileID: 1100879804}
+  - {fileID: 555848775}
 --- !u!114 &95821186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -844,7 +1035,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - 'Name:Text:'
+    - "Nafir: arrives at the leasing company in a automated taxi. He\r\nsteps out
+      on the curb and looks up, he stands outside of the\r building for a moment:"
+    - "Nafir: I need to find out who was in that\r car, I think Safar could be behind\r
+      this somehow.:"
+    - "Nafir: walks into the building towards the front desk where\r he is met by
+      an receptionist where he is greeted:"
+    - "RECEPTIONIST:Hello and welcome to X how can I help\r you today?:"
+    - "Nafir:Evening mam; I'm detective Al-Faisal\r form the NMDP:"
+    - "Nafir:This is urgent ma'am, I'm looking for\r information on the hit and run\r
+      incident from one week ago.:"
+    - "Receptionist:\rI'm sorry sir but I can't disclose this information to you without
+      a\r warrant, sir. Do to our privacy our clients are protected.:"
+    - "Nafir:I want to talk to whomever is in\r charge here.:"
+    - "Receptionist:\rOf course. Sir...:"
+    - ":As the receptionist stands up and starts walking towards the\r door on her
+      left. Nafir takes his chance an runs around to\r the keyboard and start looking
+      for the file.:"
+    - ":In seconds Nafir has found a file with the right car and who\r the owner was.
+      He also noticed that the car was registered\r to the company on 54th st.:"
+    - "Nafir: leaves before the receptionist returns with her boss.\r When he gets
+      outside hes think for himself what he should do\r with this information.:"
+    - ":Option one, I better check up on this Security Corp.\n\nOption two, I believe
+      I have a friend that can do more with\r\nthis information.\n\nOption three,
+      I should go and look for more evidence at the\r\ncrime scene:"
 --- !u!1 &266698553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1612,7 +1826,84 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - 'Name:Text:'
+    - ":Nafir has arrived at the bar in the middle of Old Town, the\r\nsand storm
+      has slowly faded. Nafir steps out of the\r\nautomated taxi cab, he looks at
+      the bar. His husband Jamal\r\nsits closest to the windows at a table with a
+      glass of\r\nmulled wine. This is their fifth anniversary and the\r\nmarriage
+      is in a crisis.:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+    - "Nafir:The city has changed, and I with\r it... Late night stake outs, getting\r
+      shot up by murderous scum and killed.\r How many times have I shed skin now,\r
+      8,9 or 10 times? I've lost count...\r We used to laugh together, spend our\r
+      evenings drinking and talking about\r the future. Now we hardly look at\r each
+      other. Jamal, have you finally had enough?:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+    - ":Nafir steps inside the bar and walks over to Jamal. There is\r\na jazz band
+      playing and only a handful of guests there:"
+    - "Jamal:\rOh! This is unexpected.. You came!:"
+    - "Nafir\r: Of course, it's our anniversary. Remember?:"
+    - "Jamal\r:I remember. I also remember our last anniversary. You were shot and
+      killed\r two nights before, and the city had a\r shortage of skins. So I sat
+      here,\r drinking mulled wine for the both of\r us. Man, did I get plastered!:"
+    - "Nafir\r:\nJamal, I'm..(interrupted):"
+    - "Jamal\r: (slight aggressive)I went to this\r awesome nightclub, danced all
+      night with Jasmine,from personnel. We went on 'til 7 in the morning.\r\nBest
+      anniversary I've had in years!\r\nSo sorry you had to be kept on ice,\r\nhoney..
+      For how long was it now?:"
+    - "Nafir\r: \rTwo months... Look, I know\r\nit's..\nJamal\r:Two. Months. Yeah,
+      that's right. Time\r seemed to go faster then that though.:\r"
+    - ":Jamal looks out the window, takes a sip from his glass, then\r\nlooks back
+      at Nafir with teary eyes, but with a slight smile\r\non his face.:"
+    - "Jamal:Sorry, I'm rambling.. must have had a\r bit too much to drink..\r\nJamal
+      gestures to the waiter-bot\n\n(voice cracking)Garcon! Over here!:"
+    - "Nafir: Jamal, look I'm sorry.. I've begged\r your forgiveness at least a hundred\r
+      times before. But it never seems\r enough for ..(interrupted):"
+    - "Waiter-bot\r:How can I be of service?\r:"
+    - "Nafir: drops his head in his hands\r\n\nYa 'iilhi..(oh god), can I\r\ncomplete
+      a fuckin' sentance before\r\nsomeone interrupts me...!:"
+    - "Waiter-bot\r:\rSo sorry, sir. I can come back later\r if you so wish?:"
+    - "Jamal: Oh, don't mind him! I'll have a glass\r of water, please.:"
+    - "Nafir: (sighs)...Sorry. I'll take a.. let's\r see.. Umm..:"
+    - "Nafir:I'll have an Al-Amoudi Rich, please.\rAnd a glass of water."
+    - ":The Waiter-bot makes an affirmative sound and leaves the\r\ntable. Nafir shakes
+      his head and chuckles, looks up at JAMAL\r\nwith a warm smile on his face.:"
+    - 'Jamal:Well, you were saying?:'
+    - "Nafir\r: Jamal, habibi.. What I was about to\r say is.. Look, I know things
+      have\r been bad lately. You must have spent\r countless nights wondering and\r
+      worrying if you'll get to see me\r again. You always have, but too many\r times
+      have I shed skin.. And I\r understand, that's not an easy thing to go through
+      over and over again.\r\nI'm sorry... truly I am. And although my work is important,
+      nothing is as important as you... \n\nI love you.:"
+    - "Jamal: Oh, you do, do you?\r:\n\r\t"
+    - ":Nafir leans in over the table and gently grabs Jamals hands,\r and looks him
+      in his eyes.:"
+    - 'Nafir: Yes, I really do.. It breaks my heart that you''d even question that.
+      What has changed? You knew what you were getting in to when you said ''yes''
+      to marrying me.:'
+    - "Jamal:Yeah, I guess so.. I love you too,\r but there only as much as one can\r
+      take..:"
+    - ":Jamal slowly pulls his hand from Nafir's hand and leans back\r\non his chair.:"
+    - "Jamal: You ask me what has changed. Well,\r YOU. You've changed.\r You hardly
+      ever smile anymore, you\r get home late at night get drunk and\r pass out on
+      the couch. It is as if\r you've died..:"
+    - 'Nafir: I have died. multiple times actually.:'
+    - "Jamal: Nafir...\r I'm not sure if I can do this\r anymore.:"
+    - 'Nafir: What? Us? Jamal...:'
+    - "Jamal: You don't seem to get it. I need to\r feel loved, right now I feel as
+      if I\r can hardly breathe..:"
+    - ":Jamal gets up from his chair, wipes the tears from his eyes,\r\ntrows a 40
+      credit tip on the table. Jamal walks up to Nafir,\r\nkisses him on his forehead.:"
+    - "Jamal:\r\nHappy anniversary, habibi.. I'll go\r\naway for a while. I've talked
+      to\r\nJasmine, she let's me crash in her\r\nappartment. I need space, to catch
+      my\r breath.:"
+    - ':Nafir grabs Jamal''S wrist with both his hands.:'
+    - "Nafir: Please, wait... Tell me what to do,\r but don't leave..:"
+    - "Jamal: I don't know if you can do anything\r that would make everything OK
+      again.\r I need to think.\r Bye', Nafir..:"
+    - ':Jamal removes Nafir''s hands and walks out of the bar.:'
+    - 'Nafir: Jamal! Wait!:'
+    - ':Nafir rush up from his chair and runs after Jamal. Nafir catch up to Jamal
+      at a street crossing.:'
+    - "Nafir: Please, just wait! I meant to tell\r you, but I never got to...:"
+    - ':A LOUD ENGINES ROARS, TIRES SCREECHING, SCREAM AND A LOUD CRASH..:'
 --- !u!114 &546301229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1754,6 +2045,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1681648998}
+  - {fileID: 1104762051}
+  - {fileID: 2110645986}
   m_Father: {fileID: 1502107064}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1776,6 +2069,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   futurePicture:
   - {fileID: 1100879804}
+  - {fileID: 1988486371}
+  - {fileID: 95821183}
 --- !u!114 &555848778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1811,6 +2106,185 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555848775}
+  m_CullTransparentMesh: 0
+--- !u!1 &583323210
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 583323211}
+  - component: {fileID: 583323215}
+  - component: {fileID: 583323214}
+  - component: {fileID: 583323213}
+  - component: {fileID: 583323212}
+  m_Layer: 5
+  m_Name: Button (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &583323211
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583323210}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1890749252}
+  m_Father: {fileID: 95821184}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 361, y: -75}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &583323212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583323210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - "Nafir: arrives at the leasing company in a automated taxi. He\r\nsteps out
+      on the curb and looks up, he stands outside of the\r building for a moment:"
+    - "Nafir: I need to find out who was in that\r car, I think Safar could be behind\r
+      this somehow.:"
+    - "Nafir: walks into the building towards the front desk where\r he is met by
+      an receptionist where he is greeted:"
+    - "RECEPTIONIST:Hello and welcome to X how can I help\r you today?:"
+    - "Nafir:Evening mam; I'm detective Al-Faisal\r form the NMDP:"
+    - "Nafir:This is urgent ma'am, I'm looking for\r information on the hit and run\r
+      incident from one week ago.:"
+    - "Receptionist:\rI'm sorry sir but I can't disclose this information to you without
+      a\r warrant, sir. Do to our privacy our clients are protected.:"
+    - "Nafir:I want to talk to whomever is in\r charge here.:"
+    - "Receptionist:\rOf course. Sir...:"
+    - ":As the receptionist stands up and starts walking towards the\r door on her
+      left. Nafir takes his chance an runs around to\r the keyboard and start looking
+      for the file.:"
+    - ":In seconds Nafir has found a file with the right car and who\r the owner was.
+      He also noticed that the car was registered\r to the company on 54th st.:"
+    - "Nafir: leaves before the receptionist returns with her boss.\r When he gets
+      outside hes think for himself what he should do\r with this information.:"
+    - ":Option one, I better check up on this Security Corp.\n\nOption two, I believe
+      I have a friend that can do more with\r\nthis information.\n\nOption three,
+      I should go and look for more evidence at the\r\ncrime scene:"
+--- !u!114 &583323213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583323210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 583323214}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 95821185}
+        m_MethodName: ForwardChange1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 583323212}
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &583323214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583323210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &583323215
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583323210}
   m_CullTransparentMesh: 0
 --- !u!1 &632902699
 GameObject:
@@ -1917,17 +2391,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: _Blue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &632902702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1978,7 +2441,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - 'Name:Text:'
+    - ':Nafirs police car drives up to the sidewalk of some working girls. There is
+      a lot of commotion on the street, kerb-crawlers driving up and ddown the street.:'
+    - "Nafir: Bilal is an old informant of mine, he\r used to do cleanup jobs for
+      some of\r the most prominent gangs of NM.\r Nowadays he runs the prostitution\r
+      businesses of the Safar family.\r Although I suspect he hasn't left his\r old
+      ways, or he might know something about another cleanup crew.:"
+    - 'Nafir: gets out of the car. He is immediately approached by
+
+      one of the girls.:'
+    - "Prostitue:Good evening, officer. What's your\r business here? We got all the\r
+      permits, so unless your looking for\r service I'll suggest you leave us\r hardworking
+      people be..:"
+    - "NAFIR: Detective, actually. I ain't\r\ninterested in your service or your\r\nbusiness,
+      I'm looking for your boss.:"
+    - "Prostitue:\r Bilal? You're in luck, he's just down\r the alley up ahead talking
+      some sense\r into some fucking scumbag trying to\r get a freebie.:"
+    - ':A dakr alley. Nafir approaches a group of three men standing behind a container,
+      encirlcing a man on the ground.:'
+    - "Bilal:What did you think, huh?! Do you\r think we run some sort of charity?!:"
+    - "John:No! I.. I sa.. I said that I was\r\ngonna pay..! Just had to get my\r
+      creds, didn't have em on me is all!\r Please don't hit me again, I'm gonna\r
+      pay..!:"
+    - "Bilal: Damn right, you are..\r\n\r\nBilal removes the knuckle duster, wipes
+      it and his hand from\r blood splatter with a silk handkerchief. He hands the
+      brass and handkerchief to one of his goons.:"
+    - "Bilal:Take this sad fuck down the docks,\r tell him the terms of repayment.
+      He\r can consider it a loan, with the\r usual interest of course. If he\r declines
+      this offer, handle it the\r way you see fit.:"
+    - ':Nafir walks up to Bilal, but is stopped by one of the goons.:'
+    - "Bilal:It's ok, Rashad. I'm sure the\r\ndetective is just here to see that\r\nour
+      permits checks out. Am I right?:"
+    - "Nafir:\rUm, yeah. And I'm pretty sure you\r can't beat up your customers,\r
+      according to your permit.:"
+    - "Bilal:Of course not, you're right. We were\r just having a little chat, clearing\r
+      up a little misunderstanding if ya\r know what I mean?:"
+    - "Nafir:Sure,I understand. But it is a\r\noffense non the less, I could take\r\nyou
+      to the station and we can have a\r little conversation 'bout that permit\r of
+      yours?:"
+    - "Bilal:C'mon detective, there's really no\r need...:"
+    - "Nafir:I could consider to look the other\r way and don't report this in. If\r
+      you'd agree to answer some of my\r questions?:"
+    - "Bilal:Sure, how can I resist an offer like\r that?:"
+    - "Nafir:Great, I knew you where reasonable. Oh, and another thing. Take that
+      guy to the hospital, I'll get some officers to pick him up. If he has\r committed
+      a breach of agreement, he\r should be charged accordingly.: "
+    - "Bilal:That's what was intended in\r\nthe first place, detective!:"
+    - ":The goons pick up the man and leaves the alley. Bilal lights\r\na cigarette.:"
+    - "Bilal:So, what did you wanna know, old\r friend?"
+    - "Nafir:I guess you've heard, I got iced last week? I've got a slight suspicion\r
+      that some of your acquaintances might be behind it all.:"
+    - "Bilal:Yeah I heard, sorry 'bout your\r\nhusband. Jamal right? Damn shame..\r
+      However, I'm quite sure it was an\r accident.."
+    - "Bilal:What makes you think it wasn't an\r accident?:"
+    - "Nafir\r:The crime scene was cleaned up before\r the police showed up, even
+      the car\r was missing. Not a trace of the\r driver.:"
+    - "Bilal:Sounds like the work of a\r\nprofessional, any leads?"
+    - "Nafir:I have a strong suspicion that you have a part in\r this. I want a straight
+      answer. Or I might have to bring you in.:"
+    - "Bilal:I wont tell you everything, but sure.\r I was at the scene. But I don't
+      know\r much. The less you know the better,\r at least in this line of work..
+      You should go visit the Leasing company.:\r\nThat's all I can give you, I'm
+      not\r\nyour informant anymore and can't be\r\nseen around you."
 --- !u!1 &633063121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,6 +2908,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
+    - :Nafir exits the car and looks up the building., guess this is where I will
+      find you.
+    - ":Nafir walks inside of the front door where he is greeted by\r a guard.:"
+    - 'Guard:How can I help you?:'
+    - "Nafir:I'm detective Al-Fasil form the NMDP,\r I need to talk to who ever is
+      in\r charge of this place.:"
+    - ":The guard scans Nafir with his eyes\r, Please follow me, I will take you to\r
+      my superior.:"
+    - ":The guard points at the elevator, Go to floor 78 and then the door in\r\nfront.:"
+    - 'Boss:How can I help you?:'
+    - "Nafir:I'm detective Al-Fasil form the NMDP, I have reason to believe that this
+      company has connect to the hit and\r run incident that took place outside the
+      bar a couple streets down."
+    - "Boss:For you sir I could do that, as a\r privet security company we want to
+      be on good terms with the police.:"
+    - :As the boss is looking through the computer he gets to a sudden stop and you
+      can tell that his mood shift.
+    - "Boss: My apologies, but I can't disclose\r this information to you without
+      a\r warrant....\r\n\n....I need to ask you to leave im am\r a very busy man.:"
+    - 'Nafir:Sir, why the sudden change of heart.:'
+    - 'Boss:Im sorry I cant help you.:'
+    - "Nafir: stands up and walks towards the elevator. As he's walking out he looks
+      back at the boss and notice that he\r looks very nervous.:"
+    - "Nafir: walks into the elevator, when hes standing inside the\r elevator he
+      notices a floor plan on the wall, and on the\r 33rd floor a sign that says \"Server
+      floor\", perhaps I can find what I need in\r there?"
+    - ":When Nafir exits the elevator he notices that the servers\r are well protected
+      by cameras and surveillance drones.:"
+    - ":As Nafir gets to the computer successfully\r, Now to find out what scum drove
+      the\r car...:"
+    - 'Nasfir:Malik? The politician, the car was registered to him.:'
+    - ":Nafir then proceeds to clear up his tracks and resting the\r computer to its
+      original state. Then Nafir continues by leaving the same way he got in, avoiding
+      the drones and\r\ncameras.:"
+    - ':Option one, I should go and find out more about who Malik is in the NMPD archives.
+
+
+      Option two, I should go to Malik''s office and investigate.:'
     - 'Name:Text:'
 --- !u!1 &702265968
 GameObject:
@@ -3077,7 +3639,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The company private
+  m_Text: 'Option one
+
+'
 --- !u!222 &765174866
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3478,10 +4042,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Leasing Company
-
-
-'
+  m_Text: Option two
 --- !u!222 &884812670
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3535,6 +4096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 526120751}
   dialogueText: {fileID: 144215979}
+  typingSpeed: -20
   continueButton: {fileID: 2066584804}
   startButton: {fileID: 546301227}
   dialogueBox: {fileID: 2050948297}
@@ -3544,24 +4106,24 @@ MonoBehaviour:
   - {fileID: 261530004}
   - {fileID: 632902699}
   - {fileID: 1510633820}
+  - {fileID: 583323210}
   - {fileID: 1681648997}
+  - {fileID: 1104762050}
+  - {fileID: 2110645985}
   - {fileID: 671174794}
+  - {fileID: 60578159}
   - {fileID: 1309880917}
   - {fileID: 633063121}
   - {fileID: 1647539934}
   - {fileID: 1200815974}
   - {fileID: 1763921891}
   - {fileID: 2136481140}
-  - {fileID: 1387580756}
   - {fileID: 178355791}
   - {fileID: 944013329}
-  - {fileID: 1903315165}
   - {fileID: 305484437}
   - {fileID: 779429706}
   - {fileID: 1016548675}
-  - {fileID: 752434042}
   - {fileID: 752417022}
-  - {fileID: 702265968}
   - {fileID: 751940175}
 --- !u!1 &934984497
 GameObject:
@@ -4290,7 +4852,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - 'Name:Text:'
+    - ':Nafir storm into the station, looking for Hakeem so he can get right on this
+      case. a stranger is yelling in the background at an officer in a desk. :'
+    - 'Stranger:I need help! I swear that was my best friends skin in the CUBE! But
+      he acted like he didn''t even know me!:'
+    - 'Police officer: It''s being handled sir! please leave the premises at once
+      or I will have to arrest you.:'
+    - ':Nafir hears the conversation on his way to the chiefs office and takes note
+      of what he heard:'
+    - 'Police Chief Hakeem''s Office: Nafir slams Hakeems desk with his palm ....YOU
+      KNOW DAMN WELL THAT I CAN SETTLE THIS FASTER THEN ANY OF THOSE SHITS OUT THERE!:'
+    - 'Hakeem:Damn it Nafir you know I can''t put you on this, you''re way to close
+      to it.... (Hakeem stands up) ....I can''t allow you to investigate this. Drop
+      it or I will have to take action against you. Hakeem sits back down:'
+    - ':Option one, Nafir go to the scene of the crime and tries to figure it out
+      himself
+
+
+      Option two, Nafir goes and asks one of his colleague for the address of the
+      leasing company
+
+
+      Option three, Nafir have a associate that could help him find out more about
+      this.:'
 --- !u!1 &1049320995
 GameObject:
   m_ObjectHideFlags: 0
@@ -4446,7 +5030,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - 'Name:Text:'
+    - ":Nafir arrives outside the bar where the hit and run \toccurred.:"
+    - "Nafir:Some motherfuckers are always trying\r to ice-skate uphill\r\n*Nafir
+      bows down to\r check tire marks*:"
+    - "Nafir: These marks lead toward 57th\r street...:"
+    - ":Nafir walks into the corner store, where a cleric is sitting\r behind the
+      desk:"
+    - "Clerk:Oh, you have got to be kidding, sir.\r Your people have already been
+      in\r here..\r\n....I didn't see anything and I was\r\nnot h..\r\n(NAFIR interrupts):"
+    - 'Nafir:Cameras...:'
+    - 'Clerk:Sorry?:'
+    - 'Nafir:Do the cameras work?:'
+    - "Clerk:Of course they do, would I not be\r able to afford working cam..\r\n"
+    - 'Nafir:Show me surveillance from one week prior, when the crash happen.:'
+    - ":Clerk muffles something under his breath in another language\r and walks in
+      the back.:"
+    - 'Nafir:I haven''t gotten all day..:'
+    - ":The clerk comes back with a laptop where hes loaded up the\r video ready to
+      play. He puts it down on the counter towards\r Nafir.:"
+    - "Clerk\r:I don't have all day so hurry.:"
+    - ":As the clerk yet again muffles something in his language and\r sits down on
+      his chair, NAFIR grabs the laptop and looks through the video.:"
+    - "Nafir\r\r:Thanks.\r\nHe leaves the laptop on the counter and walks out, as
+      he\r discusses for him self what he saw."
+    - ":Option one, I also noticed that the car was\r driving from a company building
+      on 54 st. Should I go there?\n\nOption two, I know that logo, it's the leasing\r
+      company over at twenty second st.\r Should I go there?\n:"
 --- !u!1 &1100879804
 GameObject:
   m_ObjectHideFlags: 0
@@ -4537,6 +5146,223 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100879804}
+  m_CullTransparentMesh: 0
+--- !u!1 &1104762050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1104762051}
+  - component: {fileID: 1104762055}
+  - component: {fileID: 1104762054}
+  - component: {fileID: 1104762053}
+  - component: {fileID: 1104762052}
+  m_Layer: 5
+  m_Name: Button (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1104762051
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104762050}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1392599924}
+  m_Father: {fileID: 555848776}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 360, y: -152}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1104762052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104762050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - ':Nafirs police car drives up to the sidewalk of some working girls. There is
+      a lot of commotion on the street, kerb-crawlers driving up and ddown the street.:'
+    - "Nafir: Bilal is an old informant of mine, he\r used to do cleanup jobs for
+      some of\r the most prominent gangs of NM.\r Nowadays he runs the prostitution\r
+      businesses of the Safar family.\r Although I suspect he hasn't left his\r old
+      ways, or he might know something about another cleanup crew.:"
+    - 'Nafir: gets out of the car. He is immediately approached by
+
+      one of the girls.:'
+    - "Prostitue:Good evening, officer. What's your\r business here? We got all the\r
+      permits, so unless your looking for\r service I'll suggest you leave us\r hardworking
+      people be..:"
+    - "NAFIR: Detective, actually. I ain't\r\ninterested in your service or your\r\nbusiness,
+      I'm looking for your boss.:"
+    - "Prostitue:\r Bilal? You're in luck, he's just down\r the alley up ahead talking
+      some sense\r into some fucking scumbag trying to\r get a freebie.:"
+    - ':A dakr alley. Nafir approaches a group of three men standing behind a container,
+      encirlcing a man on the ground.:'
+    - "Bilal:What did you think, huh?! Do you\r think we run some sort of charity?!:"
+    - "John:No! I.. I sa.. I said that I was\r\ngonna pay..! Just had to get my\r
+      creds, didn't have em on me is all!\r Please don't hit me again, I'm gonna\r
+      pay..!:"
+    - "Bilal: Damn right, you are..\r\n\r\nBilal removes the knuckle duster, wipes
+      it and his hand from\r blood splatter with a silk handkerchief. He hands the
+      brass and handkerchief to one of his goons.:"
+    - "Bilal:Take this sad fuck down the docks,\r tell him the terms of repayment.
+      He\r can consider it a loan, with the\r usual interest of course. If he\r declines
+      this offer, handle it the\r way you see fit.:"
+    - ':Nafir walks up to Bilal, but is stopped by one of the goons.:'
+    - "Bilal:It's ok, Rashad. I'm sure the\r\ndetective is just here to see that\r\nour
+      permits checks out. Am I right?:"
+    - "Nafir:\rUm, yeah. And I'm pretty sure you\r can't beat up your customers,\r
+      according to your permit.:"
+    - "Bilal:Of course not, you're right. We were\r just having a little chat, clearing\r
+      up a little misunderstanding if ya\r know what I mean?:"
+    - "Nafir:Sure,I understand. But it is a\r\noffense non the less, I could take\r\nyou
+      to the station and we can have a\r little conversation 'bout that permit\r of
+      yours?:"
+    - "Bilal:C'mon detective, there's really no\r need...:"
+    - "Nafir:I could consider to look the other\r way and don't report this in. If\r
+      you'd agree to answer some of my\r questions?:"
+    - "Bilal:Sure, how can I resist an offer like\r that?:"
+    - "Nafir:Great, I knew you where reasonable. Oh, and another thing. Take that
+      guy to the hospital, I'll get some officers to pick him up. If he has\r committed
+      a breach of agreement, he\r should be charged accordingly.: "
+    - "Bilal:That's what was intended in\r\nthe first place, detective!:"
+    - ":The goons pick up the man and leaves the alley. Bilal lights\r\na cigarette.:"
+    - "Bilal:So, what did you wanna know, old\r friend?"
+    - "Nafir:I guess you've heard, I got iced last week? I've got a slight suspicion\r
+      that some of your acquaintances might be behind it all.:"
+    - "Bilal:Yeah I heard, sorry 'bout your\r\nhusband. Jamal right? Damn shame..\r
+      However, I'm quite sure it was an\r accident.."
+    - "Bilal:What makes you think it wasn't an\r accident?:"
+    - "Nafir\r:The crime scene was cleaned up before\r the police showed up, even
+      the car\r was missing. Not a trace of the\r driver.:"
+    - "Bilal:Sounds like the work of a\r\nprofessional, any leads?"
+    - "Nafir:I have a strong suspicion that you have a part in\r this. I want a straight
+      answer. Or I might have to bring you in.:"
+    - "Bilal:I wont tell you everything, but sure.\r I was at the scene. But I don't
+      know\r much. The less you know the better,\r at least in this line of work..
+      You should go visit the Leasing company.:\r\nThat's all I can give you, I'm
+      not\r\nyour informant anymore and can't be\r\nseen around you."
+--- !u!114 &1104762053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104762050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1104762054}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 555848777}
+        m_MethodName: ForwardChange1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1104762052}
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1104762054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104762050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1104762055
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104762050}
   m_CullTransparentMesh: 0
 --- !u!1 &1145860753
 GameObject:
@@ -4783,6 +5609,83 @@ MonoBehaviour:
   dialogue:
     sentences:
     - 'Name:Text:'
+--- !u!1 &1267456759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1267456760}
+  - component: {fileID: 1267456762}
+  - component: {fileID: 1267456761}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1267456760
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267456759}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2110645986}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1267456761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267456759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Option three
+--- !u!222 &1267456762
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267456759}
+  m_CullTransparentMesh: 0
 --- !u!1 &1270858333
 GameObject:
   m_ObjectHideFlags: 0
@@ -5188,6 +6091,83 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1321206309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1321206310}
+  - component: {fileID: 1321206312}
+  - component: {fileID: 1321206311}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1321206310
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321206309}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 60578160}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1321206311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321206309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Leasing company
+--- !u!222 &1321206312
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321206309}
+  m_CullTransparentMesh: 0
 --- !u!1 &1324205753
 GameObject:
   m_ObjectHideFlags: 0
@@ -5256,9 +6236,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Crime scen
-
-'
+  m_Text: Option one
 --- !u!222 &1324205756
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5423,6 +6401,83 @@ MonoBehaviour:
   dialogue:
     sentences:
     - 'Name:Text:'
+--- !u!1 &1392599923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1392599924}
+  - component: {fileID: 1392599926}
+  - component: {fileID: 1392599925}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1392599924
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392599923}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1104762051}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1392599925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392599923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Option two
+--- !u!222 &1392599926
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392599923}
+  m_CullTransparentMesh: 0
 --- !u!1 &1395300986
 GameObject:
   m_ObjectHideFlags: 0
@@ -5657,10 +6712,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Bilal
-
-
-'
+  m_Text: Option three
 --- !u!222 &1501988688
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5916,7 +6968,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 361, y: -75}
+  m_AnchoredPosition: {x: 361, y: -117.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1510633822
@@ -6034,6 +7086,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
+    - :Nafir exits the car and looks up the building., guess this is where I will
+      find you.
+    - ":Nafir walks inside of the front door where he is greeted by\r a guard.:"
+    - 'Guard:How can I help you?:'
+    - "Nafir:I'm detective Al-Fasil form the NMDP,\r I need to talk to who ever is
+      in\r charge of this place.:"
+    - ":The guard scans Nafir with his eyes\r, Please follow me, I will take you to\r
+      my superior.:"
+    - ":The guard points at the elevator, Go to floor 78 and then the door in\r\nfront.:"
+    - 'Boss:How can I help you?:'
+    - "Nafir:I'm detective Al-Fasil form the NMDP, I have reason to believe that this
+      company has connect to the hit and\r run incident that took place outside the
+      bar a couple streets down."
+    - "Boss:For you sir I could do that, as a\r privet security company we want to
+      be on good terms with the police.:"
+    - :As the boss is looking through the computer he gets to a sudden stop and you
+      can tell that his mood shift.
+    - "Boss: My apologies, but I can't disclose\r this information to you without
+      a\r warrant....\r\n\n....I need to ask you to leave im am\r a very busy man.:"
+    - 'Nafir:Sir, why the sudden change of heart.:'
+    - 'Boss:Im sorry I cant help you.:'
+    - "Nafir: stands up and walks towards the elevator. As he's walking out he looks
+      back at the boss and notice that he\r looks very nervous.:"
+    - "Nafir: walks into the elevator, when hes standing inside the\r elevator he
+      notices a floor plan on the wall, and on the\r 33rd floor a sign that says \"Server
+      floor\", perhaps I can find what I need in\r there?"
+    - ":When Nafir exits the elevator he notices that the servers\r are well protected
+      by cameras and surveillance drones.:"
+    - ":As Nafir gets to the computer successfully\r, Now to find out what scum drove
+      the\r car...:"
+    - 'Nasfir:Malik? The politician, the car was registered to him.:'
+    - ":Nafir then proceeds to clear up his tracks and resting the\r computer to its
+      original state. Then Nafir continues by leaving the same way he got in, avoiding
+      the drones and\r\ncameras.:"
+    - ':Option one, I should go and find out more about who Malik is in the NMPD archives.
+
+
+      Option two, I should go to Malik''s office and investigate.:'
     - 'Name:Text:'
 --- !u!1 &1588155182
 GameObject:
@@ -6617,7 +7707,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 360, y: -77}
+  m_AnchoredPosition: {x: 360, y: -111.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1681648999
@@ -6735,6 +7825,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
+    - :Nafir exits the car and looks up the building., guess this is where I will
+      find you.
+    - ":Nafir walks inside of the front door where he is greeted by\r a guard.:"
+    - 'Guard:How can I help you?:'
+    - "Nafir:I'm detective Al-Fasil form the NMDP,\r I need to talk to who ever is
+      in\r charge of this place.:"
+    - ":The guard scans Nafir with his eyes\r, Please follow me, I will take you to\r
+      my superior.:"
+    - ":The guard points at the elevator, Go to floor 78 and then the door in\r\nfront.:"
+    - 'Boss:How can I help you?:'
+    - "Nafir:I'm detective Al-Fasil form the NMDP, I have reason to believe that this
+      company has connect to the hit and\r run incident that took place outside the
+      bar a couple streets down."
+    - "Boss:For you sir I could do that, as a\r privet security company we want to
+      be on good terms with the police.:"
+    - :As the boss is looking through the computer he gets to a sudden stop and you
+      can tell that his mood shift.
+    - "Boss: My apologies, but I can't disclose\r this information to you without
+      a\r warrant....\r\n\n....I need to ask you to leave im am\r a very busy man.:"
+    - 'Nafir:Sir, why the sudden change of heart.:'
+    - 'Boss:Im sorry I cant help you.:'
+    - "Nafir: stands up and walks towards the elevator. As he's walking out he looks
+      back at the boss and notice that he\r looks very nervous.:"
+    - "Nafir: walks into the elevator, when hes standing inside the\r elevator he
+      notices a floor plan on the wall, and on the\r 33rd floor a sign that says \"Server
+      floor\", perhaps I can find what I need in\r there?"
+    - ":When Nafir exits the elevator he notices that the servers\r are well protected
+      by cameras and surveillance drones.:"
+    - ":As Nafir gets to the computer successfully\r, Now to find out what scum drove
+      the\r car...:"
+    - 'Nasfir:Malik? The politician, the car was registered to him.:'
+    - ":Nafir then proceeds to clear up his tracks and resting the\r computer to its
+      original state. Then Nafir continues by leaving the same way he got in, avoiding
+      the drones and\r\ncameras.:"
+    - ':Option one, I should go and find out more about who Malik is in the NMPD archives.
+
+
+      Option two, I should go to Malik''s office and investigate.:'
     - 'Name:Text:'
 --- !u!1 &1737445585
 GameObject:
@@ -6883,7 +8011,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The company private
+  m_Text: Option one
 --- !u!222 &1737697097
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7139,6 +8267,83 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1890749251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1890749252}
+  - component: {fileID: 1890749254}
+  - component: {fileID: 1890749253}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1890749252
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890749251}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 583323211}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1890749253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890749251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Option two
+--- !u!222 &1890749254
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890749251}
+  m_CullTransparentMesh: 0
 --- !u!1 &1903315165
 GameObject:
   m_ObjectHideFlags: 0
@@ -7585,6 +8790,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 671174795}
+  - {fileID: 60578160}
   m_Father: {fileID: 1502107064}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7607,6 +8813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   futurePicture:
   - {fileID: 1100879804}
+  - {fileID: 555848775}
 --- !u!114 &1988486374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7788,7 +8995,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Malik's office
+  m_Text: Option two
 --- !u!222 &2043850326
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7941,9 +9148,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Police Archives
-
-'
+  m_Text: Option one
 --- !u!222 &2064582577
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8081,6 +9286,187 @@ RectTransform:
   m_AnchoredPosition: {x: 300, y: -108}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2110645985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2110645986}
+  - component: {fileID: 2110645990}
+  - component: {fileID: 2110645989}
+  - component: {fileID: 2110645988}
+  - component: {fileID: 2110645987}
+  m_Layer: 5
+  m_Name: Button (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2110645986
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110645985}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1267456760}
+  m_Father: {fileID: 555848776}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 360, y: -77}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2110645987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110645985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - ":Nafir arrives outside the bar where the hit and run \toccurred.:"
+    - "Nafir:Some motherfuckers are always trying\r to ice-skate uphill\r\n*Nafir
+      bows down to\r check tire marks*:"
+    - "Nafir: These marks lead toward 57th\r street...:"
+    - ":Nafir walks into the corner store, where a cleric is sitting\r behind the
+      desk:"
+    - "Clerk:Oh, you have got to be kidding, sir.\r Your people have already been
+      in\r here..\r\n....I didn't see anything and I was\r\nnot h..\r\n(NAFIR interrupts):"
+    - 'Nafir:Cameras...:'
+    - 'Clerk:Sorry?:'
+    - 'Nafir:Do the cameras work?:'
+    - "Clerk:Of course they do, would I not be\r able to afford working cam..\r\n"
+    - 'Nafir:Show me surveillance from one week prior, when the crash happen.:'
+    - ":Clerk muffles something under his breath in another language\r and walks in
+      the back.:"
+    - 'Nafir:I haven''t gotten all day..:'
+    - ":The clerk comes back with a laptop where hes loaded up the\r video ready to
+      play. He puts it down on the counter towards\r Nafir.:"
+    - "Clerk\r:I don't have all day so hurry.:"
+    - ":As the clerk yet again muffles something in his language and\r sits down on
+      his chair, NAFIR grabs the laptop and looks through the video.:"
+    - "Nafir\r\r:Thanks.\r\nHe leaves the laptop on the counter and walks out, as
+      he\r discusses for him self what he saw."
+    - ":Option one, I also noticed that the car was\r driving from a company building
+      on 54 st. Should I go there?\n\nOption two, I know that logo, it's the leasing\r
+      company over at twenty second st.\r Should I go there?\n:"
+--- !u!114 &2110645988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110645985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2110645989}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 555848777}
+        m_MethodName: ForwardChange2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2110645987}
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2110645989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110645985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2110645990
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110645985}
+  m_CullTransparentMesh: 0
 --- !u!1 &2136481140
 GameObject:
   m_ObjectHideFlags: 0
