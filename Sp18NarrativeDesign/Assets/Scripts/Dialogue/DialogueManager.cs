@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityStandardAssets.Characters.ThirdPerson;
+//using UnityStandardAssets.Characters.ThirdPerson;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -10,41 +10,53 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     private float typingSpeed;
     public GameObject continueButton;
-    public GameObject endButton;
+    public GameObject startButton;
     public Queue<Dialogue.Character> sentences;
+    
     Dialogue.Character currentCharacter;
-    public Image characterPortrait;
-    public Animator animator;
-
-    [SerializeField]
+    //public Image characterPortrait;
+    public GameObject dialogueBox;
+    //public Animator animator;
+    public GameObject[] scenes;
+    /*[SerializeField]
     private GameObject playerCamera;
     [SerializeField]
-    private GameObject playerControls;
-
-    public Button choice01;
+    private GameObject playerControls;*/
+    
+    /*public Button choice01;
     public Button choice02;
-    public Button choice03;
+    public Button choice03;*/
 
-    public int choiceMade;
+    //public int choiceMade;
 
-    private string enterDialogueChoices;
+    //private string enterDialogueChoices;
     
     void Start()
     {
-        endButton.SetActive(false);
+        foreach (GameObject childButton in scenes)
+        {
+            childButton.SetActive(false);
+        }
+        startButton.SetActive(true);
         continueButton.SetActive(false);
         typingSpeed = 0.03f;
         sentences = new Queue<Dialogue.Character>();
-
-        DeactivateChoice();
+        dialogueBox.SetActive(false);
+        //DeactivateChoice();
     }
 
     public void StartDialogue (Dialogue dialogue)
     {
-        playerCamera.GetComponent<PlayerCamera>().enabled = false;
-        playerControls.GetComponent<ThirdPersonUserControl>().enabled = false;
-        Cursor.lockState = CursorLockMode.None;
-        animator.SetBool("IsOpen", true);
+        foreach (GameObject childButton in scenes)
+        {
+            childButton.SetActive(false);
+        }
+        startButton.SetActive(false);
+        dialogueBox.SetActive(true);
+        //playerCamera.GetComponent<PlayerCamera>().enabled = false;
+        //playerControls.GetComponent<ThirdPersonUserControl>().enabled = false;
+        //Cursor.lockState = CursorLockMode.None;
+        //animator.SetBool("IsOpen", true);
         Dialogue.Character character = new Dialogue.Character();
         sentences.Clear();
 
@@ -56,20 +68,19 @@ public class DialogueManager : MonoBehaviour
             {
                 character.text = splitSentence[1];
                 character.name = splitSentence[0];
-                for (int i = 0; i < DialoguePortraits.characters.Count; i++)
+                /*for (int i = 0; i < DialoguePortraits.characters.Count; i++)
                 {
                     if (splitSentence[0] == DialoguePortraits.characters[i].name)
                     {
                         characterPortrait.sprite = DialoguePortraits.characters[i].image;
                     }
-                }
+                }*/
             }
-            if (splitSentence[2] != null && splitSentence[2] == ">")
+            /*if (splitSentence[2] != null && splitSentence[2] == ">")
             {
                 enterDialogueChoices = splitSentence[2];
-            }
-            Debug.Log(enterDialogueChoices);
-            sentences.Enqueue(new Dialogue.Character(splitSentence[0], splitSentence[1], characterPortrait.sprite));
+            }*/
+            sentences.Enqueue(new Dialogue.Character(splitSentence[0], splitSentence[1]/*, characterPortrait.sprite*/));
         }
 
         currentCharacter = character;
@@ -93,18 +104,18 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        DeactivateChoice();
+        //DeactivateChoice();
         continueButton.SetActive(false);
-        if (sentences.Count == 0 && enterDialogueChoices == "")
+        if (sentences.Count == 0/* && enterDialogueChoices == ""*/)
         {
             EndDialogue();
             return;
         }
-        else if (sentences.Count == 0 && enterDialogueChoices == ">")
+        /*else if (sentences.Count == 0 && enterDialogueChoices == ">")
         {
-            ActivateChoice();
+            //ActivateChoice();
             enterDialogueChoices = "";
-        }
+        }*/
         if(sentences.Count != 0)
         {
             currentCharacter = sentences.Dequeue();
@@ -119,18 +130,22 @@ public class DialogueManager : MonoBehaviour
     
     void EndDialogue()
     {
-        endButton.SetActive(true);
+        foreach (GameObject childButton in scenes)
+        {
+            childButton.SetActive(true);
+        }
+        //endButton.SetActive(true);
     }
 
     public void QuitDialogue()
     {
-        animator.SetBool("IsOpen", false);
-        playerCamera.GetComponent<PlayerCamera>().enabled = true;
-        playerControls.GetComponent<ThirdPersonUserControl>().enabled = true;
-        Cursor.lockState = CursorLockMode.Locked;
-        endButton.SetActive(false);
+        //animator.SetBool("IsOpen", false);
+        //playerCamera.GetComponent<PlayerCamera>().enabled = true;
+        //playerControls.GetComponent<ThirdPersonUserControl>().enabled = true;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //endButton.SetActive(false);
     }
-    void DeactivateChoice()
+    /*void DeactivateChoice()
     {
         choice01.gameObject.SetActive(false);
         choice02.gameObject.SetActive(false);
@@ -166,5 +181,5 @@ public class DialogueManager : MonoBehaviour
             choice02.gameObject.SetActive(false);
             choice03.gameObject.SetActive(false);
         }
-    }
+    }*/
 }
