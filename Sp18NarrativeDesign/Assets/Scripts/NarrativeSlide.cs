@@ -7,11 +7,11 @@ using UnityEngine.UI;
 public class NarrativeSlide : MonoBehaviour
 {
 
-
+    public bool visited = false;
     public Image conceptImage;
-
-    public bool lockedScene;
+    public NarrativeSlide visitRequired;
     
+    [TextArea(0,20)]
     public List<string> dialogueTexts;
     public List<NarrativeButton> buttons;
 
@@ -19,12 +19,11 @@ public class NarrativeSlide : MonoBehaviour
     {
         foreach (NarrativeButton button in buttons)
         {
-            if(button.activate)
+            if(button.activate && visitRequired == null || button.activate && visitRequired.visited)
             {
                 button.gameObject.SetActive(true);
             }
         }
+        visited = true;
     }
-
-
 }

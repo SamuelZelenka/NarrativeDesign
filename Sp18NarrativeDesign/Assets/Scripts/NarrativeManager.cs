@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class NarrativeManager : MonoBehaviour
 {
 
-    List<NarrativeSlide> slides;
+    NarrativeSlide[] slides;
 
     static Image conceptImage;
     static Text dialougeTextShow;
@@ -17,7 +17,7 @@ public class NarrativeManager : MonoBehaviour
     {
         conceptImage = GetComponent<Image>();
         dialougeTextShow = GetComponent<Text>();
-        slides = new List<NarrativeSlide>();
+        slides = GameObject.FindObjectsOfType<NarrativeSlide>();
     }
 
     public static void ButtonPressed(NarrativeButton buttonPressed)
@@ -32,5 +32,4 @@ public class NarrativeManager : MonoBehaviour
         dialougeTextShow.text = nextSlide.dialogueTexts[textID];
         nextSlide.Initiate(textID);
     }
-
 }
