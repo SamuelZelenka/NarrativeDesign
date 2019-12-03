@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4948152573308391095
 Transform:
@@ -63,9 +63,85 @@ Transform:
   - {fileID: 6249112894119183898}
   - {fileID: 6249112893232390195}
   - {fileID: 6249112893644318434}
+  - {fileID: 1224439449107427638}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &210903668314079166
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4948152573308391095}
+    m_Modifications:
+    - target: {fileID: 2614351872483196059, guid: 5e8c2131edb7b314a85d270ba85cc222,
+        type: 3}
+      propertyPath: m_Name
+      value: MediumPainting1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302475933129248392, guid: 5e8c2131edb7b314a85d270ba85cc222,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.629
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302475933129248392, guid: 5e8c2131edb7b314a85d270ba85cc222,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.332
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302475933129248392, guid: 5e8c2131edb7b314a85d270ba85cc222,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.068495
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302475933129248392, guid: 5e8c2131edb7b314a85d270ba85cc222,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302475933129248392, guid: 5e8c2131edb7b314a85d270ba85cc222,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302475933129248392, guid: 5e8c2131edb7b314a85d270ba85cc222,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302475933129248392, guid: 5e8c2131edb7b314a85d270ba85cc222,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302475933129248392, guid: 5e8c2131edb7b314a85d270ba85cc222,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302475933129248392, guid: 5e8c2131edb7b314a85d270ba85cc222,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302475933129248392, guid: 5e8c2131edb7b314a85d270ba85cc222,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302475933129248392, guid: 5e8c2131edb7b314a85d270ba85cc222,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e8c2131edb7b314a85d270ba85cc222, type: 3}
+--- !u!4 &1224439449107427638 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1302475933129248392, guid: 5e8c2131edb7b314a85d270ba85cc222,
+    type: 3}
+  m_PrefabInstance: {fileID: 210903668314079166}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &644534820277961585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77,6 +153,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BarTable.v1.0 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7499566264966625144, guid: 1cd7b6f930c76b1469586a092f9cf760,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6793845035352737131, guid: 1cd7b6f930c76b1469586a092f9cf760,
         type: 3}
@@ -153,6 +234,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarTable.v1.0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7499566264966625144, guid: 1cd7b6f930c76b1469586a092f9cf760,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6793845035352737131, guid: 1cd7b6f930c76b1469586a092f9cf760,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -227,6 +313,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BarTable.v1.0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7499566264966625144, guid: 1cd7b6f930c76b1469586a092f9cf760,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6793845035352737131, guid: 1cd7b6f930c76b1469586a092f9cf760,
         type: 3}
@@ -303,6 +394,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarTable.v1.0 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7499566264966625144, guid: 1cd7b6f930c76b1469586a092f9cf760,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6793845035352737131, guid: 1cd7b6f930c76b1469586a092f9cf760,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -377,6 +473,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BarTable.v1.0 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7499566264966625144, guid: 1cd7b6f930c76b1469586a092f9cf760,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6793845035352737131, guid: 1cd7b6f930c76b1469586a092f9cf760,
         type: 3}
@@ -453,6 +554,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarTable.v1.0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7499566264966625144, guid: 1cd7b6f930c76b1469586a092f9cf760,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6793845035352737131, guid: 1cd7b6f930c76b1469586a092f9cf760,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -527,6 +633,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barstool (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -603,6 +714,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -678,10 +794,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.662
+      value: 1.359
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -691,7 +812,7 @@ PrefabInstance:
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.699
+      value: -4.13
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -752,6 +873,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barstool (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -828,6 +954,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -902,6 +1033,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barstool (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -978,10 +1114,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.1109996
+      value: 4.8079996
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -991,7 +1137,7 @@ PrefabInstance:
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.699
+      value: -4.13
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -1053,10 +1199,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.917
+      value: -3.22
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -1066,7 +1217,7 @@ PrefabInstance:
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.699
+      value: -4.13
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -1128,10 +1279,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.562
+      value: -0.865
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -1141,7 +1297,7 @@ PrefabInstance:
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.699
+      value: -4.13
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -1203,10 +1359,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.473
+      value: 0.22400004
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -1216,7 +1377,7 @@ PrefabInstance:
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.699
+      value: -4.13
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -1277,6 +1438,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barstool (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -1353,10 +1519,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.827
+      value: 2.5240002
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -1366,7 +1537,7 @@ PrefabInstance:
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.699
+      value: -4.13
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -1427,6 +1598,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barstool (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -1503,6 +1679,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1577,6 +1758,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barstool (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -1653,10 +1839,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.988
+      value: 3.685
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -1666,7 +1857,7 @@ PrefabInstance:
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.699
+      value: -4.13
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -1727,6 +1918,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barstool (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -1803,6 +1999,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1877,6 +2078,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barstool (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -1953,6 +2159,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2027,6 +2238,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barstool (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -2103,6 +2319,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2177,6 +2398,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barstool (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -2253,6 +2479,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2327,6 +2558,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barstool (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -2403,6 +2639,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2477,6 +2718,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barstool (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -2553,6 +2799,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2627,6 +2878,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barstool (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -2703,10 +2959,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barstool (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1277623686824725172, guid: 63f8310443c9da442999ecc56a9dd50f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.762
+      value: -2.065
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
@@ -2716,7 +2977,7 @@ PrefabInstance:
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.699
+      value: -4.13
       objectReference: {fileID: 0}
     - target: {fileID: 2873400061147412647, guid: 63f8310443c9da442999ecc56a9dd50f,
         type: 3}
