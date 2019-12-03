@@ -14,6 +14,7 @@ public class AIStun : Interactible
     [SerializeField] Animator animator;
     [SerializeField] string stunnedParameter = "Stunned";
     [SerializeField] LineRenderer lineRenderer = new LineRenderer();
+  //  [SerializeField] GameObject lightsOut;
 
     AIDetection _AIDetection
     {
@@ -73,6 +74,7 @@ public class AIStun : Interactible
         if (animator != null)
         {
             Debug.Log("Truthed");
+          //  lightsOut.GetComponent<AudioSource>().Play();
             animator.SetBool("Stunned", true);
         }
         audioSource.Play();
