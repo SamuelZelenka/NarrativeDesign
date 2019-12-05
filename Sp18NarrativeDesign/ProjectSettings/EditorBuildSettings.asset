@@ -9,12 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: cd4663f1d4d5c7046a20546499e84342
   - enabled: 1
-    path: Assets/SlideShow/SlideShow/SlideShow.unity
+    path: Assets/Scenes/SlideShow.unity
     guid: 37bf7051613138948bb6e84c0a4e0e88
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 86476ba5884c28d4a80dbafa7940abb7
   - enabled: 1
-    path: Assets/SlideShowAfterVsliece.unity
+    path: Assets/Scenes/SlideShowAfterVsliece.unity
     guid: b46343181177d2941a559e22baa547f0
   m_configObjects: {}

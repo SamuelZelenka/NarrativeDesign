@@ -74,7 +74,7 @@ public class AIStun : Interactible
         if (animator != null)
         {
             Debug.Log("Truthed");
-            //lightsOut.GetComponent<AudioSource>().Play();
+          //  lightsOut.GetComponent<AudioSource>().Play();
             animator.SetBool("Stunned", true);
         }
         audioSource.Play();
