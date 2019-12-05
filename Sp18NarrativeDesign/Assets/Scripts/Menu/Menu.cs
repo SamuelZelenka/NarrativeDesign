@@ -17,56 +17,77 @@ public class Menu : MonoBehaviour
     //
     //These open and close optios and credits windows
     //
-    public void OptionsButtonPressed(){
-        if (!optionsMenu.activeSelf){
+    public void OptionsButtonPressed()
+    {
+        tutorialWindow.SetActive(false);
+        creditsWindow.SetActive(false);
+        if (!optionsMenu.activeSelf)
+        {
             optionsMenu.SetActive(true);
         }
-        else{
+        else
+        {
             optionsMenu.SetActive(false);
         }
     }
-    public void OptionsCloseButtonPressed(){
+    public void OptionsCloseButtonPressed()
+    {
         optionsMenu.SetActive(false);
     }
-    public void TutorialButtonPressed(){
-        if (!tutorialWindow.activeSelf){
+    public void TutorialButtonPressed()
+    {
+        optionsMenu.SetActive(false);
+        creditsWindow.SetActive(false);
+        if (!tutorialWindow.activeSelf)
+        {
             tutorialWindow.SetActive(true);
         }
-        else{
+        else
+        {
             tutorialWindow.SetActive(false);
         }
     }
-    public void TutorialCloseButtonPressed(){
+    public void TutorialCloseButtonPressed()
+    {
         tutorialWindow.SetActive(false);
     }
-    public void CreditsButtonPressed(){
-        if (!creditsWindow.activeSelf){
+    public void CreditsButtonPressed()
+    {
+        tutorialWindow.SetActive(false);
+        optionsMenu.SetActive(false);
+        if (!creditsWindow.activeSelf)
+        {
             creditsWindow.SetActive(true);
         }
-        else{
+        else
+        {
             creditsWindow.SetActive(false);
         }
     }
-    public void CreditsCloseButtonPressed(){
+    public void CreditsCloseButtonPressed()
+    {
         creditsWindow.SetActive(false);
     }
     public void PlayButtonPressed()
-	{
+    {
         Time.timeScale = 1;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-		SceneManager.LoadScene("MainScene");
-	}
-    public void ExitGame(){
+        SceneManager.LoadScene("MainScene");
+    }
+    public void ExitGame()
+    {
         Application.Quit();
     }
 
-    public void PauseMenu(){
+    public void PauseMenu()
+    {
         Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "MainScene")
         {
-            if (!pauseMenu.activeSelf){
+            if (!pauseMenu.activeSelf)
+            {
                 Time.timeScale = 0;
                 playerCamera.GetComponent<PlayerCamera>().enabled = false;
                 playerControls.GetComponent<ThirdPersonUserControl>().enabled = false;
@@ -77,7 +98,8 @@ public class Menu : MonoBehaviour
                 missionsText.SetBool("Paused", true);
 
             }
-            else{
+            else
+            {
                 Time.timeScale = 1;
                 pauseButtons.SetBool("Paused", false);
                 missionsText.SetBool("Paused", false);
@@ -102,7 +124,8 @@ public class Menu : MonoBehaviour
 
     [SerializeField]
     GameObject gameOverScreen;
-    void Update() {
+    void Update()
+    {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (gameOverScreen.activeSelf == false)
@@ -129,20 +152,25 @@ public class Menu : MonoBehaviour
     private Dropdown dropdownMenu;
     void Start()
     {
-
+        if (gameOverScreen != null)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
         resolutions = Screen.resolutions;
-        for (int i = 0; i < resolutions.Length; i++){
-             dropdownMenu.options.Add (new Dropdown.OptionData (ResToString (resolutions [i])));
+        for (int i = 0; i < resolutions.Length; i++)
+        {
+            dropdownMenu.options.Add(new Dropdown.OptionData(ResToString(resolutions[i])));
 
-             dropdownMenu.value = i;
+            dropdownMenu.value = i;
 
-             dropdownMenu.onValueChanged.AddListener(delegate { Screen.SetResolution(resolutions[dropdownMenu.value].width, resolutions[dropdownMenu.value].height, true);});
+            dropdownMenu.onValueChanged.AddListener(delegate { Screen.SetResolution(resolutions[dropdownMenu.value].width, resolutions[dropdownMenu.value].height, true); });
 
-         }
-     }
+        }
+    }
 
-      string ResToString(Resolution res)
-     {
-         return res.width + " x " + res.height;
-     }
+    string ResToString(Resolution res)
+    {
+        return res.width + " x " + res.height;
+    }
 }
