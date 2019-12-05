@@ -8,7 +8,7 @@ public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
-    private float typingSpeed;
+    public float typingSpeed;
     public GameObject continueButton;
     public GameObject startButton;
     public Queue<Dialogue.Character> sentences;
@@ -39,7 +39,6 @@ public class DialogueManager : MonoBehaviour
         }
         startButton.SetActive(true);
         continueButton.SetActive(false);
-        typingSpeed = 0.03f;
         sentences = new Queue<Dialogue.Character>();
         dialogueBox.SetActive(false);
         //DeactivateChoice();

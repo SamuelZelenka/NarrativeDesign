@@ -9,6 +9,8 @@ public class TalkingDialougue : Interactible
     [SerializeField] Text subtitleText;
     [SerializeField] List<DialogueClip> audioClips;
     [SerializeField] GameObject choiceCanvas;
+    [SerializeField] AudioSource musicSource;
+    [SerializeField] AudioClip sadMusicSad;
     public AudioSource _AudioSource
     {
         get => GetComponent<AudioSource>();
@@ -32,6 +34,8 @@ public class TalkingDialougue : Interactible
     //}
     public void StartDialougue()
     {
+        musicSource.clip = sadMusicSad;
+        musicSource.Play();
         StartCoroutine(PlayClips());
     }
 
