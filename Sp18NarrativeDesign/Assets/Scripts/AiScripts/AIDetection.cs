@@ -12,15 +12,15 @@ public class AIDetection : MonoBehaviour
 
     [SerializeField] Transform player;
     [SerializeField] float viewDistance = 5f;
-    [SerializeField] float angle = 100;
+    [SerializeField] float angle = 60;
 
-    [SerializeField] float patrolMoveSpeed = 3.5f;
-    [SerializeField] float checkMoveSpeed = 3.5f;
+    [SerializeField] float patrolMoveSpeed = 3f;
+    [SerializeField] float checkMoveSpeed = 3f;
     [SerializeField] float pursuitMoveSpeed = 3.5f;
 
 
     [SerializeField] GameObject target; //current target for AI
-    [SerializeField] float detectedTime = 10f;
+    [SerializeField] float detectedTime = 5f;
     float detectedTimer = 0f;
     NavMeshAgent agent;
     public bool detectedPlayer = false;
