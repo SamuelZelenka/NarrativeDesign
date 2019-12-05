@@ -16,12 +16,12 @@ public class Dialogue
     {
         public string name;
         public string text;
-        //public Sprite image;
-        public Character(string name, string text/*, Sprite image*/)
+        public Sprite image;
+        public Character(string name, string text, Sprite image)
         {
             this.name = name;
             this.text = text;
-            //this.image = image;
+            this.image = image;
         }
     }
 }

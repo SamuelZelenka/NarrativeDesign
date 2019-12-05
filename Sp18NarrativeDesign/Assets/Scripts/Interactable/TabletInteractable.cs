@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class TabletInteractable : Interactible
 {
-    [TextArea(0,25)]
     public string text;
     public Text textComponent;
     public Image textBox;

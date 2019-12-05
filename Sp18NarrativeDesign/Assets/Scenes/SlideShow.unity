@@ -419,7 +419,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1510633821}
-  - {fileID: 583323211}
+  - {fileID: 283297875}
   m_Father: {fileID: 1502107064}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -556,83 +556,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118822974}
   m_CullTransparentMesh: 0
---- !u!1 &144215978
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 144215981}
-  - component: {fileID: 144215980}
-  - component: {fileID: 144215979}
-  m_Layer: 5
-  m_Name: Dialogue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &144215979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 144215978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &144215980
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 144215978}
-  m_CullTransparentMesh: 0
---- !u!224 &144215981
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 144215978}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2050948300}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.9, y: -18.7}
-  m_SizeDelta: {x: 754.1, y: 219.4}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &178355791
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,7 +568,6 @@ GameObject:
   - component: {fileID: 178355795}
   - component: {fileID: 178355794}
   - component: {fileID: 178355793}
-  - component: {fileID: 178355796}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -727,17 +649,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 178355796}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &178355794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -774,21 +685,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178355791}
   m_CullTransparentMesh: 0
---- !u!114 &178355796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178355791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Name:Text:'
 --- !u!1 &209303769
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +788,6 @@ GameObject:
   - component: {fileID: 261530008}
   - component: {fileID: 261530007}
   - component: {fileID: 261530006}
-  - component: {fileID: 261530009}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -974,17 +869,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 261530009}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &261530007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1021,44 +905,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261530004}
   m_CullTransparentMesh: 0
---- !u!114 &261530009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261530004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - "Nafir: arrives at the leasing company in a automated taxi. He\r\nsteps out
-      on the curb and looks up, he stands outside of the\r building for a moment:"
-    - "Nafir: I need to find out who was in that\r car, I think Safar could be behind\r
-      this somehow.:"
-    - "Nafir: walks into the building towards the front desk where\r he is met by
-      an receptionist where he is greeted:"
-    - "RECEPTIONIST:Hello and welcome to X how can I help\r you today?:"
-    - "Nafir:Evening mam; I'm detective Al-Faisal\r form the NMDP:"
-    - "Nafir:This is urgent ma'am, I'm looking for\r information on the hit and run\r
-      incident from one week ago.:"
-    - "Receptionist:\rI'm sorry sir but I can't disclose this information to you without
-      a\r warrant, sir. Do to our privacy our clients are protected.:"
-    - "Nafir:I want to talk to whomever is in\r charge here.:"
-    - "Receptionist:\rOf course. Sir...:"
-    - ":As the receptionist stands up and starts walking towards the\r door on her
-      left. Nafir takes his chance an runs around to\r the keyboard and start looking
-      for the file.:"
-    - ":In seconds Nafir has found a file with the right car and who\r the owner was.
-      He also noticed that the car was registered\r to the company on 54th st.:"
-    - "Nafir: leaves before the receptionist returns with her boss.\r When he gets
-      outside hes think for himself what he should do\r with this information.:"
-    - ":Option one, I better check up on this Security Corp.\n\nOption two, I believe
-      I have a friend that can do more with\r\nthis information.\n\nOption three,
-      I should go and look for more evidence at the\r\ncrime scene:"
 --- !u!1 &266698553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,6 +984,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266698553}
   m_CullTransparentMesh: 0
+--- !u!1 &283297874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 283297875}
+  - component: {fileID: 283297878}
+  - component: {fileID: 283297877}
+  - component: {fileID: 283297876}
+  m_Layer: 5
+  m_Name: Button (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &283297875
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283297874}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1249320453}
+  m_Father: {fileID: 95821184}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 361, y: -110}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &283297876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283297874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 283297877}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1027961307}
+        m_MethodName: ForwardChange1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &283297877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283297874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &283297878
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283297874}
+  m_CullTransparentMesh: 0
 --- !u!1 &305484437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,7 +1125,6 @@ GameObject:
   - component: {fileID: 305484441}
   - component: {fileID: 305484440}
   - component: {fileID: 305484439}
-  - component: {fileID: 305484442}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -1232,17 +1206,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 305484442}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &305484440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1279,21 +1242,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 305484437}
   m_CullTransparentMesh: 0
---- !u!114 &305484442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 305484437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Name:Text:'
 --- !u!1 &335028060
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,6 +1485,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417411733}
   m_CullTransparentMesh: 0
+--- !u!1 &418074405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 418074406}
+  - component: {fileID: 418074408}
+  - component: {fileID: 418074407}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &418074406
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418074405}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2042398465}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &418074407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418074405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: go back
+--- !u!222 &418074408
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418074405}
+  m_CullTransparentMesh: 0
 --- !u!1 &422239587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,6 +1682,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 944013330}
+  - {fileID: 1042871675}
   m_Father: {fileID: 1502107064}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1715,305 +1741,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455035432}
   m_CullTransparentMesh: 0
---- !u!1 &526120750
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 526120753}
-  - component: {fileID: 526120752}
-  - component: {fileID: 526120751}
-  m_Layer: 5
-  m_Name: Name
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &526120751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526120750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 24
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &526120752
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526120750}
-  m_CullTransparentMesh: 0
---- !u!224 &526120753
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526120750}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2050948300}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -189.49998, y: 117}
-  m_SizeDelta: {x: 379, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &546301227
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 546301232}
-  - component: {fileID: 546301231}
-  - component: {fileID: 546301230}
-  - component: {fileID: 546301229}
-  - component: {fileID: 546301228}
-  m_Layer: 5
-  m_Name: StartButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &546301228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546301227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - ":Nafir has arrived at the bar in the middle of Old Town, the\r\nsand storm
-      has slowly faded. Nafir steps out of the\r\nautomated taxi cab, he looks at
-      the bar. His husband Jamal\r\nsits closest to the windows at a table with a
-      glass of\r\nmulled wine. This is their fifth anniversary and the\r\nmarriage
-      is in a crisis.:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-    - "Nafir:The city has changed, and I with\r it... Late night stake outs, getting\r
-      shot up by murderous scum and killed.\r How many times have I shed skin now,\r
-      8,9 or 10 times? I've lost count...\r We used to laugh together, spend our\r
-      evenings drinking and talking about\r the future. Now we hardly look at\r each
-      other. Jamal, have you finally had enough?:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-    - ":Nafir steps inside the bar and walks over to Jamal. There is\r\na jazz band
-      playing and only a handful of guests there:"
-    - "Jamal:\rOh! This is unexpected.. You came!:"
-    - "Nafir\r: Of course, it's our anniversary. Remember?:"
-    - "Jamal\r:I remember. I also remember our last anniversary. You were shot and
-      killed\r two nights before, and the city had a\r shortage of skins. So I sat
-      here,\r drinking mulled wine for the both of\r us. Man, did I get plastered!:"
-    - "Nafir\r:\nJamal, I'm..(interrupted):"
-    - "Jamal\r: (slight aggressive)I went to this\r awesome nightclub, danced all
-      night with Jasmine,from personnel. We went on 'til 7 in the morning.\r\nBest
-      anniversary I've had in years!\r\nSo sorry you had to be kept on ice,\r\nhoney..
-      For how long was it now?:"
-    - "Nafir\r: \rTwo months... Look, I know\r\nit's..\nJamal\r:Two. Months. Yeah,
-      that's right. Time\r seemed to go faster then that though.:\r"
-    - ":Jamal looks out the window, takes a sip from his glass, then\r\nlooks back
-      at Nafir with teary eyes, but with a slight smile\r\non his face.:"
-    - "Jamal:Sorry, I'm rambling.. must have had a\r bit too much to drink..\r\nJamal
-      gestures to the waiter-bot\n\n(voice cracking)Garcon! Over here!:"
-    - "Nafir: Jamal, look I'm sorry.. I've begged\r your forgiveness at least a hundred\r
-      times before. But it never seems\r enough for ..(interrupted):"
-    - "Waiter-bot\r:How can I be of service?\r:"
-    - "Nafir: drops his head in his hands\r\n\nYa 'iilhi..(oh god), can I\r\ncomplete
-      a fuckin' sentance before\r\nsomeone interrupts me...!:"
-    - "Waiter-bot\r:\rSo sorry, sir. I can come back later\r if you so wish?:"
-    - "Jamal: Oh, don't mind him! I'll have a glass\r of water, please.:"
-    - "Nafir: (sighs)...Sorry. I'll take a.. let's\r see.. Umm..:"
-    - "Nafir:I'll have an Al-Amoudi Rich, please.\rAnd a glass of water."
-    - ":The Waiter-bot makes an affirmative sound and leaves the\r\ntable. Nafir shakes
-      his head and chuckles, looks up at JAMAL\r\nwith a warm smile on his face.:"
-    - 'Jamal:Well, you were saying?:'
-    - "Nafir\r: Jamal, habibi.. What I was about to\r say is.. Look, I know things
-      have\r been bad lately. You must have spent\r countless nights wondering and\r
-      worrying if you'll get to see me\r again. You always have, but too many\r times
-      have I shed skin.. And I\r understand, that's not an easy thing to go through
-      over and over again.\r\nI'm sorry... truly I am. And although my work is important,
-      nothing is as important as you... \n\nI love you.:"
-    - "Jamal: Oh, you do, do you?\r:\n\r\t"
-    - ":Nafir leans in over the table and gently grabs Jamals hands,\r and looks him
-      in his eyes.:"
-    - 'Nafir: Yes, I really do.. It breaks my heart that you''d even question that.
-      What has changed? You knew what you were getting in to when you said ''yes''
-      to marrying me.:'
-    - "Jamal:Yeah, I guess so.. I love you too,\r but there only as much as one can\r
-      take..:"
-    - ":Jamal slowly pulls his hand from Nafir's hand and leans back\r\non his chair.:"
-    - "Jamal: You ask me what has changed. Well,\r YOU. You've changed.\r You hardly
-      ever smile anymore, you\r get home late at night get drunk and\r pass out on
-      the couch. It is as if\r you've died..:"
-    - 'Nafir: I have died. multiple times actually.:'
-    - "Jamal: Nafir...\r I'm not sure if I can do this\r anymore.:"
-    - 'Nafir: What? Us? Jamal...:'
-    - "Jamal: You don't seem to get it. I need to\r feel loved, right now I feel as
-      if I\r can hardly breathe..:"
-    - ":Jamal gets up from his chair, wipes the tears from his eyes,\r\ntrows a 40
-      credit tip on the table. Jamal walks up to Nafir,\r\nkisses him on his forehead.:"
-    - "Jamal:\r\nHappy anniversary, habibi.. I'll go\r\naway for a while. I've talked
-      to\r\nJasmine, she let's me crash in her\r\nappartment. I need space, to catch
-      my\r breath.:"
-    - ':Nafir grabs Jamal''S wrist with both his hands.:'
-    - "Nafir: Please, wait... Tell me what to do,\r but don't leave..:"
-    - "Jamal: I don't know if you can do anything\r that would make everything OK
-      again.\r I need to think.\r Bye', Nafir..:"
-    - ':Jamal removes Nafir''s hands and walks out of the bar.:'
-    - 'Nafir: Jamal! Wait!:'
-    - ':Nafir rush up from his chair and runs after Jamal. Nafir catch up to Jamal
-      at a street crossing.:'
-    - "Nafir: Please, just wait! I meant to tell\r you, but I never got to...:"
-    - ':A LOUD ENGINES ROARS, TIRES SCREECHING, SCREAM AND A LOUD CRASH..:'
---- !u!114 &546301229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546301227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 546301230}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 546301228}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &546301230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546301227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.76862746, g: 0.7921569, b: 0.5176471, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &546301231
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546301227}
-  m_CullTransparentMesh: 0
---- !u!224 &546301232
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546301227}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1633008744}
-  m_Father: {fileID: 1502107064}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -179, y: -153}
-  m_SizeDelta: {x: 276.7, y: 65}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &555848775
 GameObject:
   m_ObjectHideFlags: 0
@@ -2045,8 +1772,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1681648998}
-  - {fileID: 1104762051}
-  - {fileID: 2110645986}
+  - {fileID: 2042398465}
   m_Father: {fileID: 1502107064}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2115,11 +1841,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 583323211}
-  - component: {fileID: 583323215}
-  - component: {fileID: 583323214}
-  - component: {fileID: 583323213}
-  - component: {fileID: 583323212}
+  - component: {fileID: 632902700}
+  - component: {fileID: 632902703}
+  - component: {fileID: 632902702}
+  - component: {fileID: 632902701}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -2239,8 +1964,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 583323212}
-        m_MethodName: TriggerDialogue
+      - m_Target: {fileID: 0}
+        m_MethodName: _Blue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2250,7 +1975,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &583323214
+--- !u!114 &632902702
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2286,7 +2011,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583323210}
   m_CullTransparentMesh: 0
---- !u!1 &632902699
+--- !u!1 &633063121
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2294,11 +2019,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 632902700}
-  - component: {fileID: 632902703}
-  - component: {fileID: 632902702}
-  - component: {fileID: 632902701}
-  - component: {fileID: 632902704}
+  - component: {fileID: 633063122}
+  - component: {fileID: 633063125}
+  - component: {fileID: 633063124}
+  - component: {fileID: 633063123}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -2380,18 +2104,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 632902704}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &632902702
+--- !u!114 &633063124
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2427,238 +2140,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632902699}
   m_CullTransparentMesh: 0
---- !u!114 &632902704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632902699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - ':Nafirs police car drives up to the sidewalk of some working girls. There is
-      a lot of commotion on the street, kerb-crawlers driving up and ddown the street.:'
-    - "Nafir: Bilal is an old informant of mine, he\r used to do cleanup jobs for
-      some of\r the most prominent gangs of NM.\r Nowadays he runs the prostitution\r
-      businesses of the Safar family.\r Although I suspect he hasn't left his\r old
-      ways, or he might know something about another cleanup crew.:"
-    - 'Nafir: gets out of the car. He is immediately approached by
-
-      one of the girls.:'
-    - "Prostitue:Good evening, officer. What's your\r business here? We got all the\r
-      permits, so unless your looking for\r service I'll suggest you leave us\r hardworking
-      people be..:"
-    - "NAFIR: Detective, actually. I ain't\r\ninterested in your service or your\r\nbusiness,
-      I'm looking for your boss.:"
-    - "Prostitue:\r Bilal? You're in luck, he's just down\r the alley up ahead talking
-      some sense\r into some fucking scumbag trying to\r get a freebie.:"
-    - ':A dakr alley. Nafir approaches a group of three men standing behind a container,
-      encirlcing a man on the ground.:'
-    - "Bilal:What did you think, huh?! Do you\r think we run some sort of charity?!:"
-    - "John:No! I.. I sa.. I said that I was\r\ngonna pay..! Just had to get my\r
-      creds, didn't have em on me is all!\r Please don't hit me again, I'm gonna\r
-      pay..!:"
-    - "Bilal: Damn right, you are..\r\n\r\nBilal removes the knuckle duster, wipes
-      it and his hand from\r blood splatter with a silk handkerchief. He hands the
-      brass and handkerchief to one of his goons.:"
-    - "Bilal:Take this sad fuck down the docks,\r tell him the terms of repayment.
-      He\r can consider it a loan, with the\r usual interest of course. If he\r declines
-      this offer, handle it the\r way you see fit.:"
-    - ':Nafir walks up to Bilal, but is stopped by one of the goons.:'
-    - "Bilal:It's ok, Rashad. I'm sure the\r\ndetective is just here to see that\r\nour
-      permits checks out. Am I right?:"
-    - "Nafir:\rUm, yeah. And I'm pretty sure you\r can't beat up your customers,\r
-      according to your permit.:"
-    - "Bilal:Of course not, you're right. We were\r just having a little chat, clearing\r
-      up a little misunderstanding if ya\r know what I mean?:"
-    - "Nafir:Sure,I understand. But it is a\r\noffense non the less, I could take\r\nyou
-      to the station and we can have a\r little conversation 'bout that permit\r of
-      yours?:"
-    - "Bilal:C'mon detective, there's really no\r need...:"
-    - "Nafir:I could consider to look the other\r way and don't report this in. If\r
-      you'd agree to answer some of my\r questions?:"
-    - "Bilal:Sure, how can I resist an offer like\r that?:"
-    - "Nafir:Great, I knew you where reasonable. Oh, and another thing. Take that
-      guy to the hospital, I'll get some officers to pick him up. If he has\r committed
-      a breach of agreement, he\r should be charged accordingly.: "
-    - "Bilal:That's what was intended in\r\nthe first place, detective!:"
-    - ":The goons pick up the man and leaves the alley. Bilal lights\r\na cigarette.:"
-    - "Bilal:So, what did you wanna know, old\r friend?"
-    - "Nafir:I guess you've heard, I got iced last week? I've got a slight suspicion\r
-      that some of your acquaintances might be behind it all.:"
-    - "Bilal:Yeah I heard, sorry 'bout your\r\nhusband. Jamal right? Damn shame..\r
-      However, I'm quite sure it was an\r accident.."
-    - "Bilal:What makes you think it wasn't an\r accident?:"
-    - "Nafir\r:The crime scene was cleaned up before\r the police showed up, even
-      the car\r was missing. Not a trace of the\r driver.:"
-    - "Bilal:Sounds like the work of a\r\nprofessional, any leads?"
-    - "Nafir:I have a strong suspicion that you have a part in\r this. I want a straight
-      answer. Or I might have to bring you in.:"
-    - "Bilal:I wont tell you everything, but sure.\r I was at the scene. But I don't
-      know\r much. The less you know the better,\r at least in this line of work..
-      You should go visit the Leasing company.:\r\nThat's all I can give you, I'm
-      not\r\nyour informant anymore and can't be\r\nseen around you."
---- !u!1 &633063121
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 633063122}
-  - component: {fileID: 633063125}
-  - component: {fileID: 633063124}
-  - component: {fileID: 633063123}
-  - component: {fileID: 633063126}
-  m_Layer: 5
-  m_Name: Button (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &633063122
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633063121}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2064582575}
-  m_Father: {fileID: 1100879805}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 360, y: -75}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &633063123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633063121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 633063124}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1100879806}
-        m_MethodName: ForwardChange0
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 633063126}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &633063124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633063121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &633063125
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633063121}
-  m_CullTransparentMesh: 0
---- !u!114 &633063126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633063121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Name:Text:'
 --- !u!1 &669848975
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,7 +2235,6 @@ GameObject:
   - component: {fileID: 671174798}
   - component: {fileID: 671174797}
   - component: {fileID: 671174796}
-  - component: {fileID: 671174799}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -2847,17 +2327,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 671174799}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &671174797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2894,59 +2363,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671174794}
   m_CullTransparentMesh: 0
---- !u!114 &671174799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 671174794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - :Nafir exits the car and looks up the building., guess this is where I will
-      find you.
-    - ":Nafir walks inside of the front door where he is greeted by\r a guard.:"
-    - 'Guard:How can I help you?:'
-    - "Nafir:I'm detective Al-Fasil form the NMDP,\r I need to talk to who ever is
-      in\r charge of this place.:"
-    - ":The guard scans Nafir with his eyes\r, Please follow me, I will take you to\r
-      my superior.:"
-    - ":The guard points at the elevator, Go to floor 78 and then the door in\r\nfront.:"
-    - 'Boss:How can I help you?:'
-    - "Nafir:I'm detective Al-Fasil form the NMDP, I have reason to believe that this
-      company has connect to the hit and\r run incident that took place outside the
-      bar a couple streets down."
-    - "Boss:For you sir I could do that, as a\r privet security company we want to
-      be on good terms with the police.:"
-    - :As the boss is looking through the computer he gets to a sudden stop and you
-      can tell that his mood shift.
-    - "Boss: My apologies, but I can't disclose\r this information to you without
-      a\r warrant....\r\n\n....I need to ask you to leave im am\r a very busy man.:"
-    - 'Nafir:Sir, why the sudden change of heart.:'
-    - 'Boss:Im sorry I cant help you.:'
-    - "Nafir: stands up and walks towards the elevator. As he's walking out he looks
-      back at the boss and notice that he\r looks very nervous.:"
-    - "Nafir: walks into the elevator, when hes standing inside the\r elevator he
-      notices a floor plan on the wall, and on the\r 33rd floor a sign that says \"Server
-      floor\", perhaps I can find what I need in\r there?"
-    - ":When Nafir exits the elevator he notices that the servers\r are well protected
-      by cameras and surveillance drones.:"
-    - ":As Nafir gets to the computer successfully\r, Now to find out what scum drove
-      the\r car...:"
-    - 'Nasfir:Malik? The politician, the car was registered to him.:'
-    - ":Nafir then proceeds to clear up his tracks and resting the\r computer to its
-      original state. Then Nafir continues by leaving the same way he got in, avoiding
-      the drones and\r\ncameras.:"
-    - ':Option one, I should go and find out more about who Malik is in the NMPD archives.
-
-
-      Option two, I should go to Malik''s office and investigate.:'
-    - 'Name:Text:'
 --- !u!1 &702265968
 GameObject:
   m_ObjectHideFlags: 0
@@ -2959,7 +2375,6 @@ GameObject:
   - component: {fileID: 702265972}
   - component: {fileID: 702265971}
   - component: {fileID: 702265970}
-  - component: {fileID: 702265973}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -3041,17 +2456,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 702265973}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &702265971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3088,21 +2492,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 702265968}
   m_CullTransparentMesh: 0
---- !u!114 &702265973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702265968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Name:Text:'
 --- !u!1 &751940175
 GameObject:
   m_ObjectHideFlags: 0
@@ -3115,7 +2504,6 @@ GameObject:
   - component: {fileID: 751940179}
   - component: {fileID: 751940178}
   - component: {fileID: 751940177}
-  - component: {fileID: 751940180}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -3197,17 +2585,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 751940180}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &751940178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3244,21 +2621,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751940175}
   m_CullTransparentMesh: 0
---- !u!114 &751940180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751940175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Name:Text:'
 --- !u!1 &752417022
 GameObject:
   m_ObjectHideFlags: 0
@@ -3271,7 +2633,6 @@ GameObject:
   - component: {fileID: 752417026}
   - component: {fileID: 752417025}
   - component: {fileID: 752417024}
-  - component: {fileID: 752417027}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -3353,17 +2714,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 752417027}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &752417025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3400,21 +2750,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752417022}
   m_CullTransparentMesh: 0
---- !u!114 &752417027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752417022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Name:Text:'
 --- !u!1 &752434042
 GameObject:
   m_ObjectHideFlags: 0
@@ -3427,7 +2762,6 @@ GameObject:
   - component: {fileID: 752434046}
   - component: {fileID: 752434045}
   - component: {fileID: 752434044}
-  - component: {fileID: 752434047}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -3509,17 +2843,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 752434047}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &752434045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3556,21 +2879,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752434042}
   m_CullTransparentMesh: 0
---- !u!114 &752434047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752434042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Name:Text:'
 --- !u!1 &765174863
 GameObject:
   m_ObjectHideFlags: 0
@@ -3662,7 +2970,6 @@ GameObject:
   - component: {fileID: 779429710}
   - component: {fileID: 779429709}
   - component: {fileID: 779429708}
-  - component: {fileID: 779429711}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -3744,17 +3051,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 779429711}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &779429709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3790,98 +3086,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779429706}
-  m_CullTransparentMesh: 0
---- !u!114 &779429711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779429706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Name:Text:'
---- !u!1 &780053461
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 780053462}
-  - component: {fileID: 780053464}
-  - component: {fileID: 780053463}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &780053462
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780053461}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2066584808}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &780053463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780053461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.6431373, g: 0.3764706, b: 0.09411765, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Continue
---- !u!222 &780053464
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780053461}
   m_CullTransparentMesh: 0
 --- !u!1 &847825206
 GameObject:
@@ -4051,80 +3255,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884812667}
   m_CullTransparentMesh: 0
---- !u!1 &901563888
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 901563889}
-  - component: {fileID: 901563890}
-  m_Layer: 0
-  m_Name: DialogueManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &901563889
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 901563888}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.19999187, y: 0, z: 0}
-  m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
-  m_Children: []
-  m_Father: {fileID: 1502107064}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &901563890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 901563888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa9d9906dc99ed24e8140f87224fd127, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 526120751}
-  dialogueText: {fileID: 144215979}
-  typingSpeed: -20
-  continueButton: {fileID: 2066584804}
-  startButton: {fileID: 546301227}
-  dialogueBox: {fileID: 2050948297}
-  scenes:
-  - {fileID: 1028399256}
-  - {fileID: 1049320995}
-  - {fileID: 261530004}
-  - {fileID: 632902699}
-  - {fileID: 1510633820}
-  - {fileID: 583323210}
-  - {fileID: 1681648997}
-  - {fileID: 1104762050}
-  - {fileID: 2110645985}
-  - {fileID: 671174794}
-  - {fileID: 60578159}
-  - {fileID: 1309880917}
-  - {fileID: 633063121}
-  - {fileID: 1647539934}
-  - {fileID: 1200815974}
-  - {fileID: 1763921891}
-  - {fileID: 2136481140}
-  - {fileID: 178355791}
-  - {fileID: 944013329}
-  - {fileID: 305484437}
-  - {fileID: 779429706}
-  - {fileID: 1016548675}
-  - {fileID: 752417022}
-  - {fileID: 751940175}
 --- !u!1 &934984497
 GameObject:
   m_ObjectHideFlags: 0
@@ -4214,7 +3344,6 @@ GameObject:
   - component: {fileID: 944013333}
   - component: {fileID: 944013332}
   - component: {fileID: 944013331}
-  - component: {fileID: 944013334}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -4307,17 +3436,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 944013334}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &944013332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4354,21 +3472,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 944013329}
   m_CullTransparentMesh: 0
---- !u!114 &944013334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 944013329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Name:Text:'
 --- !u!1 &964348839
 GameObject:
   m_ObjectHideFlags: 0
@@ -4460,7 +3563,6 @@ GameObject:
   - component: {fileID: 1016548679}
   - component: {fileID: 1016548678}
   - component: {fileID: 1016548677}
-  - component: {fileID: 1016548680}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -4542,17 +3644,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1016548680}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1016548678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4589,21 +3680,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016548675}
   m_CullTransparentMesh: 0
---- !u!114 &1016548680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1016548675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Name:Text:'
 --- !u!1 &1027961303
 GameObject:
   m_ObjectHideFlags: 0
@@ -4637,6 +3713,7 @@ RectTransform:
   - {fileID: 1049320996}
   - {fileID: 261530005}
   - {fileID: 632902700}
+  - {fileID: 1683736555}
   m_Father: {fileID: 1502107064}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4709,7 +3786,6 @@ GameObject:
   - component: {fileID: 1028399260}
   - component: {fileID: 1028399259}
   - component: {fileID: 1028399258}
-  - component: {fileID: 1028399261}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4791,17 +3867,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1028399261}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1028399259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4838,43 +3903,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028399256}
   m_CullTransparentMesh: 0
---- !u!114 &1028399261
+--- !u!1 &1042871674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1042871675}
+  - component: {fileID: 1042871678}
+  - component: {fileID: 1042871677}
+  - component: {fileID: 1042871676}
+  m_Layer: 5
+  m_Name: Button (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1042871675
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042871674}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1081148036}
+  m_Father: {fileID: 455035433}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 360, y: -110}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1042871676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1028399256}
+  m_GameObject: {fileID: 1042871674}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - ':Nafir storm into the station, looking for Hakeem so he can get right on this
-      case. a stranger is yelling in the background at an officer in a desk. :'
-    - 'Stranger:I need help! I swear that was my best friends skin in the CUBE! But
-      he acted like he didn''t even know me!:'
-    - 'Police officer: It''s being handled sir! please leave the premises at once
-      or I will have to arrest you.:'
-    - ':Nafir hears the conversation on his way to the chiefs office and takes note
-      of what he heard:'
-    - 'Police Chief Hakeem''s Office: Nafir slams Hakeems desk with his palm ....YOU
-      KNOW DAMN WELL THAT I CAN SETTLE THIS FASTER THEN ANY OF THOSE SHITS OUT THERE!:'
-    - 'Hakeem:Damn it Nafir you know I can''t put you on this, you''re way to close
-      to it.... (Hakeem stands up) ....I can''t allow you to investigate this. Drop
-      it or I will have to take action against you. Hakeem sits back down:'
-    - ':Option one, Nafir go to the scene of the crime and tries to figure it out
-      himself
-
-
-      Option two, Nafir goes and asks one of his colleague for the address of the
-      leasing company
-
-
-      Option three, Nafir have a associate that could help him find out more about
-      this.:'
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1042871677}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 455035434}
+        m_MethodName: ChangePictureForward
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1042871677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042871674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1042871678
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042871674}
+  m_CullTransparentMesh: 0
 --- !u!1 &1049320995
 GameObject:
   m_ObjectHideFlags: 0
@@ -4887,7 +4044,6 @@ GameObject:
   - component: {fileID: 1049320999}
   - component: {fileID: 1049320998}
   - component: {fileID: 1049320997}
-  - component: {fileID: 1049321000}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -4969,17 +4125,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1049321000}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1049320998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5016,46 +4161,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1049320995}
   m_CullTransparentMesh: 0
---- !u!114 &1049321000
+--- !u!1 &1081148035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1081148036}
+  - component: {fileID: 1081148038}
+  - component: {fileID: 1081148037}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1081148036
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081148035}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1042871675}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1081148037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1049320995}
+  m_GameObject: {fileID: 1081148035}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - ":Nafir arrives outside the bar where the hit and run \toccurred.:"
-    - "Nafir:Some motherfuckers are always trying\r to ice-skate uphill\r\n*Nafir
-      bows down to\r check tire marks*:"
-    - "Nafir: These marks lead toward 57th\r street...:"
-    - ":Nafir walks into the corner store, where a cleric is sitting\r behind the
-      desk:"
-    - "Clerk:Oh, you have got to be kidding, sir.\r Your people have already been
-      in\r here..\r\n....I didn't see anything and I was\r\nnot h..\r\n(NAFIR interrupts):"
-    - 'Nafir:Cameras...:'
-    - 'Clerk:Sorry?:'
-    - 'Nafir:Do the cameras work?:'
-    - "Clerk:Of course they do, would I not be\r able to afford working cam..\r\n"
-    - 'Nafir:Show me surveillance from one week prior, when the crash happen.:'
-    - ":Clerk muffles something under his breath in another language\r and walks in
-      the back.:"
-    - 'Nafir:I haven''t gotten all day..:'
-    - ":The clerk comes back with a laptop where hes loaded up the\r video ready to
-      play. He puts it down on the counter towards\r Nafir.:"
-    - "Clerk\r:I don't have all day so hurry.:"
-    - ":As the clerk yet again muffles something in his language and\r sits down on
-      his chair, NAFIR grabs the laptop and looks through the video.:"
-    - "Nafir\r\r:Thanks.\r\nHe leaves the laptop on the counter and walks out, as
-      he\r discusses for him self what he saw."
-    - ":Option one, I also noticed that the car was\r driving from a company building
-      on 54 st. Should I go there?\n\nOption two, I know that logo, it's the leasing\r
-      company over at twenty second st.\r Should I go there?\n:"
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Button
+--- !u!222 &1081148038
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081148035}
+  m_CullTransparentMesh: 0
 --- !u!1 &1100879804
 GameObject:
   m_ObjectHideFlags: 0
@@ -5147,7 +4329,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100879804}
   m_CullTransparentMesh: 0
---- !u!1 &1104762050
+--- !u!1 &1123212849
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5155,121 +4337,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1104762051}
-  - component: {fileID: 1104762055}
-  - component: {fileID: 1104762054}
-  - component: {fileID: 1104762053}
-  - component: {fileID: 1104762052}
+  - component: {fileID: 1123212850}
+  - component: {fileID: 1123212853}
+  - component: {fileID: 1123212852}
+  - component: {fileID: 1123212851}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1104762051
+  m_IsActive: 0
+--- !u!224 &1123212850
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104762050}
+  m_GameObject: {fileID: 1123212849}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1392599924}
-  m_Father: {fileID: 555848776}
+  - {fileID: 1269180681}
+  m_Father: {fileID: 1988486372}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 360, y: -152}
+  m_AnchoredPosition: {x: 637, y: -200}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1104762052
+--- !u!114 &1123212851
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104762050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - ':Nafirs police car drives up to the sidewalk of some working girls. There is
-      a lot of commotion on the street, kerb-crawlers driving up and ddown the street.:'
-    - "Nafir: Bilal is an old informant of mine, he\r used to do cleanup jobs for
-      some of\r the most prominent gangs of NM.\r Nowadays he runs the prostitution\r
-      businesses of the Safar family.\r Although I suspect he hasn't left his\r old
-      ways, or he might know something about another cleanup crew.:"
-    - 'Nafir: gets out of the car. He is immediately approached by
-
-      one of the girls.:'
-    - "Prostitue:Good evening, officer. What's your\r business here? We got all the\r
-      permits, so unless your looking for\r service I'll suggest you leave us\r hardworking
-      people be..:"
-    - "NAFIR: Detective, actually. I ain't\r\ninterested in your service or your\r\nbusiness,
-      I'm looking for your boss.:"
-    - "Prostitue:\r Bilal? You're in luck, he's just down\r the alley up ahead talking
-      some sense\r into some fucking scumbag trying to\r get a freebie.:"
-    - ':A dakr alley. Nafir approaches a group of three men standing behind a container,
-      encirlcing a man on the ground.:'
-    - "Bilal:What did you think, huh?! Do you\r think we run some sort of charity?!:"
-    - "John:No! I.. I sa.. I said that I was\r\ngonna pay..! Just had to get my\r
-      creds, didn't have em on me is all!\r Please don't hit me again, I'm gonna\r
-      pay..!:"
-    - "Bilal: Damn right, you are..\r\n\r\nBilal removes the knuckle duster, wipes
-      it and his hand from\r blood splatter with a silk handkerchief. He hands the
-      brass and handkerchief to one of his goons.:"
-    - "Bilal:Take this sad fuck down the docks,\r tell him the terms of repayment.
-      He\r can consider it a loan, with the\r usual interest of course. If he\r declines
-      this offer, handle it the\r way you see fit.:"
-    - ':Nafir walks up to Bilal, but is stopped by one of the goons.:'
-    - "Bilal:It's ok, Rashad. I'm sure the\r\ndetective is just here to see that\r\nour
-      permits checks out. Am I right?:"
-    - "Nafir:\rUm, yeah. And I'm pretty sure you\r can't beat up your customers,\r
-      according to your permit.:"
-    - "Bilal:Of course not, you're right. We were\r just having a little chat, clearing\r
-      up a little misunderstanding if ya\r know what I mean?:"
-    - "Nafir:Sure,I understand. But it is a\r\noffense non the less, I could take\r\nyou
-      to the station and we can have a\r little conversation 'bout that permit\r of
-      yours?:"
-    - "Bilal:C'mon detective, there's really no\r need...:"
-    - "Nafir:I could consider to look the other\r way and don't report this in. If\r
-      you'd agree to answer some of my\r questions?:"
-    - "Bilal:Sure, how can I resist an offer like\r that?:"
-    - "Nafir:Great, I knew you where reasonable. Oh, and another thing. Take that
-      guy to the hospital, I'll get some officers to pick him up. If he has\r committed
-      a breach of agreement, he\r should be charged accordingly.: "
-    - "Bilal:That's what was intended in\r\nthe first place, detective!:"
-    - ":The goons pick up the man and leaves the alley. Bilal lights\r\na cigarette.:"
-    - "Bilal:So, what did you wanna know, old\r friend?"
-    - "Nafir:I guess you've heard, I got iced last week? I've got a slight suspicion\r
-      that some of your acquaintances might be behind it all.:"
-    - "Bilal:Yeah I heard, sorry 'bout your\r\nhusband. Jamal right? Damn shame..\r
-      However, I'm quite sure it was an\r accident.."
-    - "Bilal:What makes you think it wasn't an\r accident?:"
-    - "Nafir\r:The crime scene was cleaned up before\r the police showed up, even
-      the car\r was missing. Not a trace of the\r driver.:"
-    - "Bilal:Sounds like the work of a\r\nprofessional, any leads?"
-    - "Nafir:I have a strong suspicion that you have a part in\r this. I want a straight
-      answer. Or I might have to bring you in.:"
-    - "Bilal:I wont tell you everything, but sure.\r I was at the scene. But I don't
-      know\r much. The less you know the better,\r at least in this line of work..
-      You should go visit the Leasing company.:\r\nThat's all I can give you, I'm
-      not\r\nyour informant anymore and can't be\r\nseen around you."
---- !u!114 &1104762053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104762050}
+  m_GameObject: {fileID: 1123212849}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -5302,12 +4407,12 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1104762054}
+  m_TargetGraphic: {fileID: 1123212852}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 555848777}
-        m_MethodName: ForwardChange1
+      - m_Target: {fileID: 1027961307}
+        m_MethodName: ChangePictureBackward
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5317,24 +4422,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1104762052}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1104762054
+--- !u!114 &1123212852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104762050}
+  m_GameObject: {fileID: 1123212849}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -5356,13 +4450,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &1104762055
+--- !u!222 &1123212853
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104762050}
+  m_GameObject: {fileID: 1123212849}
   m_CullTransparentMesh: 0
 --- !u!1 &1145860753
 GameObject:
@@ -5465,7 +4559,6 @@ GameObject:
   - component: {fileID: 1200815978}
   - component: {fileID: 1200815977}
   - component: {fileID: 1200815976}
-  - component: {fileID: 1200815979}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -5547,17 +4640,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1200815979}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1200815977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5594,22 +4676,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200815974}
   m_CullTransparentMesh: 0
---- !u!114 &1200815979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200815974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Name:Text:'
---- !u!1 &1267456759
+--- !u!1 &1208534737
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5617,9 +4684,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1267456760}
-  - component: {fileID: 1267456762}
-  - component: {fileID: 1267456761}
+  - component: {fileID: 1208534738}
+  - component: {fileID: 1208534740}
+  - component: {fileID: 1208534739}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -5627,18 +4694,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1267456760
+--- !u!224 &1208534738
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267456759}
+  m_GameObject: {fileID: 1208534737}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2110645986}
+  m_Father: {fileID: 1683736555}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5646,13 +4713,13 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1267456761
+--- !u!114 &1208534739
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267456759}
+  m_GameObject: {fileID: 1208534737}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
@@ -5677,14 +4744,173 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Option three
---- !u!222 &1267456762
+  m_Text: 'return
+
+
+'
+--- !u!222 &1208534740
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267456759}
+  m_GameObject: {fileID: 1208534737}
+  m_CullTransparentMesh: 0
+--- !u!1 &1249320452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1249320453}
+  - component: {fileID: 1249320455}
+  - component: {fileID: 1249320454}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1249320453
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249320452}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 283297875}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1249320454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249320452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'return
+
+'
+--- !u!222 &1249320455
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249320452}
+  m_CullTransparentMesh: 0
+--- !u!1 &1269180680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1269180681}
+  - component: {fileID: 1269180683}
+  - component: {fileID: 1269180682}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1269180681
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269180680}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1123212850}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1269180682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269180680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: go back
+--- !u!222 &1269180683
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269180680}
   m_CullTransparentMesh: 0
 --- !u!1 &1270858333
 GameObject:
@@ -5870,7 +5096,6 @@ GameObject:
   - component: {fileID: 1309880921}
   - component: {fileID: 1309880920}
   - component: {fileID: 1309880919}
-  - component: {fileID: 1309880922}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -5963,17 +5188,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1309880922}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1309880920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6010,21 +5224,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309880917}
   m_CullTransparentMesh: 0
---- !u!114 &1309880922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309880917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Name:Text:'
 --- !u!1 &1318712677
 GameObject:
   m_ObjectHideFlags: 0
@@ -6257,7 +5456,6 @@ GameObject:
   - component: {fileID: 1387580760}
   - component: {fileID: 1387580759}
   - component: {fileID: 1387580758}
-  - component: {fileID: 1387580761}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -6330,17 +5528,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 209303771}
         m_MethodName: ForwardChange0
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1387580761}
-        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6827,9 +6014,6 @@ RectTransform:
   - {fileID: 1145860754}
   - {fileID: 1280480879}
   - {fileID: 422239588}
-  - {fileID: 546301232}
-  - {fileID: 2050948300}
-  - {fileID: 901563889}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6943,7 +6127,6 @@ GameObject:
   - component: {fileID: 1510633824}
   - component: {fileID: 1510633823}
   - component: {fileID: 1510633822}
-  - component: {fileID: 1510633825}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -7025,17 +6208,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1510633825}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1510633823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7072,59 +6244,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510633820}
   m_CullTransparentMesh: 0
---- !u!114 &1510633825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510633820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - :Nafir exits the car and looks up the building., guess this is where I will
-      find you.
-    - ":Nafir walks inside of the front door where he is greeted by\r a guard.:"
-    - 'Guard:How can I help you?:'
-    - "Nafir:I'm detective Al-Fasil form the NMDP,\r I need to talk to who ever is
-      in\r charge of this place.:"
-    - ":The guard scans Nafir with his eyes\r, Please follow me, I will take you to\r
-      my superior.:"
-    - ":The guard points at the elevator, Go to floor 78 and then the door in\r\nfront.:"
-    - 'Boss:How can I help you?:'
-    - "Nafir:I'm detective Al-Fasil form the NMDP, I have reason to believe that this
-      company has connect to the hit and\r run incident that took place outside the
-      bar a couple streets down."
-    - "Boss:For you sir I could do that, as a\r privet security company we want to
-      be on good terms with the police.:"
-    - :As the boss is looking through the computer he gets to a sudden stop and you
-      can tell that his mood shift.
-    - "Boss: My apologies, but I can't disclose\r this information to you without
-      a\r warrant....\r\n\n....I need to ask you to leave im am\r a very busy man.:"
-    - 'Nafir:Sir, why the sudden change of heart.:'
-    - 'Boss:Im sorry I cant help you.:'
-    - "Nafir: stands up and walks towards the elevator. As he's walking out he looks
-      back at the boss and notice that he\r looks very nervous.:"
-    - "Nafir: walks into the elevator, when hes standing inside the\r elevator he
-      notices a floor plan on the wall, and on the\r 33rd floor a sign that says \"Server
-      floor\", perhaps I can find what I need in\r there?"
-    - ":When Nafir exits the elevator he notices that the servers\r are well protected
-      by cameras and surveillance drones.:"
-    - ":As Nafir gets to the computer successfully\r, Now to find out what scum drove
-      the\r car...:"
-    - 'Nasfir:Malik? The politician, the car was registered to him.:'
-    - ":Nafir then proceeds to clear up his tracks and resting the\r computer to its
-      original state. Then Nafir continues by leaving the same way he got in, avoiding
-      the drones and\r\ncameras.:"
-    - ':Option one, I should go and find out more about who Malik is in the NMPD archives.
-
-
-      Option two, I should go to Malik''s office and investigate.:'
-    - 'Name:Text:'
 --- !u!1 &1588155182
 GameObject:
   m_ObjectHideFlags: 0
@@ -7358,83 +6477,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1629517903}
   m_CullTransparentMesh: 0
---- !u!1 &1633008743
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1633008744}
-  - component: {fileID: 1633008746}
-  - component: {fileID: 1633008745}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1633008744
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633008743}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 546301232}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1633008745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633008743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.6415094, g: 0.3778183, b: 0.09380562, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Start
---- !u!222 &1633008746
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633008743}
-  m_CullTransparentMesh: 0
 --- !u!1 &1647539934
 GameObject:
   m_ObjectHideFlags: 0
@@ -7447,7 +6489,6 @@ GameObject:
   - component: {fileID: 1647539938}
   - component: {fileID: 1647539937}
   - component: {fileID: 1647539936}
-  - component: {fileID: 1647539939}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -7529,17 +6570,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1647539939}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1647539937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7576,21 +6606,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647539934}
   m_CullTransparentMesh: 0
---- !u!114 &1647539939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1647539934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Name:Text:'
 --- !u!1 &1678056704
 GameObject:
   m_ObjectHideFlags: 0
@@ -7682,7 +6697,6 @@ GameObject:
   - component: {fileID: 1681649001}
   - component: {fileID: 1681649000}
   - component: {fileID: 1681648999}
-  - component: {fileID: 1681649002}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -7764,17 +6778,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1681649002}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1681649000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7811,59 +6814,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681648997}
   m_CullTransparentMesh: 0
---- !u!114 &1681649002
+--- !u!1 &1683736554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1683736555}
+  - component: {fileID: 1683736558}
+  - component: {fileID: 1683736557}
+  - component: {fileID: 1683736556}
+  m_Layer: 5
+  m_Name: Button (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1683736555
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683736554}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1208534738}
+  m_Father: {fileID: 1027961304}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 358, y: -176}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1683736556
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1681648997}
+  m_GameObject: {fileID: 1683736554}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - :Nafir exits the car and looks up the building., guess this is where I will
-      find you.
-    - ":Nafir walks inside of the front door where he is greeted by\r a guard.:"
-    - 'Guard:How can I help you?:'
-    - "Nafir:I'm detective Al-Fasil form the NMDP,\r I need to talk to who ever is
-      in\r charge of this place.:"
-    - ":The guard scans Nafir with his eyes\r, Please follow me, I will take you to\r
-      my superior.:"
-    - ":The guard points at the elevator, Go to floor 78 and then the door in\r\nfront.:"
-    - 'Boss:How can I help you?:'
-    - "Nafir:I'm detective Al-Fasil form the NMDP, I have reason to believe that this
-      company has connect to the hit and\r run incident that took place outside the
-      bar a couple streets down."
-    - "Boss:For you sir I could do that, as a\r privet security company we want to
-      be on good terms with the police.:"
-    - :As the boss is looking through the computer he gets to a sudden stop and you
-      can tell that his mood shift.
-    - "Boss: My apologies, but I can't disclose\r this information to you without
-      a\r warrant....\r\n\n....I need to ask you to leave im am\r a very busy man.:"
-    - 'Nafir:Sir, why the sudden change of heart.:'
-    - 'Boss:Im sorry I cant help you.:'
-    - "Nafir: stands up and walks towards the elevator. As he's walking out he looks
-      back at the boss and notice that he\r looks very nervous.:"
-    - "Nafir: walks into the elevator, when hes standing inside the\r elevator he
-      notices a floor plan on the wall, and on the\r 33rd floor a sign that says \"Server
-      floor\", perhaps I can find what I need in\r there?"
-    - ":When Nafir exits the elevator he notices that the servers\r are well protected
-      by cameras and surveillance drones.:"
-    - ":As Nafir gets to the computer successfully\r, Now to find out what scum drove
-      the\r car...:"
-    - 'Nasfir:Malik? The politician, the car was registered to him.:'
-    - ":Nafir then proceeds to clear up his tracks and resting the\r computer to its
-      original state. Then Nafir continues by leaving the same way he got in, avoiding
-      the drones and\r\ncameras.:"
-    - ':Option one, I should go and find out more about who Malik is in the NMPD archives.
-
-
-      Option two, I should go to Malik''s office and investigate.:'
-    - 'Name:Text:'
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1683736557}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 335028064}
+        m_MethodName: ForwardChange2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1683736557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683736554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1683736558
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683736554}
+  m_CullTransparentMesh: 0
 --- !u!1 &1737445585
 GameObject:
   m_ObjectHideFlags: 0
@@ -8032,7 +7111,6 @@ GameObject:
   - component: {fileID: 1763921895}
   - component: {fileID: 1763921894}
   - component: {fileID: 1763921893}
-  - component: {fileID: 1763921896}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -8114,17 +7192,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1763921896}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1763921894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8161,21 +7228,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763921891}
   m_CullTransparentMesh: 0
---- !u!114 &1763921896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763921891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Name:Text:'
 --- !u!1 &1873901918
 GameObject:
   m_ObjectHideFlags: 0
@@ -8356,7 +7408,6 @@ GameObject:
   - component: {fileID: 1903315169}
   - component: {fileID: 1903315168}
   - component: {fileID: 1903315167}
-  - component: {fileID: 1903315170}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -8438,17 +7489,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1903315170}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1903315168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8485,21 +7525,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903315165}
   m_CullTransparentMesh: 0
---- !u!114 &1903315170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903315165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Name:Text:'
 --- !u!1 &1927562322
 GameObject:
   m_ObjectHideFlags: 0
@@ -8790,7 +7815,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 671174795}
-  - {fileID: 60578160}
+  - {fileID: 1123212850}
   m_Father: {fileID: 1502107064}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8813,7 +7838,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   futurePicture:
   - {fileID: 1100879804}
-  - {fileID: 555848775}
 --- !u!114 &1988486374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8927,6 +7951,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027633069}
   m_CullTransparentMesh: 0
+--- !u!1 &2042398464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2042398465}
+  - component: {fileID: 2042398468}
+  - component: {fileID: 2042398467}
+  - component: {fileID: 2042398466}
+  m_Layer: 5
+  m_Name: Button (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2042398465
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042398464}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 418074406}
+  m_Father: {fileID: 555848776}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 360, y: -112}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2042398466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042398464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2042398467}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1027961307}
+        m_MethodName: ChangePictureBackward
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2042398467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042398464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2042398468
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042398464}
+  m_CullTransparentMesh: 0
 --- !u!1 &2043850323
 GameObject:
   m_ObjectHideFlags: 0
@@ -8995,7 +8148,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Option two
+  m_Text: Malik's office
 --- !u!222 &2043850326
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9004,82 +8157,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043850323}
   m_CullTransparentMesh: 0
---- !u!1 &2050948297
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2050948300}
-  - component: {fileID: 2050948299}
-  - component: {fileID: 2050948298}
-  m_Layer: 5
-  m_Name: DialogueBox
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2050948298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2050948297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.768599, g: 0.7924528, b: 0.51957995, a: 0.5294118}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2050948299
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2050948297}
-  m_CullTransparentMesh: 0
---- !u!224 &2050948300
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2050948297}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 526120753}
-  - {fileID: 144215981}
-  - {fileID: 2066584808}
-  m_Father: {fileID: 1502107064}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -178, y: -189.4}
-  m_SizeDelta: {x: 793.5, y: 290.8}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2064582574
 GameObject:
   m_ObjectHideFlags: 0
@@ -9148,7 +8225,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Option one
+  m_Text: 'Police Archives
+
+'
 --- !u!222 &2064582577
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9156,316 +8235,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064582574}
-  m_CullTransparentMesh: 0
---- !u!1 &2066584804
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2066584808}
-  - component: {fileID: 2066584807}
-  - component: {fileID: 2066584806}
-  - component: {fileID: 2066584805}
-  m_Layer: 5
-  m_Name: ContinueButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2066584805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066584804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 2066584806}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 901563890}
-        m_MethodName: DisplayNextSentence
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2066584806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066584804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.76862746, g: 0.7921569, b: 0.5176471, a: 0.85882354}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2066584807
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066584804}
-  m_CullTransparentMesh: 0
---- !u!224 &2066584808
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066584804}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 780053462}
-  m_Father: {fileID: 2050948300}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: -108}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &2110645985
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2110645986}
-  - component: {fileID: 2110645990}
-  - component: {fileID: 2110645989}
-  - component: {fileID: 2110645988}
-  - component: {fileID: 2110645987}
-  m_Layer: 5
-  m_Name: Button (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2110645986
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110645985}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1267456760}
-  m_Father: {fileID: 555848776}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 360, y: -77}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2110645987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110645985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - ":Nafir arrives outside the bar where the hit and run \toccurred.:"
-    - "Nafir:Some motherfuckers are always trying\r to ice-skate uphill\r\n*Nafir
-      bows down to\r check tire marks*:"
-    - "Nafir: These marks lead toward 57th\r street...:"
-    - ":Nafir walks into the corner store, where a cleric is sitting\r behind the
-      desk:"
-    - "Clerk:Oh, you have got to be kidding, sir.\r Your people have already been
-      in\r here..\r\n....I didn't see anything and I was\r\nnot h..\r\n(NAFIR interrupts):"
-    - 'Nafir:Cameras...:'
-    - 'Clerk:Sorry?:'
-    - 'Nafir:Do the cameras work?:'
-    - "Clerk:Of course they do, would I not be\r able to afford working cam..\r\n"
-    - 'Nafir:Show me surveillance from one week prior, when the crash happen.:'
-    - ":Clerk muffles something under his breath in another language\r and walks in
-      the back.:"
-    - 'Nafir:I haven''t gotten all day..:'
-    - ":The clerk comes back with a laptop where hes loaded up the\r video ready to
-      play. He puts it down on the counter towards\r Nafir.:"
-    - "Clerk\r:I don't have all day so hurry.:"
-    - ":As the clerk yet again muffles something in his language and\r sits down on
-      his chair, NAFIR grabs the laptop and looks through the video.:"
-    - "Nafir\r\r:Thanks.\r\nHe leaves the laptop on the counter and walks out, as
-      he\r discusses for him self what he saw."
-    - ":Option one, I also noticed that the car was\r driving from a company building
-      on 54 st. Should I go there?\n\nOption two, I know that logo, it's the leasing\r
-      company over at twenty second st.\r Should I go there?\n:"
---- !u!114 &2110645988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110645985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 2110645989}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 555848777}
-        m_MethodName: ForwardChange2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2110645987}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2110645989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110645985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2110645990
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110645985}
   m_CullTransparentMesh: 0
 --- !u!1 &2136481140
 GameObject:
@@ -9479,7 +8248,6 @@ GameObject:
   - component: {fileID: 2136481144}
   - component: {fileID: 2136481143}
   - component: {fileID: 2136481142}
-  - component: {fileID: 2136481145}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -9561,17 +8329,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2136481145}
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &2136481143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9608,18 +8365,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136481140}
   m_CullTransparentMesh: 0
---- !u!114 &2136481145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2136481140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f443925c25bfa4c9a72c00df4e8172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Name:Text:'
