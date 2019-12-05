@@ -79,6 +79,17 @@ public class Menu : MonoBehaviour
     public void ExitGame(){
         Application.Quit();
     }
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
+    }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1;
+    }
+
 
     public void PauseMenu()
     {
@@ -127,7 +138,7 @@ public class Menu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (gameOverScreen.activeSelf == false)
+            if (gameOverScreen != null && gameOverScreen.activeSelf == false)
             {
 
                 if (optionsMenu.activeSelf)
