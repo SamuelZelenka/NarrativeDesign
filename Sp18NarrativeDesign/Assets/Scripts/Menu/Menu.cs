@@ -20,7 +20,10 @@ public class Menu : MonoBehaviour
     public void OptionsButtonPressed()
     {
         tutorialWindow.SetActive(false);
-        creditsWindow.SetActive(false);
+        if (scene.name == "MainMenu")
+        {   
+            creditsWindow.SetActive(false);
+        }
         if (!optionsMenu.activeSelf)
         {
             optionsMenu.SetActive(true);
@@ -37,7 +40,10 @@ public class Menu : MonoBehaviour
     public void TutorialButtonPressed()
     {
         optionsMenu.SetActive(false);
-        creditsWindow.SetActive(false);
+        if (scene.name == "MainMenu")
+        {   
+            creditsWindow.SetActive(false);
+        }
         if (!tutorialWindow.activeSelf)
         {
             tutorialWindow.SetActive(true);
@@ -93,7 +99,6 @@ public class Menu : MonoBehaviour
 
     public void PauseMenu()
     {
-        Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "MainScene")
         {
             if (!pauseMenu.activeSelf)
@@ -136,16 +141,19 @@ public class Menu : MonoBehaviour
     GameObject gameOverScreen;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && scene.name == "MainScene")
         {
             if (gameOverScreen != null && gameOverScreen.activeSelf == false)
             {
 
-                if (optionsMenu.activeSelf)
+                if (pauseMenu.activeSelf)
                 {
                     Cursor.visible = false;
                     Cursor.lockState = CursorLockMode.Locked;
+                    pauseMenu.SetActive(false);
                     optionsMenu.SetActive(false);
+                    tutorialWindow.SetActive(false);
+                    
                 }
                 else
                 {
@@ -160,8 +168,10 @@ public class Menu : MonoBehaviour
     Resolution[] resolutions;
     [SerializeField]
     private Dropdown dropdownMenu;
+    Scene scene;
     void Start()
     {
+        scene = SceneManager.GetActiveScene();
         if (gameOverScreen != null)
         {
             Cursor.lockState = CursorLockMode.Locked;
