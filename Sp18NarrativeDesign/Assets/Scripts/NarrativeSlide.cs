@@ -6,24 +6,16 @@ using UnityEngine.UI;
 
 public class NarrativeSlide : MonoBehaviour
 {
-
-    public bool visited = false;
     public Image conceptImage;
-    public NarrativeSlide visitRequired;
-    
-    [TextArea(0,20)]
-    public List<string> dialogueTexts;
+    public Text textComponent;
+
+    [TextArea(0, 20)]
+    public string text;
     public List<NarrativeButton> buttons;
 
-    public void Initiate(int dialogueID)
+
+    public void Awake()
     {
-        foreach (NarrativeButton button in buttons)
-        {
-            if(button.activate && visitRequired == null || button.activate && visitRequired.visited)
-            {
-                button.gameObject.SetActive(true);
-            }
-        }
-        visited = true;
+        textComponent.text = text;
     }
 }

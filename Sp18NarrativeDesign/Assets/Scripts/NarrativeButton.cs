@@ -4,14 +4,24 @@ using UnityEngine;
 
 public class NarrativeButton : MonoBehaviour
 {
-    public bool activate;
+    [SerializeField] bool activate;
     public NarrativeSlide nextSlide;
-    public int nextSlideID;
-   
 
+    private void Awake()
+    {
+        gameObject.SetActive(activate);
+    }
 
     public void IsPressed()
     {
-        NarrativeManager.ButtonPressed(this);
+        if (nextSlide != null)
+        {
+            nextSlide.gameObject.SetActive(true);
+            transform.parent.gameObject.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("Hello world");
+        }
     }
 }
