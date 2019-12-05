@@ -388,6 +388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 1708560515}
   dialogueText: {fileID: 499367735}
+  typingSpeed: 0
   continueButton: {fileID: 962036139}
   startButton: {fileID: 1432915094}
   dialogueBox: {fileID: 415178638}
@@ -1543,6 +1544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 236038841}
   - component: {fileID: 236038842}
+  - component: {fileID: 236038843}
   m_Layer: 0
   m_Name: Scene
   m_TagString: Untagged
@@ -1591,6 +1593,19 @@ MonoBehaviour:
   - {fileID: 251672961}
   - {fileID: 58872771}
   - {fileID: 326146322}
+--- !u!114 &236038843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236038840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65b5e23cc18a47e4088ac2c81129071a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSceneName: MainMenu
 --- !u!1 &251672959
 GameObject:
   m_ObjectHideFlags: 0
@@ -3457,7 +3472,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4b2333c585ceeee4b8631f9df72329df, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b51d22d6c35b35c48b15095755a281f9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6574,7 +6589,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1538585944}
   - component: {fileID: 1538585945}
-  - component: {fileID: 1538585946}
   m_Layer: 0
   m_Name: Scene (22.1)
   m_TagString: Untagged
@@ -6626,19 +6640,6 @@ MonoBehaviour:
   - {fileID: 2093912381}
   - {fileID: 1000830269}
   - {fileID: 64050260}
---- !u!114 &1538585946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538585943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65b5e23cc18a47e4088ac2c81129071a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newSceneName: MainMenu
 --- !u!1 &1565938450
 GameObject:
   m_ObjectHideFlags: 0
