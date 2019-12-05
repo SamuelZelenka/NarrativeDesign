@@ -12,6 +12,7 @@ public class ThisIsAScript : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Start works");
         _Pink.gameObject.SetActive(false);
         _Blue.gameObject.SetActive(false); 
         _Yellow.gameObject.SetActive(false);
@@ -20,14 +21,18 @@ public class ThisIsAScript : MonoBehaviour
     public void SetBlueTrue()
     {
         _Blue.SetActive(true); //set true if otherways. 
+        Debug.Log("Mother fucking blue should be enabled");
     }
     public void SetPinkTrue()
     {
         _Pink.SetActive(true); //set true if otherways. 
+        Debug.Log("Mother fucking pink should be enabled");
     }
     public void SetYellowTrue()
     {
         _Yellow2.SetActive(true);
         _Yellow.SetActive(true); //set true if otherways. 
+        Debug.Log("Mother fucking yellow should be enabled");
+
     }
 }
